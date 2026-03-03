@@ -1,6 +1,7 @@
 # Python cache
 __pycache__/
 *.pyc
+.DS_Store
 
 # IDE configuration folder
 .idea/
@@ -8,6 +9,10 @@ __pycache__/
 
 # Environment variables file
 .env
+.env.local
+frontend/.env.local
+*.pid
+*.log
 text_to_3d_agent/models/
 output/
 outputs/
@@ -30,9 +35,6 @@ node_modules
 node_modules
 old_version/
 backend/text_to_3d_agent/
-backend/backend.log
-frontend/backend.log
-frontend/frontend.log
 面试问题回答.md
 test/
 archive

@@ -49,6 +49,11 @@ The **3D Asset Generation and Scene Construction Agent** combines large language
 
 ## Installation
 
+Dependency notes:
+- `backend/requirements.txt` is the backend service dependency list.
+- `text_to_3d_agent/Hunyuan3D-2.1/requirements.txt` is required for 3D generation.
+- Root `requirements.txt` is a historical conda export (Linux snapshot) and is **not** the recommended install entry for contributors.
+
 ```bash
 # from project root
 python -m venv .venv && source .venv/bin/activate
