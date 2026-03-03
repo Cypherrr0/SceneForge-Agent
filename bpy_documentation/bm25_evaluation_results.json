@@ -1,0 +1,6537 @@
+{
+  "metrics": {
+    "total_apis": 2396,
+    "total_queries": 8765,
+    "hit_at_1": 6399,
+    "hit_at_5": 8092,
+    "hit_at_10": 8382,
+    "mrr_sum": 7139.868650793616,
+    "success_apis": 2392,
+    "failed_apis": [
+      "bpy.ops.transform.translate",
+      "bpy.ops.object.grease_pencil_add",
+      "bpy.ops.node.select",
+      "bpy.ops.uv.select"
+    ],
+    "hit_rate_at_1": 0.730062749572162,
+    "hit_rate_at_5": 0.923217341699943,
+    "hit_rate_at_10": 0.9563034797490018,
+    "mrr": 0.8145885511458775,
+    "api_success_rate": 0.998330550918197
+  },
+  "sample_results": [
+    {
+      "api_id": "bpy.ops.export_anim.bvh",
+      "queries": [
+        "Save a BVH motion capture file from an armature",
+        "Save a BVH motion capture",
+        "bvh",
+        "save motion capture"
+      ],
+      "query_results": [
+        {
+          "query": "Save a BVH motion capture file from an armature",
+          "query_tokens": [
+            "save",
+            "bvh",
+            "motion",
+            "capture",
+            "file",
+            "from",
+            "an",
+            "armature"
+          ],
+          "correct_rank": 1,
+          "top_5": [
+            [
+              "bpy.ops.export_anim.bvh",
+              19.047048960993592
+            ],
+            [
+              "bpy.ops.import_anim.bvh",
+              16.215688490051022
+            ],
+            [
+              "bpy.ops.image.unpack",
+              9.701267830027298
+            ],
+            [
+              "bpy.ops.object.multires_external_pack",
+              9.005869119480918
+            ],
+            [
+              "bpy.ops.clip.solve_camera",
+              8.81386143856081
+            ]
+          ]
+        },
+        {
+          "query": "Save a BVH motion capture",
+          "query_tokens": [
+            "save",
+            "bvh",
+            "motion",
+            "capture"
+          ],
+          "correct_rank": 1,
+          "top_5": [
+            [
+              "bpy.ops.export_anim.bvh",
+              12.49727035082508
+            ],
+            [
+              "bpy.ops.import_anim.bvh",
+              10.976019573305265
+            ],
+            [
+              "bpy.ops.sculpt.optimize",
+              7.761137646730697
+            ],
+            [
+              "bpy.ops.node.capture_attribute_item_remove",
+              6.843003689487382
+            ],
+            [
+              "bpy.ops.node.capture_attribute_item_add",
+              6.703696238837865
+            ]
+          ]
+        },
+        {
+          "query": "bvh",
+          "query_tokens": [
+            "bvh"
+          ],
+          "correct_rank": 3,
+          "top_5": [
+            [
+              "bpy.ops.sculpt.optimize",
+              7.761137646730697
+            ],
+            [
+              "bpy.ops.import_anim.bvh",
+              4.093996108410678
+            ],
+            [
+              "bpy.ops.export_anim.bvh",
+              3.733191263719848
+            ],
+            [
+              "bpy.ops.cachefile.layer_add",
+              0.0
+            ],
+            [
+              "bpy.ops.cachefile.layer_move",
+              0.0
+            ]
+          ]
+        },
+        {
+          "query": "save motion capture",
+          "query_tokens": [
+            "save",
+            "motion",
+            "capture"
+          ],
+          "correct_rank": 1,
+          "top_5": [
+            [
+              "bpy.ops.export_anim.bvh",
+              8.764079087105234
+            ],
+            [
+              "bpy.ops.import_anim.bvh",
+              6.882023464894587
+            ],
+            [
+              "bpy.ops.node.capture_attribute_item_remove",
+              6.843003689487382
+            ],
+            [
+              "bpy.ops.node.capture_attribute_item_add",
+              6.703696238837865
+            ],
+            [
+              "bpy.ops.clip.solve_camera",
+              6.47461440143801
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "api_id": "bpy.ops.cachefile.layer_add",
+      "queries": [
+        "Add an override layer to the archive",
+        "Add an override layer to",
+        "layer add",
+        "override layer archive"
+      ],
+      "query_results": [
+        {
+          "query": "Add an override layer to the archive",
+          "query_tokens": [
+            "add",
+            "an",
+            "override",
+            "layer",
+            "to",
+            "the",
+            "archive"
+          ],
+          "correct_rank": 2,
+          "top_5": [
+            [
+              "bpy.ops.cachefile.layer_remove",
+              21.82909099430115
+            ],
+            [
+              "bpy.ops.cachefile.layer_add",
+              14.985407728002063
+            ],
+            [
+              "bpy.ops.ui.override_remove_button",
+              10.112658334958056
+            ],
+            [
+              "bpy.ops.ui.override_type_set_button",
+              8.455378775133688
+            ],
+            [
+              "bpy.ops.wm.alembic_import",
+              8.400164540041306
+            ]
+          ]
+        },
+        {
+          "query": "Add an override layer to",
+          "query_tokens": [
+            "add",
+            "an",
+            "override",
+            "layer",
+            "to"
+          ],
+          "correct_rank": 2,
+          "top_5": [
+            [
+              "bpy.ops.cachefile.layer_remove",
+              12.983028118480133
+            ],
+            [
+              "bpy.ops.cachefile.layer_add",
+              9.586355640852455
+            ],
+            [
+              "bpy.ops.ui.override_remove_button",
+              8.359923905865843
+            ],
+            [
+              "bpy.ops.ui.override_type_set_button",
+              6.989885430128492
+            ],
+            [
+              "bpy.ops.node.cryptomatte_layer_add",
+              6.953812731158889
+            ]
+          ]
+        },
+        {
+          "query": "layer add",
+          "query_tokens": [
+            "layer",
+            "add"
+          ],
+          "correct_rank": null,
+          "top_5": [
+            [
+              "bpy.ops.scene.view_layer_add_aov",
+              6.609809388214739
+            ],
+            [
+              "bpy.ops.mesh.customdata_skin_add",
+              6.609809388214739
+            ],
+            [
+              "bpy.ops.node.cryptomatte_layer_add",
+              6.475249224734773
+            ],
+            [
+              "bpy.ops.mask.layer_new",
+              6.34605841044511
+            ],
+            [
+              "bpy.ops.scene.view_layer_add",
+              6.34605841044511
+            ]
+          ]
+        },
+        {
+          "query": "override layer archive",
+          "query_tokens": [
+            "override",
+            "layer",
+            "archive"
+          ],
+          "correct_rank": 2,
+          "top_5": [
+            [
+              "bpy.ops.cachefile.layer_remove",
+              16.25636785529099
+            ],
+            [
+              "bpy.ops.cachefile.layer_add",
+              9.92181245268784
+            ],
+            [
+              "bpy.ops.paint.vertex_paint",
+              6.513757046234103
+            ],
+            [
+              "bpy.ops.cachefile.reload",
+              6.494769725273244
+            ],
+            [
+              "bpy.ops.ui.override_idtemplate_reset",
+              4.891151921017456
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "api_id": "bpy.ops.cachefile.layer_move",
+      "queries": [
+        "Move layer in the list, layers further down the list will overwrite data from the layers higher up",
+        "Move layer in the list,",
+        "layer move",
+        "move layer list,"
+      ],
+      "query_results": [
+        {
+          "query": "Move layer in the list, layers further down the list will overwrite data from the layers higher up",
+          "query_tokens": [
+            "move",
+            "layer",
+            "in",
+            "the",
+            "list",
+            "layers",
+            "further",
+            "down",
+            "will",
+            "overwrite",
+            "data",
+            "from",
+            "higher",
+            "up"
+          ],
+          "correct_rank": 1,
+          "top_5": [
+            [
+              "bpy.ops.cachefile.layer_move",
+              47.832240487132644
+            ],
+            [
+              "bpy.ops.mask.layer_move",
+              21.938511619174275
+            ],
+            [
+              "bpy.ops.gpencil.layer_annotation_move",
+              21.938511619174275
+            ],
+            [
+              "bpy.ops.palette.color_move",
+              18.425052386306632
+            ],
+            [
+              "bpy.ops.grease_pencil.layer_mask_reorder",
+              18.27089138253735
+            ]
+          ]
+        },
+        {
+          "query": "Move layer in the list,",
+          "query_tokens": [
+            "move",
+            "layer",
+            "in",
+            "the",
+            "list"
+          ],
+          "correct_rank": 3,
+          "top_5": [
+            [
+              "bpy.ops.mask.layer_move",
+              13.209704944408514
+            ],
+            [
+              "bpy.ops.gpencil.layer_annotation_move",
+              13.209704944408514
+            ],
+            [
+              "bpy.ops.cachefile.layer_move",
+              11.295920355996365
+            ],
+            [
+              "bpy.ops.boid.rule_move_down",
+              10.110725980216078
+            ],
+            [
+              "bpy.ops.boid.rule_move_up",
+              10.110725980216078
+            ]
+          ]
+        },
+        {
+          "query": "layer move",
+          "query_tokens": [
+            "layer",
+            "move"
+          ],
+          "correct_rank": 5,
+          "top_5": [
+            [
+              "bpy.ops.mask.layer_move",
+              6.840036781342075
+            ],
+            [
+              "bpy.ops.gpencil.layer_annotation_move",
+              6.840036781342075
+            ],
+            [
+              "bpy.ops.grease_pencil.layer_move",
+              6.713654009022777
+            ],
+            [
+              "bpy.ops.grease_pencil.move_to_layer",
+              6.145870409665937
+            ],
+            [
+              "bpy.ops.cachefile.layer_move",
+              5.849071651432367
+            ]
+          ]
+        },
+        {
+          "query": "move layer list,",
+          "query_tokens": [
+            "move",
+            "layer",
+            "list"
+          ],
+          "correct_rank": 3,
+          "top_5": [
+            [
+              "bpy.ops.mask.layer_move",
+              11.038357888794675
+            ],
+            [
+              "bpy.ops.gpencil.layer_annotation_move",
+              11.038357888794675
+            ],
+            [
+              "bpy.ops.cachefile.layer_move",
+              9.439151903660628
+            ],
+            [
+              "bpy.ops.grease_pencil.layer_mask_reorder",
+              7.76623253630606
+            ],
+            [
+              "bpy.ops.boid.rule_move_down",
+              7.762564860767906
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "api_id": "bpy.ops.cachefile.layer_remove",
+      "queries": [
+        "Remove an override layer from the archive",
+        "Remove an override layer from",
+        "layer remove",
+        "remove override layer"
+      ],
+      "query_results": [
+        {
+          "query": "Remove an override layer from the archive",
+          "query_tokens": [
+            "remove",
+            "an",
+            "override",
+            "layer",
+            "from",
+            "the",
+            "archive"
+          ],
+          "correct_rank": 1,
+          "top_5": [
+            [
+              "bpy.ops.cachefile.layer_remove",
+              26.84541799738069
+            ],
+            [
+              "bpy.ops.cachefile.layer_add",
+              13.323034320216934
+            ],
+            [
+              "bpy.ops.ui.override_remove_button",
+              12.168020600964445
+            ],
+            [
+              "bpy.ops.cachefile.reload",
+              10.465556932966976
+            ],
+            [
+              "bpy.ops.asset.tag_remove",
+              10.381915547434087
+            ]
+          ]
+        },
+        {
+          "query": "Remove an override layer from",
+          "query_tokens": [
+            "remove",
+            "an",
+            "override",
+            "layer",
+            "from"
+          ],
+          "correct_rank": 1,
+          "top_5": [
+            [
+              "bpy.ops.cachefile.layer_remove",
+              17.99935512155967
+            ],
+            [
+              "bpy.ops.ui.override_remove_button",
+              10.415286171872232
+            ],
+            [
+              "bpy.ops.node.cryptomatte_layer_remove",
+              9.687531274010098
+            ],
+            [
+              "bpy.ops.asset.tag_remove",
+              8.457753119306398
+            ],
+            [
+              "bpy.ops.node.index_switch_item_remove",
+              8.295483455829622
+            ]
+          ]
+        },
+        {
+          "query": "layer remove",
+          "query_tokens": [
+            "layer",
+            "remove"
+          ],
+          "correct_rank": 9,
+          "top_5": [
+            [
+              "bpy.ops.mask.layer_remove",
+              7.622151381517999
+            ],
+            [
+              "bpy.ops.node.cryptomatte_layer_remove",
+              7.298641451900618
+            ],
+            [
+              "bpy.ops.gpencil.layer_annotation_remove",
+              7.298641451900618
+            ],
+            [
+              "bpy.ops.grease_pencil.layer_mask_remove",
+              7.146970627680007
+            ],
+            [
+              "bpy.ops.scene.view_layer_remove",
+              7.146970627680007
+            ]
+          ]
+        },
+        {
+          "query": "remove override layer",
+          "query_tokens": [
+            "remove",
+            "override",
+            "layer"
+          ],
+          "correct_rank": 1,
+          "top_5": [
+            [
+              "bpy.ops.cachefile.layer_remove",
+              12.143280151770584
+            ],
+            [
+              "bpy.ops.mask.layer_remove",
+              7.622151381517999
+            ],
+            [
+              "bpy.ops.node.cryptomatte_layer_remove",
+              7.298641451900618
+            ],
+            [
+              "bpy.ops.gpencil.layer_annotation_remove",
+              7.298641451900618
+            ],
+            [
+              "bpy.ops.ui.override_remove_button",
+              7.1910813290130235
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "api_id": "bpy.ops.cachefile.open",
+      "queries": [
+        "Load a cache file",
+        "open",
+        "load cache file"
+      ],
+      "query_results": [
+        {
+          "query": "Load a cache file",
+          "query_tokens": [
+            "load",
+            "cache",
+            "file"
+          ],
+          "correct_rank": 1,
+          "top_5": [
+            [
+              "bpy.ops.cachefile.open",
+              9.406052207152111
+            ],
+            [
+              "bpy.ops.import_curve.svg",
+              7.196301030040652
+            ],
+            [
+              "bpy.ops.ptcache.add",
+              6.90509219578769
+            ],
+            [
+              "bpy.ops.ptcache.bake_from_cache",
+              6.755377236589442
+            ],
+            [
+              "bpy.ops.ptcache.remove",
+              6.755377236589442
+            ]
+          ]
+        },
+        {
+          "query": "open",
+          "query_tokens": [
+            "open"
+          ],
+          "correct_rank": null,
+          "top_5": [
+            [
+              "bpy.ops.wm.path_open",
+              4.717432063645189
+            ],
+            [
+              "bpy.ops.wm.splash",
+              4.717432063645189
+            ],
+            [
+              "bpy.ops.extensions.userpref_show_for_update",
+              4.717432063645189
+            ],
+            [
+              "bpy.ops.wm.call_menu",
+              4.623312305701286
+            ],
+            [
+              "bpy.ops.wm.splash_about",
+              4.623312305701286
+            ]
+          ]
+        },
+        {
+          "query": "load cache file",
+          "query_tokens": [
+            "load",
+            "cache",
+            "file"
+          ],
+          "correct_rank": 1,
+          "top_5": [
+            [
+              "bpy.ops.cachefile.open",
+              9.406052207152111
+            ],
+            [
+              "bpy.ops.import_curve.svg",
+              7.196301030040652
+            ],
+            [
+              "bpy.ops.ptcache.add",
+              6.90509219578769
+            ],
+            [
+              "bpy.ops.ptcache.bake_from_cache",
+              6.755377236589442
+            ],
+            [
+              "bpy.ops.ptcache.remove",
+              6.755377236589442
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "api_id": "bpy.ops.cachefile.reload",
+      "queries": [
+        "Update objects paths list with new data from the archive",
+        "Update objects paths list with",
+        "reload",
+        "update objects paths"
+      ],
+      "query_results": [
+        {
+          "query": "Update objects paths list with new data from the archive",
+          "query_tokens": [
+            "update",
+            "objects",
+            "paths",
+            "list",
+            "with",
+            "new",
+            "data",
+            "from",
+            "the",
+            "archive"
+          ],
+          "correct_rank": 1,
+          "top_5": [
+            [
+              "bpy.ops.cachefile.reload",
+              37.0898567128268
+            ],
+            [
+              "bpy.ops.object.camera_custom_update",
+              15.537552290243864
+            ],
+            [
+              "bpy.ops.node.shader_script_update",
+              14.952571613295671
+            ],
+            [
+              "bpy.ops.object.paths_update",
+              14.432752748219757
+            ],
+            [
+              "bpy.ops.pose.paths_range_update",
+              14.318504699497677
+            ]
+          ]
+        },
+        {
+          "query": "Update objects paths list with",
+          "query_tokens": [
+            "update",
+            "objects",
+            "paths",
+            "list",
+            "with"
+          ],
+          "correct_rank": 1,
+          "top_5": [
+            [
+              "bpy.ops.cachefile.reload",
+              21.279116807952214
+            ],
+            [
+              "bpy.ops.object.paths_update",
+              14.432752748219757
+            ],
+            [
+              "bpy.ops.object.paths_update_visible",
+              13.617674415883503
+            ],
+            [
+              "bpy.ops.object.update_shapes",
+              11.025121392063319
+            ],
+            [
+              "bpy.ops.pose.paths_update",
+              10.546247835674453
+            ]
+          ]
+        },
+        {
+          "query": "reload",
+          "query_tokens": [
+            "reload"
+          ],
+          "correct_rank": 6,
+          "top_5": [
+            [
+              "bpy.ops.clip.reload",
+              7.3491313911006735
+            ],
+            [
+              "bpy.ops.script.reload",
+              7.1825659718955395
+            ],
+            [
+              "bpy.ops.image.reload",
+              6.871103781114927
+            ],
+            [
+              "bpy.ops.ui.reloadtranslation",
+              6.7252873187174345
+            ],
+            [
+              "bpy.ops.text.reload",
+              6.451465273963802
+            ]
+          ]
+        },
+        {
+          "query": "update objects paths",
+          "query_tokens": [
+            "update",
+            "objects",
+            "paths"
+          ],
+          "correct_rank": 2,
+          "top_5": [
+            [
+              "bpy.ops.object.paths_update",
+              14.432752748219757
+            ],
+            [
+              "bpy.ops.cachefile.reload",
+              13.617674415883503
+            ],
+            [
+              "bpy.ops.object.paths_update_visible",
+              13.617674415883503
+            ],
+            [
+              "bpy.ops.pose.paths_update",
+              10.546247835674453
+            ],
+            [
+              "bpy.ops.pose.paths_range_update",
+              10.347717491803945
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "api_id": "bpy.ops.grease_pencil.active_frame_delete",
+      "queries": [
+        "Delete the active Grease Pencil frame(s)",
+        "Delete the active Grease Pencil",
+        "active frame delete",
+        "delete active grease"
+      ],
+      "query_results": [
+        {
+          "query": "Delete the active Grease Pencil frame(s)",
+          "query_tokens": [
+            "delete",
+            "the",
+            "active",
+            "grease",
+            "pencil",
+            "frame"
+          ],
+          "correct_rank": 1,
+          "top_5": [
+            [
+              "bpy.ops.grease_pencil.active_frame_delete",
+              16.747149658975
+            ],
+            [
+              "bpy.ops.grease_pencil.delete_frame",
+              14.354973719553168
+            ],
+            [
+              "bpy.ops.grease_pencil.frame_duplicate",
+              12.991968067805033
+            ],
+            [
+              "bpy.ops.grease_pencil.frame_clean_duplicate",
+              12.940662084625563
+            ],
+            [
+              "bpy.ops.grease_pencil.remove_fill_guides",
+              11.318866301359195
+            ]
+          ]
+        },
+        {
+          "query": "Delete the active Grease Pencil",
+          "query_tokens": [
+            "delete",
+            "the",
+            "active",
+            "grease",
+            "pencil"
+          ],
+          "correct_rank": 1,
+          "top_5": [
+            [
+              "bpy.ops.grease_pencil.active_frame_delete",
+              13.426557026013619
+            ],
+            [
+              "bpy.ops.grease_pencil.delete_frame",
+              11.154863552358904
+            ],
+            [
+              "bpy.ops.grease_pencil.layer_remove",
+              10.723407101276214
+            ],
+            [
+              "bpy.ops.grease_pencil.layer_active",
+              10.509459244245248
+            ],
+            [
+              "bpy.ops.grease_pencil.delete",
+              10.508463483780721
+            ]
+          ]
+        },
+        {
+          "query": "active frame delete",
+          "query_tokens": [
+            "active",
+            "frame",
+            "delete"
+          ],
+          "correct_rank": 2,
+          "top_5": [
+            [
+              "bpy.ops.gpencil.annotation_active_frame_delete",
+              9.208921492038323
+            ],
+            [
+              "bpy.ops.grease_pencil.active_frame_delete",
+              8.688854911304311
+            ],
+            [
+              "bpy.ops.grease_pencil.delete_frame",
+              8.373593516692027
+            ],
+            [
+              "bpy.ops.clip.keyframe_delete",
+              7.09845701520833
+            ],
+            [
+              "bpy.ops.clip.delete_marker",
+              6.704984272831337
+            ]
+          ]
+        },
+        {
+          "query": "delete active grease",
+          "query_tokens": [
+            "delete",
+            "active",
+            "grease"
+          ],
+          "correct_rank": 1,
+          "top_5": [
+            [
+              "bpy.ops.grease_pencil.active_frame_delete",
+              8.471550290139064
+            ],
+            [
+              "bpy.ops.grease_pencil.delete_frame",
+              8.164173450928335
+            ],
+            [
+              "bpy.ops.grease_pencil.delete",
+              7.15247290967636
+            ],
+            [
+              "bpy.ops.grease_pencil.delete_breakdown",
+              6.4916947704934564
+            ],
+            [
+              "bpy.ops.scene.delete",
+              6.463289878598207
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "api_id": "bpy.ops.grease_pencil.bake_grease_pencil_animation",
+      "queries": [
+        "Bake Grease Pencil object transform to Grease Pencil keyframes",
+        "Bake Grease Pencil object transform",
+        "bake grease pencil animation",
+        "bake grease pencil"
+      ],
+      "query_results": [
+        {
+          "query": "Bake Grease Pencil object transform to Grease Pencil keyframes",
+          "query_tokens": [
+            "bake",
+            "grease",
+            "pencil",
+            "object",
+            "transform",
+            "to",
+            "keyframes"
+          ],
+          "correct_rank": 1,
+          "top_5": [
+            [
+              "bpy.ops.grease_pencil.bake_grease_pencil_animation",
+              13.362221310403553
+            ],
+            [
+              "bpy.ops.object.lineart_bake_strokes",
+              12.219684202169617
+            ],
+            [
+              "bpy.ops.grease_pencil.active_frame_delete",
+              9.886087661517097
+            ],
+            [
+              "bpy.ops.grease_pencil.frame_duplicate",
+              9.703423268620517
+            ],
+            [
+              "bpy.ops.grease_pencil.layer_duplicate",
+              9.357623265373906
+            ]
+          ]
+        },
+        {
+          "query": "Bake Grease Pencil object transform",
+          "query_tokens": [
+            "bake",
+            "grease",
+            "pencil",
+            "object",
+            "transform"
+          ],
+          "correct_rank": 2,
+          "top_5": [
+            [
+              "bpy.ops.object.lineart_bake_strokes",
+              12.219684202169617
+            ],
+            [
+              "bpy.ops.grease_pencil.bake_grease_pencil_animation",
+              10.629258682248643
+            ],
+            [
+              "bpy.ops.grease_pencil.extrude_move",
+              8.736303740136
+            ],
+            [
+              "bpy.ops.grease_pencil.duplicate_move",
+              8.307504185683449
+            ],
+            [
+              "bpy.ops.grease_pencil.separate",
+              7.946334945292078
+            ]
+          ]
+        },
+        {
+          "query": "bake grease pencil animation",
+          "query_tokens": [
+            "bake",
+            "grease",
+            "pencil",
+            "animation"
+          ],
+          "correct_rank": 2,
+          "top_5": [
+            [
+              "bpy.ops.object.lineart_bake_strokes",
+              10.39888957418885
+            ],
+            [
+              "bpy.ops.grease_pencil.bake_grease_pencil_animation",
+              10.153797634674998
+            ],
+            [
+              "bpy.ops.sound.bake_animation",
+              9.849746620596097
+            ],
+            [
+              "bpy.ops.grease_pencil.duplicate",
+              6.851460765012878
+            ],
+            [
+              "bpy.ops.grease_pencil.extrude",
+              6.851460765012878
+            ]
+          ]
+        },
+        {
+          "query": "bake grease pencil",
+          "query_tokens": [
+            "bake",
+            "grease",
+            "pencil"
+          ],
+          "correct_rank": 2,
+          "top_5": [
+            [
+              "bpy.ops.object.lineart_bake_strokes",
+              10.39888957418885
+            ],
+            [
+              "bpy.ops.grease_pencil.bake_grease_pencil_animation",
+              7.154168215649664
+            ],
+            [
+              "bpy.ops.grease_pencil.duplicate",
+              6.851460765012878
+            ],
+            [
+              "bpy.ops.grease_pencil.extrude",
+              6.851460765012878
+            ],
+            [
+              "bpy.ops.grease_pencil.layer_mask_remove",
+              6.851460765012878
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "api_id": "bpy.ops.grease_pencil.brush_stroke",
+      "queries": [
+        "Draw a new stroke in the active Grease Pencil object",
+        "Draw a new stroke in",
+        "brush stroke",
+        "draw stroke active"
+      ],
+      "query_results": [
+        {
+          "query": "Draw a new stroke in the active Grease Pencil object",
+          "query_tokens": [
+            "draw",
+            "new",
+            "stroke",
+            "in",
+            "the",
+            "active",
+            "grease",
+            "pencil",
+            "object"
+          ],
+          "correct_rank": 1,
+          "top_5": [
+            [
+              "bpy.ops.grease_pencil.brush_stroke",
+              18.117723014464925
+            ],
+            [
+              "bpy.ops.grease_pencil.vertex_brush_stroke",
+              15.881199664810643
+            ],
+            [
+              "bpy.ops.grease_pencil.weight_brush_stroke",
+              15.881199664810643
+            ],
+            [
+              "bpy.ops.grease_pencil.set_active_material",
+              14.144614065969915
+            ],
+            [
+              "bpy.ops.grease_pencil.layer_add",
+              13.994475962041847
+            ]
+          ]
+        },
+        {
+          "query": "Draw a new stroke in",
+          "query_tokens": [
+            "draw",
+            "new",
+            "stroke",
+            "in"
+          ],
+          "correct_rank": 1,
+          "top_5": [
+            [
+              "bpy.ops.grease_pencil.brush_stroke",
+              9.30020490590938
+            ],
+            [
+              "bpy.ops.grease_pencil.vertex_brush_stroke",
+              7.304855686157786
+            ],
+            [
+              "bpy.ops.grease_pencil.weight_brush_stroke",
+              7.304855686157786
+            ],
+            [
+              "bpy.ops.curve.draw",
+              7.304855686157786
+            ],
+            [
+              "bpy.ops.paintcurve.draw",
+              6.950668007863646
+            ]
+          ]
+        },
+        {
+          "query": "brush stroke",
+          "query_tokens": [
+            "brush",
+            "stroke"
+          ],
+          "correct_rank": 3,
+          "top_5": [
+            [
+              "bpy.ops.particle.brush_edit",
+              7.52842075315538
+            ],
+            [
+              "bpy.ops.sculpt_curves.brush_stroke",
+              7.079776996041522
+            ],
+            [
+              "bpy.ops.grease_pencil.brush_stroke",
+              6.681598224020393
+            ],
+            [
+              "bpy.ops.grease_pencil.vertex_brush_stroke",
+              6.49884513883263
+            ],
+            [
+              "bpy.ops.grease_pencil.weight_brush_stroke",
+              6.49884513883263
+            ]
+          ]
+        },
+        {
+          "query": "draw stroke active",
+          "query_tokens": [
+            "draw",
+            "stroke",
+            "active"
+          ],
+          "correct_rank": 1,
+          "top_5": [
+            [
+              "bpy.ops.grease_pencil.brush_stroke",
+              8.659042580281113
+            ],
+            [
+              "bpy.ops.grease_pencil.vertex_brush_stroke",
+              8.422203025841938
+            ],
+            [
+              "bpy.ops.grease_pencil.weight_brush_stroke",
+              8.422203025841938
+            ],
+            [
+              "bpy.ops.curve.draw",
+              7.072651144175472
+            ],
+            [
+              "bpy.ops.paintcurve.draw",
+              6.950668007863646
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "api_id": "bpy.ops.grease_pencil.caps_set",
+      "queries": [
+        "Change curve caps mode (rounded or flat)",
+        "Change curve caps mode (rounded",
+        "caps set",
+        "change curve caps"
+      ],
+      "query_results": [
+        {
+          "query": "Change curve caps mode (rounded or flat)",
+          "query_tokens": [
+            "change",
+            "curve",
+            "caps",
+            "mode",
+            "rounded",
+            "or",
+            "flat"
+          ],
+          "correct_rank": 1,
+          "top_5": [
+            [
+              "bpy.ops.grease_pencil.caps_set",
+              31.791643578309397
+            ],
+            [
+              "bpy.ops.curve.shade_flat",
+              10.81257337190517
+            ],
+            [
+              "bpy.ops.graph.ease",
+              7.850386077444515
+            ],
+            [
+              "bpy.ops.mesh.faces_shade_flat",
+              7.321749822440686
+            ],
+            [
+              "bpy.ops.mask.select_all",
+              7.069727591814968
+            ]
+          ]
+        },
+        {
+          "query": "Change curve caps mode (rounded",
+          "query_tokens": [
+            "change",
+            "curve",
+            "caps",
+            "mode",
+            "rounded"
+          ],
+          "correct_rank": 1,
+          "top_5": [
+            [
+              "bpy.ops.grease_pencil.caps_set",
+              23.501970568692546
+            ],
+            [
+              "bpy.ops.mask.select_all",
+              7.069727591814968
+            ],
+            [
+              "bpy.ops.uv.select_mode",
+              7.035340188904287
+            ],
+            [
+              "bpy.ops.grease_pencil.set_selection_mode",
+              6.397174635972739
+            ],
+            [
+              "bpy.ops.curves.set_selection_domain",
+              6.283186873682586
+            ]
+          ]
+        },
+        {
+          "query": "caps set",
+          "query_tokens": [
+            "caps",
+            "set"
+          ],
+          "correct_rank": 1,
+          "top_5": [
+            [
+              "bpy.ops.grease_pencil.caps_set",
+              9.274644775008674
+            ],
+            [
+              "bpy.ops.text.selection_set",
+              2.605380150202182
+            ],
+            [
+              "bpy.ops.font.selection_set",
+              2.548890769347659
+            ],
+            [
+              "bpy.ops.console.select_set",
+              2.494798989211049
+            ],
+            [
+              "bpy.ops.mask.parent_set",
+              2.494798989211049
+            ]
+          ]
+        },
+        {
+          "query": "change curve caps",
+          "query_tokens": [
+            "change",
+            "curve",
+            "caps"
+          ],
+          "correct_rank": 1,
+          "top_5": [
+            [
+              "bpy.ops.grease_pencil.caps_set",
+              13.877628737084937
+            ],
+            [
+              "bpy.ops.mask.select_all",
+              7.069727591814968
+            ],
+            [
+              "bpy.ops.graph.ease",
+              5.720574458220586
+            ],
+            [
+              "bpy.ops.sequencer.change_scene",
+              4.364453493559661
+            ],
+            [
+              "bpy.ops.spreadsheet.reorder_columns",
+              4.364453493559661
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "api_id": "bpy.ops.grease_pencil.clean_loose",
+      "queries": [
+        "Remove loose points",
+        "clean loose",
+        "remove loose points"
+      ],
+      "query_results": [
+        {
+          "query": "Remove loose points",
+          "query_tokens": [
+            "remove",
+            "loose",
+            "points"
+          ],
+          "correct_rank": 1,
+          "top_5": [
+            [
+              "bpy.ops.grease_pencil.clean_loose",
+              11.490342982385156
+            ],
+            [
+              "bpy.ops.mesh.delete_loose",
+              8.778239046120682
+            ],
+            [
+              "bpy.ops.pointcloud.delete",
+              6.999422747618626
+            ],
+            [
+              "bpy.ops.curves.delete",
+              6.708517042989616
+            ],
+            [
+              "bpy.ops.mesh.select_loose",
+              6.61937777221109
+            ]
+          ]
+        },
+        {
+          "query": "clean loose",
+          "query_tokens": [
+            "clean",
+            "loose"
+          ],
+          "correct_rank": 1,
+          "top_5": [
+            [
+              "bpy.ops.grease_pencil.clean_loose",
+              11.489506042152673
+            ],
+            [
+              "bpy.ops.mesh.select_loose",
+              6.61937777221109
+            ],
+            [
+              "bpy.ops.object.skin_loose_mark_clear",
+              6.494769725273244
+            ],
+            [
+              "bpy.ops.mesh.face_split_by_edges",
+              6.374766422704099
+            ],
+            [
+              "bpy.ops.mesh.delete_loose",
+              6.25911725067485
+            ]
+          ]
+        },
+        {
+          "query": "remove loose points",
+          "query_tokens": [
+            "remove",
+            "loose",
+            "points"
+          ],
+          "correct_rank": 1,
+          "top_5": [
+            [
+              "bpy.ops.grease_pencil.clean_loose",
+              11.490342982385156
+            ],
+            [
+              "bpy.ops.mesh.delete_loose",
+              8.778239046120682
+            ],
+            [
+              "bpy.ops.pointcloud.delete",
+              6.999422747618626
+            ],
+            [
+              "bpy.ops.curves.delete",
+              6.708517042989616
+            ],
+            [
+              "bpy.ops.mesh.select_loose",
+              6.61937777221109
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "api_id": "bpy.ops.grease_pencil.convert_curve_type",
+      "queries": [
+        "Convert type of selected curves",
+        "convert curve type",
+        "convert type selected"
+      ],
+      "query_results": [
+        {
+          "query": "Convert type of selected curves",
+          "query_tokens": [
+            "convert",
+            "type",
+            "of",
+            "selected",
+            "curves"
+          ],
+          "correct_rank": 1,
+          "top_5": [
+            [
+              "bpy.ops.grease_pencil.convert_curve_type",
+              11.261922666737902
+            ],
+            [
+              "bpy.ops.curves.convert_from_particle_system",
+              9.018867078458616
+            ],
+            [
+              "bpy.ops.text.convert_whitespace",
+              8.280178677561711
+            ],
+            [
+              "bpy.ops.curves.convert_to_particle_system",
+              7.879778895881825
+            ],
+            [
+              "bpy.ops.anim.update_animated_transform_constraints",
+              7.255604290690953
+            ]
+          ]
+        },
+        {
+          "query": "convert curve type",
+          "query_tokens": [
+            "convert",
+            "curve",
+            "type"
+          ],
+          "correct_rank": 1,
+          "top_5": [
+            [
+              "bpy.ops.grease_pencil.convert_curve_type",
+              9.141024108244189
+            ],
+            [
+              "bpy.ops.text.convert_whitespace",
+              7.3560341436750285
+            ],
+            [
+              "bpy.ops.object.convert",
+              6.973325555142293
+            ],
+            [
+              "bpy.ops.geometry.color_attribute_convert",
+              6.272876692708298
+            ],
+            [
+              "bpy.ops.grease_pencil.outline",
+              5.979393177628084
+            ]
+          ]
+        },
+        {
+          "query": "convert type selected",
+          "query_tokens": [
+            "convert",
+            "type",
+            "selected"
+          ],
+          "correct_rank": 2,
+          "top_5": [
+            [
+              "bpy.ops.text.convert_whitespace",
+              7.3560341436750285
+            ],
+            [
+              "bpy.ops.grease_pencil.convert_curve_type",
+              7.238869993870386
+            ],
+            [
+              "bpy.ops.grease_pencil.outline",
+              6.9001914074605315
+            ],
+            [
+              "bpy.ops.geometry.color_attribute_convert",
+              6.272876692708298
+            ],
+            [
+              "bpy.ops.graph.samples_to_keys",
+              6.245909614328982
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "api_id": "bpy.ops.grease_pencil.copy",
+      "queries": [
+        "Copy the selected Grease Pencil points or strokes to the internal clipboard",
+        "Copy the selected Grease Pencil",
+        "copy",
+        "copy selected grease"
+      ],
+      "query_results": [
+        {
+          "query": "Copy the selected Grease Pencil points or strokes to the internal clipboard",
+          "query_tokens": [
+            "copy",
+            "the",
+            "selected",
+            "grease",
+            "pencil",
+            "points",
+            "or",
+            "strokes",
+            "to",
+            "internal",
+            "clipboard"
+          ],
+          "correct_rank": 1,
+          "top_5": [
+            [
+              "bpy.ops.grease_pencil.copy",
+              32.94605889075942
+            ],
+            [
+              "bpy.ops.grease_pencil.paste",
+              21.15552743010447
+            ],
+            [
+              "bpy.ops.grease_pencil.delete",
+              19.414627287238922
+            ],
+            [
+              "bpy.ops.sequencer.copy",
+              17.416225999634392
+            ],
+            [
+              "bpy.ops.graph.copy",
+              17.416225999634392
+            ]
+          ]
+        },
+        {
+          "query": "Copy the selected Grease Pencil",
+          "query_tokens": [
+            "copy",
+            "the",
+            "selected",
+            "grease",
+            "pencil"
+          ],
+          "correct_rank": 1,
+          "top_5": [
+            [
+              "bpy.ops.grease_pencil.copy",
+              12.680375815707212
+            ],
+            [
+              "bpy.ops.grease_pencil.frame_duplicate",
+              11.355148272349036
+            ],
+            [
+              "bpy.ops.grease_pencil.layer_duplicate",
+              10.950485896943633
+            ],
+            [
+              "bpy.ops.grease_pencil.layer_duplicate_object",
+              10.671494938966518
+            ],
+            [
+              "bpy.ops.grease_pencil.material_copy_to_object",
+              10.573672887990407
+            ]
+          ]
+        },
+        {
+          "query": "copy",
+          "query_tokens": [
+            "copy"
+          ],
+          "correct_rank": null,
+          "top_5": [
+            [
+              "bpy.ops.uv.copy",
+              4.133038047006405
+            ],
+            [
+              "bpy.ops.text.copy",
+              4.043426264132623
+            ],
+            [
+              "bpy.ops.pointcloud.duplicate",
+              4.043426264132623
+            ],
+            [
+              "bpy.ops.curves.duplicate",
+              3.957617908942089
+            ],
+            [
+              "bpy.ops.material.copy",
+              3.957617908942089
+            ]
+          ]
+        },
+        {
+          "query": "copy selected grease",
+          "query_tokens": [
+            "copy",
+            "selected",
+            "grease"
+          ],
+          "correct_rank": 1,
+          "top_5": [
+            [
+              "bpy.ops.grease_pencil.copy",
+              7.725369079832657
+            ],
+            [
+              "bpy.ops.grease_pencil.layer_duplicate_object",
+              6.501482151259465
+            ],
+            [
+              "bpy.ops.grease_pencil.frame_duplicate",
+              6.4916947704934564
+            ],
+            [
+              "bpy.ops.grease_pencil.layer_duplicate",
+              6.260350840565954
+            ],
+            [
+              "bpy.ops.grease_pencil.material_copy_to_object",
+              6.044928286759923
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "api_id": "bpy.ops.grease_pencil.cyclical_set",
+      "queries": [
+        "Close or open the selected stroke adding a segment from last to first point",
+        "Close or open the selected",
+        "cyclical set",
+        "close open selected"
+      ],
+      "query_results": [
+        {
+          "query": "Close or open the selected stroke adding a segment from last to first point",
+          "query_tokens": [
+            "close",
+            "or",
+            "open",
+            "the",
+            "selected",
+            "stroke",
+            "adding",
+            "segment",
+            "from",
+            "last",
+            "to",
+            "first",
+            "point"
+          ],
+          "correct_rank": 1,
+          "top_5": [
+            [
+              "bpy.ops.grease_pencil.cyclical_set",
+              35.035512698681906
+            ],
+            [
+              "bpy.ops.grease_pencil.select_alternate",
+              14.337842460404788
+            ],
+            [
+              "bpy.ops.grease_pencil.stroke_subdivide",
+              12.294090180006323
+            ],
+            [
+              "bpy.ops.outliner.item_openclose",
+              12.144622575301293
+            ],
+            [
+              "bpy.ops.screen.frame_jump",
+              12.085535272127881
+            ]
+          ]
+        },
+        {
+          "query": "Close or open the selected",
+          "query_tokens": [
+            "close",
+            "or",
+            "open",
+            "the",
+            "selected"
+          ],
+          "correct_rank": 2,
+          "top_5": [
+            [
+              "bpy.ops.outliner.item_openclose",
+              12.144622575301293
+            ],
+            [
+              "bpy.ops.grease_pencil.cyclical_set",
+              12.137908526561242
+            ],
+            [
+              "bpy.ops.wm.xr_session_toggle",
+              11.538619527281847
+            ],
+            [
+              "bpy.ops.outliner.show_hierarchy",
+              10.526041065920213
+            ],
+            [
+              "bpy.ops.wm.window_close",
+              8.812785692443208
+            ]
+          ]
+        },
+        {
+          "query": "cyclical set",
+          "query_tokens": [
+            "cyclical",
+            "set"
+          ],
+          "correct_rank": 1,
+          "top_5": [
+            [
+              "bpy.ops.grease_pencil.cyclical_set",
+              7.819727818870028
+            ],
+            [
+              "bpy.ops.text.selection_set",
+              2.605380150202182
+            ],
+            [
+              "bpy.ops.font.selection_set",
+              2.548890769347659
+            ],
+            [
+              "bpy.ops.console.select_set",
+              2.494798989211049
+            ],
+            [
+              "bpy.ops.mask.parent_set",
+              2.494798989211049
+            ]
+          ]
+        },
+        {
+          "query": "close open selected",
+          "query_tokens": [
+            "close",
+            "open",
+            "selected"
+          ],
+          "correct_rank": 4,
+          "top_5": [
+            [
+              "bpy.ops.outliner.show_hierarchy",
+              10.526041065920213
+            ],
+            [
+              "bpy.ops.outliner.item_openclose",
+              9.604669586076152
+            ],
+            [
+              "bpy.ops.wm.xr_session_toggle",
+              9.125407344018587
+            ],
+            [
+              "bpy.ops.grease_pencil.cyclical_set",
+              8.666047755243023
+            ],
+            [
+              "bpy.ops.outliner.select_walk",
+              8.173733673279184
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "api_id": "bpy.ops.grease_pencil.delete",
+      "queries": [
+        "Delete selected strokes or points",
+        "delete",
+        "delete selected strokes"
+      ],
+      "query_results": [
+        {
+          "query": "Delete selected strokes or points",
+          "query_tokens": [
+            "delete",
+            "selected",
+            "strokes",
+            "or",
+            "points"
+          ],
+          "correct_rank": 1,
+          "top_5": [
+            [
+              "bpy.ops.grease_pencil.delete",
+              16.499128474602202
+            ],
+            [
+              "bpy.ops.curves.delete",
+              11.940273704323609
+            ],
+            [
+              "bpy.ops.grease_pencil.copy",
+              11.74615023817854
+            ],
+            [
+              "bpy.ops.grease_pencil.dissolve",
+              11.254387359782763
+            ],
+            [
+              "bpy.ops.mask.delete",
+              11.023933788277398
+            ]
+          ]
+        },
+        {
+          "query": "delete",
+          "query_tokens": [
+            "delete"
+          ],
+          "correct_rank": null,
+          "top_5": [
+            [
+              "bpy.ops.scene.delete",
+              4.226711867524028
+            ],
+            [
+              "bpy.ops.screen.delete",
+              4.226711867524028
+            ],
+            [
+              "bpy.ops.workspace.delete",
+              4.133038047006405
+            ],
+            [
+              "bpy.ops.nla.delete",
+              4.133038047006405
+            ],
+            [
+              "bpy.ops.transform.delete_orientation",
+              4.043426264132623
+            ]
+          ]
+        },
+        {
+          "query": "delete selected strokes",
+          "query_tokens": [
+            "delete",
+            "selected",
+            "strokes"
+          ],
+          "correct_rank": 1,
+          "top_5": [
+            [
+              "bpy.ops.grease_pencil.delete",
+              9.800390481815182
+            ],
+            [
+              "bpy.ops.grease_pencil.dissolve",
+              8.142723591210109
+            ],
+            [
+              "bpy.ops.grease_pencil.copy",
+              5.551820174326338
+            ],
+            [
+              "bpy.ops.grease_pencil.stroke_switch_direction",
+              5.449239669647838
+            ],
+            [
+              "bpy.ops.nla.delete",
+              5.441570081634764
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "api_id": "bpy.ops.grease_pencil.delete_breakdown",
+      "queries": [
+        "Remove breakdown frames generated by interpolating between two Grease Pencil frames",
+        "Remove breakdown frames generated by",
+        "delete breakdown",
+        "remove breakdown frames"
+      ],
+      "query_results": [
+        {
+          "query": "Remove breakdown frames generated by interpolating between two Grease Pencil frames",
+          "query_tokens": [
+            "remove",
+            "breakdown",
+            "frames",
+            "generated",
+            "by",
+            "interpolating",
+            "between",
+            "two",
+            "grease",
+            "pencil"
+          ],
+          "correct_rank": 1,
+          "top_5": [
+            [
+              "bpy.ops.grease_pencil.delete_breakdown",
+              46.08681054573961
+            ],
+            [
+              "bpy.ops.grease_pencil.bake_grease_pencil_animation",
+              14.088292052677307
+            ],
+            [
+              "bpy.ops.grease_pencil.interpolate_sequence",
+              10.537337665717217
+            ],
+            [
+              "bpy.ops.curve.shortest_path_pick",
+              9.95648323292676
+            ],
+            [
+              "bpy.ops.armature.shortest_path_pick",
+              9.95648323292676
+            ]
+          ]
+        },
+        {
+          "query": "Remove breakdown frames generated by",
+          "query_tokens": [
+            "remove",
+            "breakdown",
+            "frames",
+            "generated",
+            "by"
+          ],
+          "correct_rank": 1,
+          "top_5": [
+            [
+              "bpy.ops.grease_pencil.delete_breakdown",
+              22.814936836073564
+            ],
+            [
+              "bpy.ops.grease_pencil.bake_grease_pencil_animation",
+              7.2847953818520566
+            ],
+            [
+              "bpy.ops.sculpt.mask_by_color",
+              6.16157199702831
+            ],
+            [
+              "bpy.ops.nla.meta_remove",
+              5.685128007127116
+            ],
+            [
+              "bpy.ops.marker.duplicate",
+              5.654439965872429
+            ]
+          ]
+        },
+        {
+          "query": "delete breakdown",
+          "query_tokens": [
+            "delete",
+            "breakdown"
+          ],
+          "correct_rank": 1,
+          "top_5": [
+            [
+              "bpy.ops.grease_pencil.delete_breakdown",
+              10.00123262741824
+            ],
+            [
+              "bpy.ops.graph.breakdown",
+              5.620792567577731
+            ],
+            [
+              "bpy.ops.scene.delete",
+              4.226711867524028
+            ],
+            [
+              "bpy.ops.screen.delete",
+              4.226711867524028
+            ],
+            [
+              "bpy.ops.pose.breakdown",
+              4.168077289968249
+            ]
+          ]
+        },
+        {
+          "query": "remove breakdown frames",
+          "query_tokens": [
+            "remove",
+            "breakdown",
+            "frames"
+          ],
+          "correct_rank": 1,
+          "top_5": [
+            [
+              "bpy.ops.grease_pencil.delete_breakdown",
+              14.148734430481122
+            ],
+            [
+              "bpy.ops.marker.duplicate",
+              5.654439965872429
+            ],
+            [
+              "bpy.ops.graph.breakdown",
+              5.620792567577731
+            ],
+            [
+              "bpy.ops.clip.prefetch",
+              5.4288110585702585
+            ],
+            [
+              "bpy.ops.clip.set_scene_frames",
+              5.122223234238974
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "api_id": "bpy.ops.grease_pencil.delete_frame",
+      "queries": [
+        "Delete Grease Pencil Frame(s)",
+        "delete frame",
+        "delete grease pencil"
+      ],
+      "query_results": [
+        {
+          "query": "Delete Grease Pencil Frame(s)",
+          "query_tokens": [
+            "delete",
+            "grease",
+            "pencil",
+            "frame"
+          ],
+          "correct_rank": 2,
+          "top_5": [
+            [
+              "bpy.ops.grease_pencil.active_frame_delete",
+              13.03777986323757
+            ],
+            [
+              "bpy.ops.grease_pencil.delete_frame",
+              12.56472458676096
+            ],
+            [
+              "bpy.ops.grease_pencil.frame_clean_duplicate",
+              11.331308610191849
+            ],
+            [
+              "bpy.ops.grease_pencil.delete",
+              10.508463483780721
+            ],
+            [
+              "bpy.ops.grease_pencil.delete_breakdown",
+              9.537643596145758
+            ]
+          ]
+        },
+        {
+          "query": "delete frame",
+          "query_tokens": [
+            "delete",
+            "frame"
+          ],
+          "correct_rank": 5,
+          "top_5": [
+            [
+              "bpy.ops.gpencil.annotation_active_frame_delete",
+              7.240081748120829
+            ],
+            [
+              "bpy.ops.clip.keyframe_delete",
+              7.09845701520833
+            ],
+            [
+              "bpy.ops.grease_pencil.active_frame_delete",
+              6.831203839645305
+            ],
+            [
+              "bpy.ops.clip.delete_marker",
+              6.704984272831337
+            ],
+            [
+              "bpy.ops.grease_pencil.delete_frame",
+              6.583344383899821
+            ]
+          ]
+        },
+        {
+          "query": "delete grease pencil",
+          "query_tokens": [
+            "delete",
+            "grease",
+            "pencil"
+          ],
+          "correct_rank": 4,
+          "top_5": [
+            [
+              "bpy.ops.grease_pencil.delete",
+              10.508463483780721
+            ],
+            [
+              "bpy.ops.grease_pencil.active_frame_delete",
+              9.717187230276188
+            ],
+            [
+              "bpy.ops.grease_pencil.delete_breakdown",
+              9.537643596145758
+            ],
+            [
+              "bpy.ops.grease_pencil.delete_frame",
+              9.364614419566696
+            ],
+            [
+              "bpy.ops.grease_pencil.dissolve",
+              8.731031041622622
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "api_id": "bpy.ops.grease_pencil.dissolve",
+      "queries": [
+        "Delete selected points without splitting strokes",
+        "Delete selected points without splitting",
+        "dissolve",
+        "delete selected points"
+      ],
+      "query_results": [
+        {
+          "query": "Delete selected points without splitting strokes",
+          "query_tokens": [
+            "delete",
+            "selected",
+            "points",
+            "without",
+            "splitting",
+            "strokes"
+          ],
+          "correct_rank": 1,
+          "top_5": [
+            [
+              "bpy.ops.grease_pencil.dissolve",
+              22.549556515146858
+            ],
+            [
+              "bpy.ops.grease_pencil.delete",
+              13.545515763121285
+            ],
+            [
+              "bpy.ops.pointcloud.delete",
+              9.312315610825758
+            ],
+            [
+              "bpy.ops.grease_pencil.copy",
+              9.014941458942449
+            ],
+            [
+              "bpy.ops.curves.delete",
+              8.925282875102418
+            ]
+          ]
+        },
+        {
+          "query": "Delete selected points without splitting",
+          "query_tokens": [
+            "delete",
+            "selected",
+            "points",
+            "without",
+            "splitting"
+          ],
+          "correct_rank": 1,
+          "top_5": [
+            [
+              "bpy.ops.grease_pencil.dissolve",
+              18.559838554638805
+            ],
+            [
+              "bpy.ops.pointcloud.delete",
+              9.312315610825758
+            ],
+            [
+              "bpy.ops.curves.delete",
+              8.925282875102418
+            ],
+            [
+              "bpy.ops.grease_pencil.delete",
+              8.7435851207133
+            ],
+            [
+              "bpy.ops.lattice.flip",
+              8.71865985761534
+            ]
+          ]
+        },
+        {
+          "query": "dissolve",
+          "query_tokens": [
+            "dissolve"
+          ],
+          "correct_rank": 6,
+          "top_5": [
+            [
+              "bpy.ops.armature.dissolve",
+              6.412247115072977
+            ],
+            [
+              "bpy.ops.mesh.polybuild_dissolve_at_cursor",
+              6.028445628456031
+            ],
+            [
+              "bpy.ops.mesh.dissolve_faces",
+              5.9105219596757435
+            ],
+            [
+              "bpy.ops.curve.dissolve_verts",
+              5.797123235943864
+            ],
+            [
+              "bpy.ops.mesh.extrude_context",
+              5.198675421746402
+            ]
+          ]
+        },
+        {
+          "query": "delete selected points",
+          "query_tokens": [
+            "delete",
+            "selected",
+            "points"
+          ],
+          "correct_rank": 7,
+          "top_5": [
+            [
+              "bpy.ops.pointcloud.delete",
+              9.312315610825758
+            ],
+            [
+              "bpy.ops.curves.delete",
+              8.925282875102418
+            ],
+            [
+              "bpy.ops.grease_pencil.delete",
+              8.7435851207133
+            ],
+            [
+              "bpy.ops.curve.dissolve_verts",
+              8.240324291824841
+            ],
+            [
+              "bpy.ops.mask.delete",
+              8.240324291824841
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "api_id": "bpy.ops.grease_pencil.duplicate",
+      "queries": [
+        "Duplicate the selected points",
+        "duplicate",
+        "duplicate selected points"
+      ],
+      "query_results": [
+        {
+          "query": "Duplicate the selected points",
+          "query_tokens": [
+            "duplicate",
+            "the",
+            "selected",
+            "points"
+          ],
+          "correct_rank": 1,
+          "top_5": [
+            [
+              "bpy.ops.grease_pencil.duplicate",
+              11.613521343868388
+            ],
+            [
+              "bpy.ops.curve.duplicate",
+              9.984366743795979
+            ],
+            [
+              "bpy.ops.pointcloud.duplicate",
+              9.984366743795979
+            ],
+            [
+              "bpy.ops.curves.duplicate",
+              9.772481567230756
+            ],
+            [
+              "bpy.ops.mask.duplicate",
+              9.187555115375325
+            ]
+          ]
+        },
+        {
+          "query": "duplicate",
+          "query_tokens": [
+            "duplicate"
+          ],
+          "correct_rank": 8,
+          "top_5": [
+            [
+              "bpy.ops.workspace.duplicate",
+              4.819983404892268
+            ],
+            [
+              "bpy.ops.curve.duplicate",
+              4.715477397102844
+            ],
+            [
+              "bpy.ops.sequencer.duplicate",
+              4.715477397102844
+            ],
+            [
+              "bpy.ops.geometry.color_attribute_duplicate",
+              4.715477397102844
+            ],
+            [
+              "bpy.ops.pointcloud.duplicate",
+              4.715477397102844
+            ]
+          ]
+        },
+        {
+          "query": "duplicate selected points",
+          "query_tokens": [
+            "duplicate",
+            "selected",
+            "points"
+          ],
+          "correct_rank": 4,
+          "top_5": [
+            [
+              "bpy.ops.curve.duplicate",
+              9.984366743795979
+            ],
+            [
+              "bpy.ops.pointcloud.duplicate",
+              9.984366743795979
+            ],
+            [
+              "bpy.ops.curves.duplicate",
+              9.772481567230756
+            ],
+            [
+              "bpy.ops.grease_pencil.duplicate",
+              9.569402632095965
+            ],
+            [
+              "bpy.ops.mask.duplicate",
+              9.187555115375325
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "api_id": "bpy.ops.grease_pencil.duplicate_move",
+      "queries": [
+        "Make copies of the selected Grease Pencil strokes and move them",
+        "Make copies of the selected",
+        "duplicate move",
+        "make copies selected"
+      ],
+      "query_results": [
+        {
+          "query": "Make copies of the selected Grease Pencil strokes and move them",
+          "query_tokens": [
+            "make",
+            "copies",
+            "of",
+            "the",
+            "selected",
+            "grease",
+            "pencil",
+            "strokes",
+            "and",
+            "move",
+            "them"
+          ],
+          "correct_rank": 1,
+          "top_5": [
+            [
+              "bpy.ops.grease_pencil.duplicate_move",
+              29.47351514738895
+            ],
+            [
+              "bpy.ops.mball.duplicate_move",
+              20.220129269185428
+            ],
+            [
+              "bpy.ops.armature.duplicate_move",
+              19.89463649336543
+            ],
+            [
+              "bpy.ops.pointcloud.duplicate_move",
+              19.24035207338424
+            ],
+            [
+              "bpy.ops.curves.duplicate_move",
+              18.920328075680914
+            ]
+          ]
+        },
+        {
+          "query": "Make copies of the selected",
+          "query_tokens": [
+            "make",
+            "copies",
+            "of",
+            "the",
+            "selected"
+          ],
+          "correct_rank": 2,
+          "top_5": [
+            [
+              "bpy.ops.armature.duplicate",
+              12.087837126109948
+            ],
+            [
+              "bpy.ops.grease_pencil.duplicate_move",
+              11.692303017090195
+            ],
+            [
+              "bpy.ops.mball.duplicate_move",
+              11.692303017090195
+            ],
+            [
+              "bpy.ops.armature.duplicate_move",
+              11.504086605904284
+            ],
+            [
+              "bpy.ops.pointcloud.duplicate_move",
+              10.424041495013208
+            ]
+          ]
+        },
+        {
+          "query": "duplicate move",
+          "query_tokens": [
+            "duplicate",
+            "move"
+          ],
+          "correct_rank": null,
+          "top_5": [
+            [
+              "bpy.ops.curve.duplicate_move",
+              6.943132178939042
+            ],
+            [
+              "bpy.ops.mask.duplicate_move",
+              6.943132178939042
+            ],
+            [
+              "bpy.ops.object.duplicate_move",
+              6.817171879448834
+            ],
+            [
+              "bpy.ops.node.duplicate_move",
+              6.817171879448834
+            ],
+            [
+              "bpy.ops.mesh.duplicate_move",
+              6.817171879448834
+            ]
+          ]
+        },
+        {
+          "query": "make copies selected",
+          "query_tokens": [
+            "make",
+            "copies",
+            "selected"
+          ],
+          "correct_rank": 4,
+          "top_5": [
+            [
+              "bpy.ops.pointcloud.duplicate_move",
+              9.60931572960928
+            ],
+            [
+              "bpy.ops.armature.duplicate",
+              9.60931572960928
+            ],
+            [
+              "bpy.ops.curves.duplicate_move",
+              9.449484369805994
+            ],
+            [
+              "bpy.ops.grease_pencil.duplicate_move",
+              9.29488295758006
+            ],
+            [
+              "bpy.ops.mball.duplicate_move",
+              9.29488295758006
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "api_id": "bpy.ops.grease_pencil.erase_box",
+      "queries": [
+        "Erase points in the box region",
+        "Erase points in the box",
+        "erase box",
+        "erase points region"
+      ],
+      "query_results": [
+        {
+          "query": "Erase points in the box region",
+          "query_tokens": [
+            "erase",
+            "points",
+            "in",
+            "the",
+            "box",
+            "region"
+          ],
+          "correct_rank": 1,
+          "top_5": [
+            [
+              "bpy.ops.grease_pencil.erase_box",
+              18.216032261222484
+            ],
+            [
+              "bpy.ops.grease_pencil.erase_lasso",
+              11.320401975683644
+            ],
+            [
+              "bpy.ops.curve.select_more",
+              8.828163783505072
+            ],
+            [
+              "bpy.ops.curve.select_less",
+              8.668005784858295
+            ],
+            [
+              "bpy.ops.mask.select_less",
+              8.668005784858295
+            ]
+          ]
+        },
+        {
+          "query": "Erase points in the box",
+          "query_tokens": [
+            "erase",
+            "points",
+            "in",
+            "the",
+            "box"
+          ],
+          "correct_rank": 1,
+          "top_5": [
+            [
+              "bpy.ops.grease_pencil.erase_box",
+              15.1194450312648
+            ],
+            [
+              "bpy.ops.grease_pencil.erase_lasso",
+              8.850007858302092
+            ],
+            [
+              "bpy.ops.font.textbox_remove",
+              7.227516337733325
+            ],
+            [
+              "bpy.ops.mask.select_box",
+              6.779970442528559
+            ],
+            [
+              "bpy.ops.clip.graph_select_box",
+              6.309932947679933
+            ]
+          ]
+        },
+        {
+          "query": "erase box",
+          "query_tokens": [
+            "erase",
+            "box"
+          ],
+          "correct_rank": 1,
+          "top_5": [
+            [
+              "bpy.ops.grease_pencil.erase_box",
+              10.377613933321312
+            ],
+            [
+              "bpy.ops.font.textbox_add",
+              5.281137189213834
+            ],
+            [
+              "bpy.ops.curve.match_texture_space",
+              5.070404168701285
+            ],
+            [
+              "bpy.ops.grease_pencil.erase_lasso",
+              5.067071748300574
+            ],
+            [
+              "bpy.ops.font.textbox_remove",
+              4.971220946586821
+            ]
+          ]
+        },
+        {
+          "query": "erase points region",
+          "query_tokens": [
+            "erase",
+            "points",
+            "region"
+          ],
+          "correct_rank": 1,
+          "top_5": [
+            [
+              "bpy.ops.grease_pencil.erase_box",
+              12.362533813957524
+            ],
+            [
+              "bpy.ops.grease_pencil.erase_lasso",
+              9.862577263921782
+            ],
+            [
+              "bpy.ops.curve.select_more",
+              7.010659107301794
+            ],
+            [
+              "bpy.ops.curve.select_less",
+              6.883473753772424
+            ],
+            [
+              "bpy.ops.mask.select_less",
+              6.883473753772424
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "api_id": "bpy.ops.grease_pencil.erase_lasso",
+      "queries": [
+        "Erase points in the lasso region",
+        "Erase points in the lasso",
+        "erase lasso",
+        "erase points lasso"
+      ],
+      "query_results": [
+        {
+          "query": "Erase points in the lasso region",
+          "query_tokens": [
+            "erase",
+            "points",
+            "in",
+            "the",
+            "lasso",
+            "region"
+          ],
+          "correct_rank": 1,
+          "top_5": [
+            [
+              "bpy.ops.grease_pencil.erase_lasso",
+              15.196392445649716
+            ],
+            [
+              "bpy.ops.grease_pencil.erase_box",
+              14.189886524278641
+            ],
+            [
+              "bpy.ops.curve.select_more",
+              8.828163783505072
+            ],
+            [
+              "bpy.ops.curve.select_less",
+              8.668005784858295
+            ],
+            [
+              "bpy.ops.mask.select_less",
+              8.668005784858295
+            ]
+          ]
+        },
+        {
+          "query": "Erase points in the lasso",
+          "query_tokens": [
+            "erase",
+            "points",
+            "in",
+            "the",
+            "lasso"
+          ],
+          "correct_rank": 1,
+          "top_5": [
+            [
+              "bpy.ops.grease_pencil.erase_lasso",
+              12.725998328268163
+            ],
+            [
+              "bpy.ops.grease_pencil.erase_box",
+              11.093299294320957
+            ],
+            [
+              "bpy.ops.graph.select_lasso",
+              6.3043739787105455
+            ],
+            [
+              "bpy.ops.mask.select_lasso",
+              6.181324609859545
+            ],
+            [
+              "bpy.ops.action.select_lasso",
+              6.181324609859545
+            ]
+          ]
+        },
+        {
+          "query": "erase lasso",
+          "query_tokens": [
+            "erase",
+            "lasso"
+          ],
+          "correct_rank": 1,
+          "top_5": [
+            [
+              "bpy.ops.grease_pencil.erase_lasso",
+              8.943062218266645
+            ],
+            [
+              "bpy.ops.grease_pencil.erase_box",
+              6.351468196377469
+            ],
+            [
+              "bpy.ops.clip.select_lasso",
+              3.7804304495987386
+            ],
+            [
+              "bpy.ops.uv.select_lasso",
+              3.7804304495987386
+            ],
+            [
+              "bpy.ops.view3d.select_lasso",
+              3.7343959003573226
+            ]
+          ]
+        },
+        {
+          "query": "erase points lasso",
+          "query_tokens": [
+            "erase",
+            "points",
+            "lasso"
+          ],
+          "correct_rank": 1,
+          "top_5": [
+            [
+              "bpy.ops.grease_pencil.erase_lasso",
+              11.268173616506301
+            ],
+            [
+              "bpy.ops.grease_pencil.erase_box",
+              9.26594658399984
+            ],
+            [
+              "bpy.ops.mask.select_lasso",
+              5.974568197152537
+            ],
+            [
+              "bpy.ops.action.select_lasso",
+              5.974568197152537
+            ],
+            [
+              "bpy.ops.graph.select_lasso",
+              5.104379164503621
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "api_id": "bpy.ops.grease_pencil.extrude",
+      "queries": [
+        "Extrude the selected points",
+        "extrude",
+        "extrude selected points"
+      ],
+      "query_results": [
+        {
+          "query": "Extrude the selected points",
+          "query_tokens": [
+            "extrude",
+            "the",
+            "selected",
+            "points"
+          ],
+          "correct_rank": 1,
+          "top_5": [
+            [
+              "bpy.ops.grease_pencil.extrude",
+              12.223548172382717
+            ],
+            [
+              "bpy.ops.grease_pencil.extrude_move",
+              10.120448816670185
+            ],
+            [
+              "bpy.ops.armature.extrude",
+              7.9076191841757515
+            ],
+            [
+              "bpy.ops.grease_pencil.duplicate",
+              7.094025719024273
+            ],
+            [
+              "bpy.ops.armature.click_extrude",
+              7.077010060292724
+            ]
+          ]
+        },
+        {
+          "query": "extrude",
+          "query_tokens": [
+            "extrude"
+          ],
+          "correct_rank": 2,
+          "top_5": [
+            [
+              "bpy.ops.curves.extrude",
+              5.351957208184613
+            ],
+            [
+              "bpy.ops.grease_pencil.extrude",
+              5.129522453358445
+            ],
+            [
+              "bpy.ops.curve.extrude",
+              4.924839310002328
+            ],
+            [
+              "bpy.ops.mesh.extrude_faces_indiv",
+              4.924839310002328
+            ],
+            [
+              "bpy.ops.mesh.extrude_verts_indiv",
+              4.828503512123101
+            ]
+          ]
+        },
+        {
+          "query": "extrude selected points",
+          "query_tokens": [
+            "extrude",
+            "selected",
+            "points"
+          ],
+          "correct_rank": 1,
+          "top_5": [
+            [
+              "bpy.ops.grease_pencil.extrude",
+              10.179429460610297
+            ],
+            [
+              "bpy.ops.grease_pencil.extrude_move",
+              8.42802706596848
+            ],
+            [
+              "bpy.ops.curves.extrude",
+              6.63211788807661
+            ],
+            [
+              "bpy.ops.curve.extrude",
+              6.10283558205958
+            ],
+            [
+              "bpy.ops.armature.extrude",
+              5.983456756048063
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "api_id": "bpy.ops.grease_pencil.extrude_move",
+      "queries": [
+        "Extrude selected points and move them",
+        "Extrude selected points and move",
+        "extrude move",
+        "extrude selected points"
+      ],
+      "query_results": [
+        {
+          "query": "Extrude selected points and move them",
+          "query_tokens": [
+            "extrude",
+            "selected",
+            "points",
+            "and",
+            "move",
+            "them"
+          ],
+          "correct_rank": 1,
+          "top_5": [
+            [
+              "bpy.ops.grease_pencil.extrude_move",
+              17.396025000871767
+            ],
+            [
+              "bpy.ops.armature.extrude_move",
+              13.990119745436004
+            ],
+            [
+              "bpy.ops.armature.extrude_forked",
+              13.757422649654888
+            ],
+            [
+              "bpy.ops.pointcloud.duplicate_move",
+              12.926645838119814
+            ],
+            [
+              "bpy.ops.curves.duplicate_move",
+              12.711637460818196
+            ]
+          ]
+        },
+        {
+          "query": "Extrude selected points and move",
+          "query_tokens": [
+            "extrude",
+            "selected",
+            "points",
+            "and",
+            "move"
+          ],
+          "correct_rank": 1,
+          "top_5": [
+            [
+              "bpy.ops.grease_pencil.extrude_move",
+              13.08819421945266
+            ],
+            [
+              "bpy.ops.curve.extrude_move",
+              10.463053550705546
+            ],
+            [
+              "bpy.ops.curves.extrude_move",
+              10.276618111807196
+            ],
+            [
+              "bpy.ops.mesh.extrude_region_move",
+              10.276618111807196
+            ],
+            [
+              "bpy.ops.grease_pencil.extrude",
+              10.179429460610297
+            ]
+          ]
+        },
+        {
+          "query": "extrude move",
+          "query_tokens": [
+            "extrude",
+            "move"
+          ],
+          "correct_rank": 7,
+          "top_5": [
+            [
+              "bpy.ops.curve.extrude_move",
+              7.349730193717007
+            ],
+            [
+              "bpy.ops.view3d.edit_mesh_extrude_individual_move",
+              7.349730193717007
+            ],
+            [
+              "bpy.ops.view3d.edit_mesh_extrude_move_shrink_fatten",
+              7.349730193717007
+            ],
+            [
+              "bpy.ops.curves.extrude_move",
+              7.218769363992717
+            ],
+            [
+              "bpy.ops.mesh.extrude_region_move",
+              7.218769363992717
+            ]
+          ]
+        },
+        {
+          "query": "extrude selected points",
+          "query_tokens": [
+            "extrude",
+            "selected",
+            "points"
+          ],
+          "correct_rank": 2,
+          "top_5": [
+            [
+              "bpy.ops.grease_pencil.extrude",
+              10.179429460610297
+            ],
+            [
+              "bpy.ops.grease_pencil.extrude_move",
+              8.42802706596848
+            ],
+            [
+              "bpy.ops.curves.extrude",
+              6.63211788807661
+            ],
+            [
+              "bpy.ops.curve.extrude",
+              6.10283558205958
+            ],
+            [
+              "bpy.ops.armature.extrude",
+              5.983456756048063
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "api_id": "bpy.ops.grease_pencil.fill",
+      "queries": [
+        "Fill with color the shape formed by strokes",
+        "Fill with color the shape",
+        "fill",
+        "fill with color"
+      ],
+      "query_results": [
+        {
+          "query": "Fill with color the shape formed by strokes",
+          "query_tokens": [
+            "fill",
+            "with",
+            "color",
+            "the",
+            "shape",
+            "formed",
+            "by",
+            "strokes"
+          ],
+          "correct_rank": 1,
+          "top_5": [
+            [
+              "bpy.ops.grease_pencil.fill",
+              27.361913179364244
+            ],
+            [
+              "bpy.ops.paint.vertex_color_set",
+              12.427246319278515
+            ],
+            [
+              "bpy.ops.sculpt.detail_flood_fill",
+              10.254563517490508
+            ],
+            [
+              "bpy.ops.paint.weight_set",
+              10.057820417093549
+            ],
+            [
+              "bpy.ops.image.tile_fill",
+              10.047901931359164
+            ]
+          ]
+        },
+        {
+          "query": "Fill with color the shape",
+          "query_tokens": [
+            "fill",
+            "with",
+            "color",
+            "the",
+            "shape"
+          ],
+          "correct_rank": 1,
+          "top_5": [
+            [
+              "bpy.ops.grease_pencil.fill",
+              14.706951369481342
+            ],
+            [
+              "bpy.ops.paint.vertex_color_set",
+              12.427246319278515
+            ],
+            [
+              "bpy.ops.sculpt.detail_flood_fill",
+              10.254563517490508
+            ],
+            [
+              "bpy.ops.paint.weight_set",
+              10.057820417093549
+            ],
+            [
+              "bpy.ops.image.tile_fill",
+              10.047901931359164
+            ]
+          ]
+        },
+        {
+          "query": "fill",
+          "query_tokens": [
+            "fill"
+          ],
+          "correct_rank": 10,
+          "top_5": [
+            [
+              "bpy.ops.sculpt.detail_flood_fill",
+              4.731794144766517
+            ],
+            [
+              "bpy.ops.paint.weight_set",
+              4.641010383088734
+            ],
+            [
+              "bpy.ops.armature.fill",
+              4.641010383088734
+            ],
+            [
+              "bpy.ops.mesh.fill",
+              4.469507282351807
+            ],
+            [
+              "bpy.ops.mesh.fill_holes",
+              4.388422771593619
+            ]
+          ]
+        },
+        {
+          "query": "fill with color",
+          "query_tokens": [
+            "fill",
+            "with",
+            "color"
+          ],
+          "correct_rank": 2,
+          "top_5": [
+            [
+              "bpy.ops.paint.vertex_color_set",
+              10.763450688181775
+            ],
+            [
+              "bpy.ops.grease_pencil.fill",
+              9.771756495818911
+            ],
+            [
+              "bpy.ops.image.tile_fill",
+              8.702659799226513
+            ],
+            [
+              "bpy.ops.sculpt.detail_flood_fill",
+              8.33040108936282
+            ],
+            [
+              "bpy.ops.paint.weight_set",
+              8.17057479006924
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "api_id": "bpy.ops.grease_pencil.frame_clean_duplicate",
+      "queries": [
+        "Remove any keyframe that is a duplicate of the previous one",
+        "Remove any keyframe that is",
+        "frame clean duplicate",
+        "remove keyframe that"
+      ],
+      "query_results": [
+        {
+          "query": "Remove any keyframe that is a duplicate of the previous one",
+          "query_tokens": [
+            "remove",
+            "any",
+            "keyframe",
+            "that",
+            "is",
+            "duplicate",
+            "of",
+            "the",
+            "previous",
+            "one"
+          ],
+          "correct_rank": 1,
+          "top_5": [
+            [
+              "bpy.ops.grease_pencil.frame_clean_duplicate",
+              31.356764969300276
+            ],
+            [
+              "bpy.ops.pose.breakdown",
+              12.02352943520835
+            ],
+            [
+              "bpy.ops.pose.push",
+              12.02352943520835
+            ],
+            [
+              "bpy.ops.pose.relax",
+              11.747512222426213
+            ],
+            [
+              "bpy.ops.pose.blend_with_rest",
+              11.109903165425749
+            ]
+          ]
+        },
+        {
+          "query": "Remove any keyframe that is",
+          "query_tokens": [
+            "remove",
+            "any",
+            "keyframe",
+            "that",
+            "is"
+          ],
+          "correct_rank": 1,
+          "top_5": [
+            [
+              "bpy.ops.grease_pencil.frame_clean_duplicate",
+              17.303784716879463
+            ],
+            [
+              "bpy.ops.armature.collection_remove_unused",
+              8.099337446440607
+            ],
+            [
+              "bpy.ops.pose.breakdown",
+              7.29332566144364
+            ],
+            [
+              "bpy.ops.pose.push",
+              7.29332566144364
+            ],
+            [
+              "bpy.ops.pose.blend_to_neighbor",
+              7.208639283371623
+            ]
+          ]
+        },
+        {
+          "query": "frame clean duplicate",
+          "query_tokens": [
+            "frame",
+            "clean",
+            "duplicate"
+          ],
+          "correct_rank": 1,
+          "top_5": [
+            [
+              "bpy.ops.grease_pencil.frame_clean_duplicate",
+              11.725093253881056
+            ],
+            [
+              "bpy.ops.grease_pencil.frame_duplicate",
+              7.277695957152059
+            ],
+            [
+              "bpy.ops.node.duplicate_move",
+              7.145666098186933
+            ],
+            [
+              "bpy.ops.node.duplicate_move_keep_inputs",
+              6.551398222455509
+            ],
+            [
+              "bpy.ops.node.duplicate_move_linked",
+              6.551398222455509
+            ]
+          ]
+        },
+        {
+          "query": "remove keyframe that",
+          "query_tokens": [
+            "remove",
+            "keyframe",
+            "that"
+          ],
+          "correct_rank": 1,
+          "top_5": [
+            [
+              "bpy.ops.grease_pencil.frame_clean_duplicate",
+              9.377835582256957
+            ],
+            [
+              "bpy.ops.mask.shape_key_clear",
+              6.8792114874520625
+            ],
+            [
+              "bpy.ops.anim.keyframe_clear_v3d",
+              6.8792114874520625
+            ],
+            [
+              "bpy.ops.anim.keyframe_delete_v3d",
+              6.413783456298459
+            ],
+            [
+              "bpy.ops.collection.objects_remove_active",
+              5.930928610049973
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "api_id": "bpy.ops.grease_pencil.frame_duplicate",
+      "queries": [
+        "Make a copy of the active Grease Pencil frame(s)",
+        "Make a copy of the",
+        "frame duplicate",
+        "make copy active"
+      ],
+      "query_results": [
+        {
+          "query": "Make a copy of the active Grease Pencil frame(s)",
+          "query_tokens": [
+            "make",
+            "copy",
+            "of",
+            "the",
+            "active",
+            "grease",
+            "pencil",
+            "frame"
+          ],
+          "correct_rank": 1,
+          "top_5": [
+            [
+              "bpy.ops.grease_pencil.frame_duplicate",
+              20.649464638219605
+            ],
+            [
+              "bpy.ops.grease_pencil.layer_duplicate",
+              16.770492413432038
+            ],
+            [
+              "bpy.ops.grease_pencil.layer_duplicate_object",
+              14.910693824276999
+            ],
+            [
+              "bpy.ops.grease_pencil.active_frame_delete",
+              14.143286208199726
+            ],
+            [
+              "bpy.ops.grease_pencil.material_copy_to_object",
+              13.100260021637409
+            ]
+          ]
+        },
+        {
+          "query": "Make a copy of the",
+          "query_tokens": [
+            "make",
+            "copy",
+            "of",
+            "the"
+          ],
+          "correct_rank": 2,
+          "top_5": [
+            [
+              "bpy.ops.object.vertex_group_copy",
+              10.231162490123502
+            ],
+            [
+              "bpy.ops.grease_pencil.frame_duplicate",
+              9.475001246617849
+            ],
+            [
+              "bpy.ops.grease_pencil.layer_duplicate",
+              9.137341497976596
+            ],
+            [
+              "bpy.ops.action.duplicate",
+              8.436939614717373
+            ],
+            [
+              "bpy.ops.grease_pencil.layer_duplicate_object",
+              8.124037033943452
+            ]
+          ]
+        },
+        {
+          "query": "frame duplicate",
+          "query_tokens": [
+            "frame",
+            "duplicate"
+          ],
+          "correct_rank": 1,
+          "top_5": [
+            [
+              "bpy.ops.grease_pencil.frame_duplicate",
+              7.277695957152059
+            ],
+            [
+              "bpy.ops.node.duplicate_move",
+              7.145666098186933
+            ],
+            [
+              "bpy.ops.node.duplicate_move_keep_inputs",
+              6.551398222455509
+            ],
+            [
+              "bpy.ops.node.duplicate_move_linked",
+              6.551398222455509
+            ],
+            [
+              "bpy.ops.grease_pencil.frame_clean_duplicate",
+              6.444211906503447
+            ]
+          ]
+        },
+        {
+          "query": "make copy active",
+          "query_tokens": [
+            "make",
+            "copy",
+            "active"
+          ],
+          "correct_rank": 2,
+          "top_5": [
+            [
+              "bpy.ops.object.vertex_group_copy",
+              9.276429276277456
+            ],
+            [
+              "bpy.ops.grease_pencil.frame_duplicate",
+              8.590830127244926
+            ],
+            [
+              "bpy.ops.grease_pencil.layer_duplicate",
+              8.284679503526467
+            ],
+            [
+              "bpy.ops.action.duplicate",
+              7.456354857404294
+            ],
+            [
+              "bpy.ops.grease_pencil.layer_duplicate_object",
+              7.3659327623801225
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "api_id": "bpy.ops.grease_pencil.insert_blank_frame",
+      "queries": [
+        "Insert a blank frame on the current scene frame",
+        "Insert a blank frame on",
+        "insert blank frame",
+        "insert blank frame"
+      ],
+      "query_results": [
+        {
+          "query": "Insert a blank frame on the current scene frame",
+          "query_tokens": [
+            "insert",
+            "blank",
+            "frame",
+            "on",
+            "the",
+            "current",
+            "scene"
+          ],
+          "correct_rank": 1,
+          "top_5": [
+            [
+              "bpy.ops.grease_pencil.insert_blank_frame",
+              24.063700172177146
+            ],
+            [
+              "bpy.ops.mask.shape_key_insert",
+              12.737411579756511
+            ],
+            [
+              "bpy.ops.anim.keyframe_insert",
+              12.299770851038573
+            ],
+            [
+              "bpy.ops.clip.keyframe_insert",
+              11.560726559648884
+            ],
+            [
+              "bpy.ops.anim.end_frame_set",
+              11.529233100233204
+            ]
+          ]
+        },
+        {
+          "query": "Insert a blank frame on",
+          "query_tokens": [
+            "insert",
+            "blank",
+            "frame",
+            "on"
+          ],
+          "correct_rank": 1,
+          "top_5": [
+            [
+              "bpy.ops.grease_pencil.insert_blank_frame",
+              16.883128711830526
+            ],
+            [
+              "bpy.ops.clip.keyframe_insert",
+              8.674869613549564
+            ],
+            [
+              "bpy.ops.anim.keyframe_insert",
+              8.580927429044461
+            ],
+            [
+              "bpy.ops.graph.click_insert",
+              8.328997688858571
+            ],
+            [
+              "bpy.ops.mask.shape_key_insert",
+              8.194015150489044
+            ]
+          ]
+        },
+        {
+          "query": "insert blank frame",
+          "query_tokens": [
+            "insert",
+            "blank",
+            "frame"
+          ],
+          "correct_rank": 1,
+          "top_5": [
+            [
+              "bpy.ops.grease_pencil.insert_blank_frame",
+              14.787254189169985
+            ],
+            [
+              "bpy.ops.clip.keyframe_insert",
+              8.674869613549564
+            ],
+            [
+              "bpy.ops.mask.shape_key_insert",
+              8.194015150489044
+            ],
+            [
+              "bpy.ops.sequencer.gap_insert",
+              7.0256964412567955
+            ],
+            [
+              "bpy.ops.anim.keyframe_insert",
+              6.7069338580761535
+            ]
+          ]
+        },
+        {
+          "query": "insert blank frame",
+          "query_tokens": [
+            "insert",
+            "blank",
+            "frame"
+          ],
+          "correct_rank": 1,
+          "top_5": [
+            [
+              "bpy.ops.grease_pencil.insert_blank_frame",
+              14.787254189169985
+            ],
+            [
+              "bpy.ops.clip.keyframe_insert",
+              8.674869613549564
+            ],
+            [
+              "bpy.ops.mask.shape_key_insert",
+              8.194015150489044
+            ],
+            [
+              "bpy.ops.sequencer.gap_insert",
+              7.0256964412567955
+            ],
+            [
+              "bpy.ops.anim.keyframe_insert",
+              6.7069338580761535
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "api_id": "bpy.ops.grease_pencil.interpolate",
+      "queries": [
+        "Interpolate Grease Pencil strokes between frames",
+        "Interpolate Grease Pencil strokes between",
+        "interpolate",
+        "interpolate grease pencil"
+      ],
+      "query_results": [
+        {
+          "query": "Interpolate Grease Pencil strokes between frames",
+          "query_tokens": [
+            "interpolate",
+            "grease",
+            "pencil",
+            "strokes",
+            "between",
+            "frames"
+          ],
+          "correct_rank": 2,
+          "top_5": [
+            [
+              "bpy.ops.grease_pencil.delete_breakdown",
+              15.09947524586273
+            ],
+            [
+              "bpy.ops.grease_pencil.interpolate",
+              13.825915816428903
+            ],
+            [
+              "bpy.ops.grease_pencil.stroke_subdivide_smooth",
+              13.672333628405266
+            ],
+            [
+              "bpy.ops.grease_pencil.interpolate_sequence",
+              13.051510827622625
+            ],
+            [
+              "bpy.ops.grease_pencil.delete",
+              11.513911790616707
+            ]
+          ]
+        },
+        {
+          "query": "Interpolate Grease Pencil strokes between",
+          "query_tokens": [
+            "interpolate",
+            "grease",
+            "pencil",
+            "strokes",
+            "between"
+          ],
+          "correct_rank": 3,
+          "top_5": [
+            [
+              "bpy.ops.grease_pencil.stroke_subdivide_smooth",
+              13.672333628405266
+            ],
+            [
+              "bpy.ops.grease_pencil.delete",
+              11.513911790616707
+            ],
+            [
+              "bpy.ops.grease_pencil.interpolate",
+              11.135089393648043
+            ],
+            [
+              "bpy.ops.grease_pencil.copy",
+              10.646926336566004
+            ],
+            [
+              "bpy.ops.grease_pencil.material_select",
+              10.646926336566004
+            ]
+          ]
+        },
+        {
+          "query": "interpolate",
+          "query_tokens": [
+            "interpolate"
+          ],
+          "correct_rank": 5,
+          "top_5": [
+            [
+              "bpy.ops.curve.smooth_tilt",
+              7.023642631990181
+            ],
+            [
+              "bpy.ops.curve.smooth_weight",
+              7.023642631990181
+            ],
+            [
+              "bpy.ops.curve.smooth_radius",
+              6.883510556850855
+            ],
+            [
+              "bpy.ops.mesh.point_normals",
+              3.9601262832487825
+            ],
+            [
+              "bpy.ops.grease_pencil.interpolate",
+              3.411857935012265
+            ]
+          ]
+        },
+        {
+          "query": "interpolate grease pencil",
+          "query_tokens": [
+            "interpolate",
+            "grease",
+            "pencil"
+          ],
+          "correct_rank": 9,
+          "top_5": [
+            [
+              "bpy.ops.curve.smooth_tilt",
+              7.023642631990181
+            ],
+            [
+              "bpy.ops.curve.smooth_weight",
+              7.023642631990181
+            ],
+            [
+              "bpy.ops.curve.smooth_radius",
+              6.883510556850855
+            ],
+            [
+              "bpy.ops.grease_pencil.duplicate",
+              6.851460765012878
+            ],
+            [
+              "bpy.ops.grease_pencil.extrude",
+              6.851460765012878
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "api_id": "bpy.ops.grease_pencil.interpolate_sequence",
+      "queries": [
+        "Generate ‘in-betweens’ to smoothly interpolate between Grease Pencil frames",
+        "Generate ‘in-betweens’ to smoothly interpolate",
+        "interpolate sequence",
+        "generate ‘in-betweens’ smoothly"
+      ],
+      "query_results": [
+        {
+          "query": "Generate ‘in-betweens’ to smoothly interpolate between Grease Pencil frames",
+          "query_tokens": [
+            "generate",
+            "in",
+            "betweens",
+            "to",
+            "smoothly",
+            "interpolate",
+            "between",
+            "grease",
+            "pencil",
+            "frames"
+          ],
+          "correct_rank": 1,
+          "top_5": [
+            [
+              "bpy.ops.grease_pencil.interpolate_sequence",
+              21.8890018937057
+            ],
+            [
+              "bpy.ops.grease_pencil.delete_breakdown",
+              15.09947524586273
+            ],
+            [
+              "bpy.ops.grease_pencil.interpolate",
+              11.89367260421093
+            ],
+            [
+              "bpy.ops.grease_pencil.bake_grease_pencil_animation",
+              10.704912146749479
+            ],
+            [
+              "bpy.ops.grease_pencil.stroke_subdivide_smooth",
+              9.542923553134885
+            ]
+          ]
+        },
+        {
+          "query": "Generate ‘in-betweens’ to smoothly interpolate",
+          "query_tokens": [
+            "generate",
+            "in",
+            "betweens",
+            "to",
+            "smoothly",
+            "interpolate"
+          ],
+          "correct_rank": 1,
+          "top_5": [
+            [
+              "bpy.ops.grease_pencil.interpolate_sequence",
+              14.260216510782556
+            ],
+            [
+              "bpy.ops.curve.smooth_tilt",
+              7.023642631990181
+            ],
+            [
+              "bpy.ops.curve.smooth_weight",
+              7.023642631990181
+            ],
+            [
+              "bpy.ops.curve.smooth_radius",
+              6.883510556850855
+            ],
+            [
+              "bpy.ops.wm.sysinfo",
+              5.487542276619526
+            ]
+          ]
+        },
+        {
+          "query": "interpolate sequence",
+          "query_tokens": [
+            "interpolate",
+            "sequence"
+          ],
+          "correct_rank": 5,
+          "top_5": [
+            [
+              "bpy.ops.curve.smooth_tilt",
+              7.023642631990181
+            ],
+            [
+              "bpy.ops.curve.smooth_weight",
+              7.023642631990181
+            ],
+            [
+              "bpy.ops.curve.smooth_radius",
+              6.883510556850855
+            ],
+            [
+              "bpy.ops.image.save_sequence",
+              5.831305062885984
+            ],
+            [
+              "bpy.ops.grease_pencil.interpolate_sequence",
+              5.785881920815851
+            ]
+          ]
+        },
+        {
+          "query": "generate ‘in-betweens’ smoothly",
+          "query_tokens": [
+            "generate",
+            "in",
+            "betweens",
+            "smoothly"
+          ],
+          "correct_rank": 1,
+          "top_5": [
+            [
+              "bpy.ops.grease_pencil.interpolate_sequence",
+              10.82001085020495
+            ],
+            [
+              "bpy.ops.wm.sysinfo",
+              5.487542276619526
+            ],
+            [
+              "bpy.ops.ed.lib_id_generate_preview",
+              5.08932864576003
+            ],
+            [
+              "bpy.ops.ed.lib_id_generate_preview_from_object",
+              4.9111358290537135
+            ],
+            [
+              "bpy.ops.object.paths_calculate",
+              4.82663821467661
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "api_id": "bpy.ops.grease_pencil.join_selection",
+      "queries": [
+        "New stroke from selected points/strokes",
+        "join selection",
+        "stroke from selected"
+      ],
+      "query_results": [
+        {
+          "query": "New stroke from selected points/strokes",
+          "query_tokens": [
+            "new",
+            "stroke",
+            "from",
+            "selected",
+            "points",
+            "strokes"
+          ],
+          "correct_rank": 1,
+          "top_5": [
+            [
+              "bpy.ops.grease_pencil.join_selection",
+              14.721555331673924
+            ],
+            [
+              "bpy.ops.grease_pencil.stroke_switch_direction",
+              12.737559846524611
+            ],
+            [
+              "bpy.ops.grease_pencil.dissolve",
+              11.660325665709921
+            ],
+            [
+              "bpy.ops.grease_pencil.snap_to_cursor",
+              11.466379940609329
+            ],
+            [
+              "bpy.ops.grease_pencil.stroke_split",
+              11.361172822018226
+            ]
+          ]
+        },
+        {
+          "query": "join selection",
+          "query_tokens": [
+            "join",
+            "selection"
+          ],
+          "correct_rank": 1,
+          "top_5": [
+            [
+              "bpy.ops.grease_pencil.join_selection",
+              7.013577358926678
+            ],
+            [
+              "bpy.ops.clip.join_tracks",
+              6.755377236589442
+            ],
+            [
+              "bpy.ops.object.join",
+              6.612016687516177
+            ],
+            [
+              "bpy.ops.palette.join",
+              6.612016687516177
+            ],
+            [
+              "bpy.ops.node.join",
+              6.216258104189047
+            ]
+          ]
+        },
+        {
+          "query": "stroke from selected",
+          "query_tokens": [
+            "stroke",
+            "from",
+            "selected"
+          ],
+          "correct_rank": 1,
+          "top_5": [
+            [
+              "bpy.ops.grease_pencil.join_selection",
+              6.053401100728366
+            ],
+            [
+              "bpy.ops.ui.eyedropper_grease_pencil_color",
+              5.464285640971555
+            ],
+            [
+              "bpy.ops.grease_pencil.cyclical_set",
+              5.449110656464192
+            ],
+            [
+              "bpy.ops.grease_pencil.stroke_split",
+              5.272371480516544
+            ],
+            [
+              "bpy.ops.grease_pencil.set_active_material",
+              5.171216252431791
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "api_id": "bpy.ops.grease_pencil.layer_active",
+      "queries": [
+        "Set the active Grease Pencil layer",
+        "Set the active Grease Pencil",
+        "layer active",
+        "active grease pencil"
+      ],
+      "query_results": [
+        {
+          "query": "Set the active Grease Pencil layer",
+          "query_tokens": [
+            "set",
+            "the",
+            "active",
+            "grease",
+            "pencil",
+            "layer"
+          ],
+          "correct_rank": 1,
+          "top_5": [
+            [
+              "bpy.ops.grease_pencil.layer_active",
+              16.94629589842556
+            ],
+            [
+              "bpy.ops.grease_pencil.layer_remove",
+              14.898060084154277
+            ],
+            [
+              "bpy.ops.grease_pencil.layer_move",
+              13.521709199060465
+            ],
+            [
+              "bpy.ops.grease_pencil.layer_add",
+              13.276402254523305
+            ],
+            [
+              "bpy.ops.grease_pencil.layer_mask_reorder",
+              13.276402254523305
+            ]
+          ]
+        },
+        {
+          "query": "Set the active Grease Pencil",
+          "query_tokens": [
+            "set",
+            "the",
+            "active",
+            "grease",
+            "pencil"
+          ],
+          "correct_rank": 1,
+          "top_5": [
+            [
+              "bpy.ops.grease_pencil.layer_active",
+              12.854933426772087
+            ],
+            [
+              "bpy.ops.grease_pencil.set_active_material",
+              12.3616663162869
+            ],
+            [
+              "bpy.ops.grease_pencil.stroke_material_set",
+              11.27961783140575
+            ],
+            [
+              "bpy.ops.grease_pencil.layer_remove",
+              10.723407101276214
+            ],
+            [
+              "bpy.ops.grease_pencil.set_material",
+              10.679312993540092
+            ]
+          ]
+        },
+        {
+          "query": "layer active",
+          "query_tokens": [
+            "layer",
+            "active"
+          ],
+          "correct_rank": 5,
+          "top_5": [
+            [
+              "bpy.ops.gpencil.layer_annotation_remove",
+              6.4460254879177326
+            ],
+            [
+              "bpy.ops.scene.view_layer_remove_aov",
+              6.312072613928429
+            ],
+            [
+              "bpy.ops.scene.view_layer_remove_lightgroup",
+              6.312072613928429
+            ],
+            [
+              "bpy.ops.grease_pencil.layer_remove",
+              6.18357367047296
+            ],
+            [
+              "bpy.ops.grease_pencil.layer_active",
+              6.060202215570969
+            ]
+          ]
+        },
+        {
+          "query": "active grease pencil",
+          "query_tokens": [
+            "active",
+            "grease",
+            "pencil"
+          ],
+          "correct_rank": 2,
+          "top_5": [
+            [
+              "bpy.ops.grease_pencil.layer_remove",
+              8.720901835803618
+            ],
+            [
+              "bpy.ops.grease_pencil.layer_active",
+              8.546906925275085
+            ],
+            [
+              "bpy.ops.grease_pencil.set_material",
+              8.379719115436577
+            ],
+            [
+              "bpy.ops.grease_pencil.set_active_material",
+              8.218946605088899
+            ],
+            [
+              "bpy.ops.grease_pencil.vertex_group_normalize",
+              8.218946605088899
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "api_id": "bpy.ops.grease_pencil.layer_add",
+      "queries": [
+        "Add a new Grease Pencil layer in the active object",
+        "Add a new Grease Pencil",
+        "layer add",
+        "grease pencil layer"
+      ],
+      "query_results": [
+        {
+          "query": "Add a new Grease Pencil layer in the active object",
+          "query_tokens": [
+            "add",
+            "new",
+            "grease",
+            "pencil",
+            "layer",
+            "in",
+            "the",
+            "active",
+            "object"
+          ],
+          "correct_rank": 1,
+          "top_5": [
+            [
+              "bpy.ops.grease_pencil.layer_add",
+              19.76489257469234
+            ],
+            [
+              "bpy.ops.grease_pencil.layer_group_add",
+              19.41271274458022
+            ],
+            [
+              "bpy.ops.grease_pencil.layer_mask_add",
+              16.13859950517813
+            ],
+            [
+              "bpy.ops.grease_pencil.layer_duplicate",
+              15.053482053945974
+            ],
+            [
+              "bpy.ops.grease_pencil.layer_active",
+              14.939581223542405
+            ]
+          ]
+        },
+        {
+          "query": "Add a new Grease Pencil",
+          "query_tokens": [
+            "add",
+            "new",
+            "grease",
+            "pencil"
+          ],
+          "correct_rank": 2,
+          "top_5": [
+            [
+              "bpy.ops.grease_pencil.layer_mask_add",
+              10.532115369729238
+            ],
+            [
+              "bpy.ops.grease_pencil.layer_add",
+              10.341044773340382
+            ],
+            [
+              "bpy.ops.grease_pencil.layer_group_add",
+              10.156783342235006
+            ],
+            [
+              "bpy.ops.grease_pencil.move_to_layer",
+              9.641398873849404
+            ],
+            [
+              "bpy.ops.grease_pencil.stroke_split",
+              8.939586648883608
+            ]
+          ]
+        },
+        {
+          "query": "layer add",
+          "query_tokens": [
+            "layer",
+            "add"
+          ],
+          "correct_rank": null,
+          "top_5": [
+            [
+              "bpy.ops.scene.view_layer_add_aov",
+              6.609809388214739
+            ],
+            [
+              "bpy.ops.mesh.customdata_skin_add",
+              6.609809388214739
+            ],
+            [
+              "bpy.ops.node.cryptomatte_layer_add",
+              6.475249224734773
+            ],
+            [
+              "bpy.ops.mask.layer_new",
+              6.34605841044511
+            ],
+            [
+              "bpy.ops.scene.view_layer_add",
+              6.34605841044511
+            ]
+          ]
+        },
+        {
+          "query": "grease pencil layer",
+          "query_tokens": [
+            "grease",
+            "pencil",
+            "layer"
+          ],
+          "correct_rank": 9,
+          "top_5": [
+            [
+              "bpy.ops.grease_pencil.layer_mask_remove",
+              11.112865928131729
+            ],
+            [
+              "bpy.ops.grease_pencil.layer_remove",
+              10.886634131086783
+            ],
+            [
+              "bpy.ops.grease_pencil.layer_active",
+              10.669429653011063
+            ],
+            [
+              "bpy.ops.grease_pencil.layer_reveal",
+              10.669429653011063
+            ],
+            [
+              "bpy.ops.grease_pencil.layer_hide",
+              10.260024286157503
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "api_id": "bpy.ops.grease_pencil.layer_duplicate",
+      "queries": [
+        "Make a copy of the active Grease Pencil layer",
+        "Make a copy of the",
+        "layer duplicate",
+        "make copy active"
+      ],
+      "query_results": [
+        {
+          "query": "Make a copy of the active Grease Pencil layer",
+          "query_tokens": [
+            "make",
+            "copy",
+            "of",
+            "the",
+            "active",
+            "grease",
+            "pencil",
+            "layer"
+          ],
+          "correct_rank": 1,
+          "top_5": [
+            [
+              "bpy.ops.grease_pencil.layer_duplicate",
+              20.424444359908463
+            ],
+            [
+              "bpy.ops.grease_pencil.layer_duplicate_object",
+              18.159433180248072
+            ],
+            [
+              "bpy.ops.grease_pencil.frame_duplicate",
+              17.390226310229423
+            ],
+            [
+              "bpy.ops.grease_pencil.layer_isolate",
+              15.958854799477272
+            ],
+            [
+              "bpy.ops.grease_pencil.layer_remove",
+              14.898060084154277
+            ]
+          ]
+        },
+        {
+          "query": "Make a copy of the",
+          "query_tokens": [
+            "make",
+            "copy",
+            "of",
+            "the"
+          ],
+          "correct_rank": 3,
+          "top_5": [
+            [
+              "bpy.ops.object.vertex_group_copy",
+              10.231162490123502
+            ],
+            [
+              "bpy.ops.grease_pencil.frame_duplicate",
+              9.475001246617849
+            ],
+            [
+              "bpy.ops.grease_pencil.layer_duplicate",
+              9.137341497976596
+            ],
+            [
+              "bpy.ops.action.duplicate",
+              8.436939614717373
+            ],
+            [
+              "bpy.ops.grease_pencil.layer_duplicate_object",
+              8.124037033943452
+            ]
+          ]
+        },
+        {
+          "query": "layer duplicate",
+          "query_tokens": [
+            "layer",
+            "duplicate"
+          ],
+          "correct_rank": 1,
+          "top_5": [
+            [
+              "bpy.ops.grease_pencil.layer_duplicate",
+              7.529204170417629
+            ],
+            [
+              "bpy.ops.grease_pencil.layer_duplicate_object",
+              6.6942374354881515
+            ],
+            [
+              "bpy.ops.workspace.duplicate",
+              4.819983404892268
+            ],
+            [
+              "bpy.ops.curve.duplicate",
+              4.715477397102844
+            ],
+            [
+              "bpy.ops.sequencer.duplicate",
+              4.715477397102844
+            ]
+          ]
+        },
+        {
+          "query": "make copy active",
+          "query_tokens": [
+            "make",
+            "copy",
+            "active"
+          ],
+          "correct_rank": 3,
+          "top_5": [
+            [
+              "bpy.ops.object.vertex_group_copy",
+              9.276429276277456
+            ],
+            [
+              "bpy.ops.grease_pencil.frame_duplicate",
+              8.590830127244926
+            ],
+            [
+              "bpy.ops.grease_pencil.layer_duplicate",
+              8.284679503526467
+            ],
+            [
+              "bpy.ops.action.duplicate",
+              7.456354857404294
+            ],
+            [
+              "bpy.ops.grease_pencil.layer_duplicate_object",
+              7.3659327623801225
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "api_id": "bpy.ops.grease_pencil.layer_duplicate_object",
+      "queries": [
+        "Make a copy of the active Grease Pencil layer to selected object",
+        "Make a copy of the",
+        "layer duplicate object",
+        "make copy active"
+      ],
+      "query_results": [
+        {
+          "query": "Make a copy of the active Grease Pencil layer to selected object",
+          "query_tokens": [
+            "make",
+            "copy",
+            "of",
+            "the",
+            "active",
+            "grease",
+            "pencil",
+            "layer",
+            "to",
+            "selected",
+            "object"
+          ],
+          "correct_rank": 1,
+          "top_5": [
+            [
+              "bpy.ops.grease_pencil.layer_duplicate_object",
+              21.05726801571678
+            ],
+            [
+              "bpy.ops.grease_pencil.layer_duplicate",
+              20.424444359908463
+            ],
+            [
+              "bpy.ops.grease_pencil.frame_duplicate",
+              17.390226310229423
+            ],
+            [
+              "bpy.ops.grease_pencil.layer_add",
+              15.97104472639814
+            ],
+            [
+              "bpy.ops.grease_pencil.layer_isolate",
+              15.958854799477272
+            ]
+          ]
+        },
+        {
+          "query": "Make a copy of the",
+          "query_tokens": [
+            "make",
+            "copy",
+            "of",
+            "the"
+          ],
+          "correct_rank": 5,
+          "top_5": [
+            [
+              "bpy.ops.object.vertex_group_copy",
+              10.231162490123502
+            ],
+            [
+              "bpy.ops.grease_pencil.frame_duplicate",
+              9.475001246617849
+            ],
+            [
+              "bpy.ops.grease_pencil.layer_duplicate",
+              9.137341497976596
+            ],
+            [
+              "bpy.ops.action.duplicate",
+              8.436939614717373
+            ],
+            [
+              "bpy.ops.grease_pencil.layer_duplicate_object",
+              8.124037033943452
+            ]
+          ]
+        },
+        {
+          "query": "layer duplicate object",
+          "query_tokens": [
+            "layer",
+            "duplicate",
+            "object"
+          ],
+          "correct_rank": 1,
+          "top_5": [
+            [
+              "bpy.ops.grease_pencil.layer_duplicate_object",
+              8.284265432461538
+            ],
+            [
+              "bpy.ops.grease_pencil.layer_duplicate",
+              7.529204170417629
+            ],
+            [
+              "bpy.ops.object.shape_key_copy",
+              6.4706865193553424
+            ],
+            [
+              "bpy.ops.particle.dupliob_copy",
+              6.341586737797066
+            ],
+            [
+              "bpy.ops.outliner.collection_duplicate",
+              5.872894923149353
+            ]
+          ]
+        },
+        {
+          "query": "make copy active",
+          "query_tokens": [
+            "make",
+            "copy",
+            "active"
+          ],
+          "correct_rank": 5,
+          "top_5": [
+            [
+              "bpy.ops.object.vertex_group_copy",
+              9.276429276277456
+            ],
+            [
+              "bpy.ops.grease_pencil.frame_duplicate",
+              8.590830127244926
+            ],
+            [
+              "bpy.ops.grease_pencil.layer_duplicate",
+              8.284679503526467
+            ],
+            [
+              "bpy.ops.action.duplicate",
+              7.456354857404294
+            ],
+            [
+              "bpy.ops.grease_pencil.layer_duplicate_object",
+              7.3659327623801225
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "api_id": "bpy.ops.grease_pencil.layer_group_add",
+      "queries": [
+        "Add a new Grease Pencil layer group in the active object",
+        "Add a new Grease Pencil",
+        "layer group add",
+        "grease pencil layer"
+      ],
+      "query_results": [
+        {
+          "query": "Add a new Grease Pencil layer group in the active object",
+          "query_tokens": [
+            "add",
+            "new",
+            "grease",
+            "pencil",
+            "layer",
+            "group",
+            "in",
+            "the",
+            "active",
+            "object"
+          ],
+          "correct_rank": 1,
+          "top_5": [
+            [
+              "bpy.ops.grease_pencil.layer_group_add",
+              23.146594310870224
+            ],
+            [
+              "bpy.ops.grease_pencil.layer_add",
+              19.76489257469234
+            ],
+            [
+              "bpy.ops.grease_pencil.layer_group_remove",
+              18.215469220652615
+            ],
+            [
+              "bpy.ops.grease_pencil.layer_move",
+              17.70729456986175
+            ],
+            [
+              "bpy.ops.grease_pencil.layer_mask_add",
+              16.13859950517813
+            ]
+          ]
+        },
+        {
+          "query": "Add a new Grease Pencil",
+          "query_tokens": [
+            "add",
+            "new",
+            "grease",
+            "pencil"
+          ],
+          "correct_rank": 3,
+          "top_5": [
+            [
+              "bpy.ops.grease_pencil.layer_mask_add",
+              10.532115369729238
+            ],
+            [
+              "bpy.ops.grease_pencil.layer_add",
+              10.341044773340382
+            ],
+            [
+              "bpy.ops.grease_pencil.layer_group_add",
+              10.156783342235006
+            ],
+            [
+              "bpy.ops.grease_pencil.move_to_layer",
+              9.641398873849404
+            ],
+            [
+              "bpy.ops.grease_pencil.stroke_split",
+              8.939586648883608
+            ]
+          ]
+        },
+        {
+          "query": "layer group add",
+          "query_tokens": [
+            "layer",
+            "group",
+            "add"
+          ],
+          "correct_rank": 2,
+          "top_5": [
+            [
+              "bpy.ops.scene.view_layer_add_lightgroup",
+              9.932419348962707
+            ],
+            [
+              "bpy.ops.grease_pencil.layer_group_add",
+              9.401478275688326
+            ],
+            [
+              "bpy.ops.grease_pencil.layer_group_color_tag",
+              7.660842243749785
+            ],
+            [
+              "bpy.ops.grease_pencil.layer_move",
+              7.660842243749785
+            ],
+            [
+              "bpy.ops.grease_pencil.layer_group_remove",
+              7.133613581177094
+            ]
+          ]
+        },
+        {
+          "query": "grease pencil layer",
+          "query_tokens": [
+            "grease",
+            "pencil",
+            "layer"
+          ],
+          "correct_rank": null,
+          "top_5": [
+            [
+              "bpy.ops.grease_pencil.layer_mask_remove",
+              11.112865928131729
+            ],
+            [
+              "bpy.ops.grease_pencil.layer_remove",
+              10.886634131086783
+            ],
+            [
+              "bpy.ops.grease_pencil.layer_active",
+              10.669429653011063
+            ],
+            [
+              "bpy.ops.grease_pencil.layer_reveal",
+              10.669429653011063
+            ],
+            [
+              "bpy.ops.grease_pencil.layer_hide",
+              10.260024286157503
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "api_id": "bpy.ops.grease_pencil.layer_group_color_tag",
+      "queries": [
+        "Change layer group icon",
+        "layer group color tag",
+        "change layer group"
+      ],
+      "query_results": [
+        {
+          "query": "Change layer group icon",
+          "query_tokens": [
+            "change",
+            "layer",
+            "group",
+            "icon"
+          ],
+          "correct_rank": 1,
+          "top_5": [
+            [
+              "bpy.ops.grease_pencil.layer_group_color_tag",
+              19.58144074371552
+            ],
+            [
+              "bpy.ops.scene.view_layer_add_lightgroup",
+              7.805055585659375
+            ],
+            [
+              "bpy.ops.grease_pencil.layer_move",
+              7.660842243749785
+            ],
+            [
+              "bpy.ops.grease_pencil.layer_group_add",
+              7.387833512766432
+            ],
+            [
+              "bpy.ops.grease_pencil.layer_group_remove",
+              7.133613581177094
+            ]
+          ]
+        },
+        {
+          "query": "layer group color tag",
+          "query_tokens": [
+            "layer",
+            "group",
+            "color",
+            "tag"
+          ],
+          "correct_rank": 1,
+          "top_5": [
+            [
+              "bpy.ops.grease_pencil.layer_group_color_tag",
+              17.055361691858558
+            ],
+            [
+              "bpy.ops.sequencer.strip_color_tag_set",
+              9.571368807766548
+            ],
+            [
+              "bpy.ops.outliner.collection_color_tag_set",
+              9.571368807766548
+            ],
+            [
+              "bpy.ops.scene.view_layer_add_lightgroup",
+              7.805055585659375
+            ],
+            [
+              "bpy.ops.grease_pencil.layer_move",
+              7.660842243749785
+            ]
+          ]
+        },
+        {
+          "query": "change layer group",
+          "query_tokens": [
+            "change",
+            "layer",
+            "group"
+          ],
+          "correct_rank": 1,
+          "top_5": [
+            [
+              "bpy.ops.grease_pencil.layer_group_color_tag",
+              11.622087574979592
+            ],
+            [
+              "bpy.ops.scene.view_layer_add_lightgroup",
+              7.805055585659375
+            ],
+            [
+              "bpy.ops.grease_pencil.layer_move",
+              7.660842243749785
+            ],
+            [
+              "bpy.ops.grease_pencil.layer_group_add",
+              7.387833512766432
+            ],
+            [
+              "bpy.ops.grease_pencil.layer_group_remove",
+              7.133613581177094
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "api_id": "bpy.ops.grease_pencil.layer_group_remove",
+      "queries": [
+        "Remove Grease Pencil layer group in the active object",
+        "Remove Grease Pencil layer group",
+        "layer group remove",
+        "remove grease pencil"
+      ],
+      "query_results": [
+        {
+          "query": "Remove Grease Pencil layer group in the active object",
+          "query_tokens": [
+            "remove",
+            "grease",
+            "pencil",
+            "layer",
+            "group",
+            "in",
+            "the",
+            "active",
+            "object"
+          ],
+          "correct_rank": 1,
+          "top_5": [
+            [
+              "bpy.ops.grease_pencil.layer_group_remove",
+              20.604564201864587
+            ],
+            [
+              "bpy.ops.grease_pencil.layer_group_add",
+              18.86461222320615
+            ],
+            [
+              "bpy.ops.grease_pencil.layer_remove",
+              17.72488222680727
+            ],
+            [
+              "bpy.ops.grease_pencil.layer_move",
+              17.70729456986175
+            ],
+            [
+              "bpy.ops.grease_pencil.layer_add",
+              15.405228004213097
+            ]
+          ]
+        },
+        {
+          "query": "Remove Grease Pencil layer group",
+          "query_tokens": [
+            "remove",
+            "grease",
+            "pencil",
+            "layer",
+            "group"
+          ],
+          "correct_rank": 1,
+          "top_5": [
+            [
+              "bpy.ops.grease_pencil.layer_group_remove",
+              15.195354263446623
+            ],
+            [
+              "bpy.ops.grease_pencil.layer_mask_remove",
+              13.998431392692885
+            ],
+            [
+              "bpy.ops.grease_pencil.layer_group_color_tag",
+              13.75273989505439
+            ],
+            [
+              "bpy.ops.grease_pencil.layer_move",
+              13.75273989505439
+            ],
+            [
+              "bpy.ops.grease_pencil.layer_remove",
+              13.713456273739778
+            ]
+          ]
+        },
+        {
+          "query": "layer group remove",
+          "query_tokens": [
+            "layer",
+            "group",
+            "remove"
+          ],
+          "correct_rank": 1,
+          "top_5": [
+            [
+              "bpy.ops.grease_pencil.layer_group_remove",
+              9.522708562389067
+            ],
+            [
+              "bpy.ops.scene.view_layer_add_lightgroup",
+              7.805055585659375
+            ],
+            [
+              "bpy.ops.grease_pencil.layer_group_color_tag",
+              7.660842243749785
+            ],
+            [
+              "bpy.ops.grease_pencil.layer_move",
+              7.660842243749785
+            ],
+            [
+              "bpy.ops.mask.layer_remove",
+              7.622151381517999
+            ]
+          ]
+        },
+        {
+          "query": "remove grease pencil",
+          "query_tokens": [
+            "remove",
+            "grease",
+            "pencil"
+          ],
+          "correct_rank": 5,
+          "top_5": [
+            [
+              "bpy.ops.grease_pencil.layer_mask_remove",
+              9.737026229574035
+            ],
+            [
+              "bpy.ops.grease_pencil.layer_remove",
+              9.538803290861715
+            ],
+            [
+              "bpy.ops.grease_pencil.delete_breakdown",
+              8.657565043871616
+            ],
+            [
+              "bpy.ops.grease_pencil.clean_loose",
+              8.061740682269528
+            ],
+            [
+              "bpy.ops.grease_pencil.layer_group_remove",
+              8.061740682269528
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "api_id": "bpy.ops.grease_pencil.layer_hide",
+      "queries": [
+        "Hide selected/unselected Grease Pencil layers",
+        "layer hide",
+        "hide selected/unselected grease"
+      ],
+      "query_results": [
+        {
+          "query": "Hide selected/unselected Grease Pencil layers",
+          "query_tokens": [
+            "hide",
+            "selected",
+            "unselected",
+            "grease",
+            "pencil",
+            "layers"
+          ],
+          "correct_rank": 1,
+          "top_5": [
+            [
+              "bpy.ops.grease_pencil.layer_hide",
+              21.462143955147663
+            ],
+            [
+              "bpy.ops.mask.hide_view_set",
+              15.136489142131719
+            ],
+            [
+              "bpy.ops.grease_pencil.layer_reveal",
+              12.175094055489957
+            ],
+            [
+              "bpy.ops.grease_pencil.material_lock_unselected",
+              11.743686957137461
+            ],
+            [
+              "bpy.ops.grease_pencil.active_frame_delete",
+              11.48751521783476
+            ]
+          ]
+        },
+        {
+          "query": "layer hide",
+          "query_tokens": [
+            "layer",
+            "hide"
+          ],
+          "correct_rank": 2,
+          "top_5": [
+            [
+              "bpy.ops.outliner.collection_hide",
+              8.131979919922152
+            ],
+            [
+              "bpy.ops.grease_pencil.layer_hide",
+              7.819941101481474
+            ],
+            [
+              "bpy.ops.cachefile.layer_add",
+              4.963223049128452
+            ],
+            [
+              "bpy.ops.mask.layer_remove",
+              4.544733278387353
+            ],
+            [
+              "bpy.ops.node.cryptomatte_layer_remove",
+              4.35183939981838
+            ]
+          ]
+        },
+        {
+          "query": "hide selected/unselected grease",
+          "query_tokens": [
+            "hide",
+            "selected",
+            "unselected",
+            "grease"
+          ],
+          "correct_rank": 1,
+          "top_5": [
+            [
+              "bpy.ops.grease_pencil.layer_hide",
+              12.917057746955013
+            ],
+            [
+              "bpy.ops.clip.hide_tracks",
+              10.789236801536664
+            ],
+            [
+              "bpy.ops.particle.hide",
+              10.565028988454642
+            ],
+            [
+              "bpy.ops.uv.hide",
+              10.349949862210577
+            ],
+            [
+              "bpy.ops.curve.hide",
+              10.14345303032826
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "api_id": "bpy.ops.grease_pencil.layer_isolate",
+      "queries": [
+        "Make only active layer visible/editable",
+        "layer isolate",
+        "make only active"
+      ],
+      "query_results": [
+        {
+          "query": "Make only active layer visible/editable",
+          "query_tokens": [
+            "make",
+            "only",
+            "active",
+            "layer",
+            "visible",
+            "editable"
+          ],
+          "correct_rank": 1,
+          "top_5": [
+            [
+              "bpy.ops.grease_pencil.layer_isolate",
+              21.802547676089052
+            ],
+            [
+              "bpy.ops.file.smoothscroll",
+              15.486097084828339
+            ],
+            [
+              "bpy.ops.grease_pencil.material_isolate",
+              12.820790469810028
+            ],
+            [
+              "bpy.ops.grease_pencil.layer_duplicate_object",
+              10.526877320880777
+            ],
+            [
+              "bpy.ops.grease_pencil.layer_duplicate",
+              8.615681236722407
+            ]
+          ]
+        },
+        {
+          "query": "layer isolate",
+          "query_tokens": [
+            "layer",
+            "isolate"
+          ],
+          "correct_rank": 1,
+          "top_5": [
+            [
+              "bpy.ops.grease_pencil.layer_isolate",
+              9.240664643639782
+            ],
+            [
+              "bpy.ops.armature.separate",
+              6.8498508249522425
+            ],
+            [
+              "bpy.ops.outliner.collection_isolate",
+              5.751367055491976
+            ],
+            [
+              "bpy.ops.object.isolate_type_render",
+              5.650680661778353
+            ],
+            [
+              "bpy.ops.nla.tweakmode_exit",
+              5.280881347377611
+            ]
+          ]
+        },
+        {
+          "query": "make only active",
+          "query_tokens": [
+            "make",
+            "only",
+            "active"
+          ],
+          "correct_rank": 1,
+          "top_5": [
+            [
+              "bpy.ops.grease_pencil.layer_isolate",
+              8.04262695429236
+            ],
+            [
+              "bpy.ops.grease_pencil.layer_duplicate_object",
+              7.278137964909702
+            ],
+            [
+              "bpy.ops.wm.read_factory_userpref",
+              5.999945462179614
+            ],
+            [
+              "bpy.ops.text.make_internal",
+              5.909395999952197
+            ],
+            [
+              "bpy.ops.object.vertex_group_copy",
+              5.5556923873046875
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "api_id": "bpy.ops.grease_pencil.layer_lock_all",
+      "queries": [
+        "Lock all Grease Pencil layers to prevent them from being accidentally modified",
+        "Lock all Grease Pencil layers",
+        "layer lock all",
+        "lock grease pencil"
+      ],
+      "query_results": [
+        {
+          "query": "Lock all Grease Pencil layers to prevent them from being accidentally modified",
+          "query_tokens": [
+            "lock",
+            "all",
+            "grease",
+            "pencil",
+            "layers",
+            "to",
+            "prevent",
+            "them",
+            "from",
+            "being",
+            "accidentally",
+            "modified"
+          ],
+          "correct_rank": 1,
+          "top_5": [
+            [
+              "bpy.ops.grease_pencil.layer_lock_all",
+              47.181579687177106
+            ],
+            [
+              "bpy.ops.grease_pencil.material_lock_all",
+              43.86434062919448
+            ],
+            [
+              "bpy.ops.grease_pencil.layer_reveal",
+              14.369258253891488
+            ],
+            [
+              "bpy.ops.grease_pencil.active_frame_delete",
+              13.55776572306188
+            ],
+            [
+              "bpy.ops.grease_pencil.insert_blank_frame",
+              12.181845484491703
+            ]
+          ]
+        },
+        {
+          "query": "Lock all Grease Pencil layers",
+          "query_tokens": [
+            "lock",
+            "all",
+            "grease",
+            "pencil",
+            "layers"
+          ],
+          "correct_rank": 1,
+          "top_5": [
+            [
+              "bpy.ops.grease_pencil.layer_lock_all",
+              16.986597274897058
+            ],
+            [
+              "bpy.ops.grease_pencil.layer_reveal",
+              14.369258253891488
+            ],
+            [
+              "bpy.ops.grease_pencil.active_frame_delete",
+              13.55776572306188
+            ],
+            [
+              "bpy.ops.grease_pencil.material_lock_all",
+              12.593302403708407
+            ],
+            [
+              "bpy.ops.grease_pencil.insert_blank_frame",
+              12.181845484491703
+            ]
+          ]
+        },
+        {
+          "query": "layer lock all",
+          "query_tokens": [
+            "layer",
+            "lock",
+            "all"
+          ],
+          "correct_rank": 1,
+          "top_5": [
+            [
+              "bpy.ops.grease_pencil.layer_lock_all",
+              10.015530553731502
+            ],
+            [
+              "bpy.ops.view3d.view_lock_clear",
+              7.835422004649797
+            ],
+            [
+              "bpy.ops.extensions.repo_lock_all",
+              7.522765452306731
+            ],
+            [
+              "bpy.ops.grease_pencil.material_lock_all",
+              6.718501149137474
+            ],
+            [
+              "bpy.ops.grease_pencil.layer_reveal",
+              6.285526670055005
+            ]
+          ]
+        },
+        {
+          "query": "lock grease pencil",
+          "query_tokens": [
+            "lock",
+            "grease",
+            "pencil"
+          ],
+          "correct_rank": 4,
+          "top_5": [
+            [
+              "bpy.ops.grease_pencil.material_lock_unused",
+              11.234248722876892
+            ],
+            [
+              "bpy.ops.grease_pencil.material_lock_unselected",
+              11.026674473803464
+            ],
+            [
+              "bpy.ops.grease_pencil.material_lock_all",
+              10.633717888968983
+            ],
+            [
+              "bpy.ops.grease_pencil.layer_lock_all",
+              10.26780506356454
+            ],
+            [
+              "bpy.ops.grease_pencil.vertex_group_normalize_all",
+              9.307023696471443
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "api_id": "bpy.ops.grease_pencil.layer_mask_add",
+      "queries": [
+        "Add new layer as masking",
+        "layer mask add",
+        "layer masking"
+      ],
+      "query_results": [
+        {
+          "query": "Add new layer as masking",
+          "query_tokens": [
+            "add",
+            "new",
+            "layer",
+            "as",
+            "masking"
+          ],
+          "correct_rank": 1,
+          "top_5": [
+            [
+              "bpy.ops.grease_pencil.layer_mask_add",
+              18.05411597248276
+            ],
+            [
+              "bpy.ops.mask.layer_new",
+              15.964589238792083
+            ],
+            [
+              "bpy.ops.outliner.collection_holdout_clear",
+              10.539197998336249
+            ],
+            [
+              "bpy.ops.node.cryptomatte_layer_add",
+              9.066832616530665
+            ],
+            [
+              "bpy.ops.scene.view_layer_add",
+              8.885935874474278
+            ]
+          ]
+        },
+        {
+          "query": "layer mask add",
+          "query_tokens": [
+            "layer",
+            "mask",
+            "add"
+          ],
+          "correct_rank": 2,
+          "top_5": [
+            [
+              "bpy.ops.mask.layer_new",
+              10.508492240031174
+            ],
+            [
+              "bpy.ops.grease_pencil.layer_mask_add",
+              9.731834204616122
+            ],
+            [
+              "bpy.ops.mask.layer_remove",
+              9.168413452283058
+            ],
+            [
+              "bpy.ops.grease_pencil.relative_layer_mask_add",
+              8.908798664563731
+            ],
+            [
+              "bpy.ops.grease_pencil.layer_mask_remove",
+              8.596835508250333
+            ]
+          ]
+        },
+        {
+          "query": "layer masking",
+          "query_tokens": [
+            "layer",
+            "masking"
+          ],
+          "correct_rank": 3,
+          "top_5": [
+            [
+              "bpy.ops.mask.layer_new",
+              11.170015835971277
+            ],
+            [
+              "bpy.ops.outliner.collection_holdout_clear",
+              10.539197998336249
+            ],
+            [
+              "bpy.ops.grease_pencil.layer_mask_add",
+              10.344466141822696
+            ],
+            [
+              "bpy.ops.mesh.customdata_mask_clear",
+              6.807032596226432
+            ],
+            [
+              "bpy.ops.curves.set_selection_domain",
+              6.321869406141349
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "api_id": "bpy.ops.grease_pencil.layer_mask_remove",
+      "queries": [
+        "Remove Layer Mask",
+        "layer mask remove",
+        "remove layer mask"
+      ],
+      "query_results": [
+        {
+          "query": "Remove Layer Mask",
+          "query_tokens": [
+            "remove",
+            "layer",
+            "mask"
+          ],
+          "correct_rank": 2,
+          "top_5": [
+            [
+              "bpy.ops.mask.layer_remove",
+              12.245831555413705
+            ],
+            [
+              "bpy.ops.grease_pencil.layer_mask_remove",
+              11.48240097281149
+            ],
+            [
+              "bpy.ops.mask.shape_key_clear",
+              10.024228148660946
+            ],
+            [
+              "bpy.ops.mask.layer_new",
+              8.253796301239538
+            ],
+            [
+              "bpy.ops.outliner.collection_holdout_set",
+              7.9370831673102185
+            ]
+          ]
+        },
+        {
+          "query": "layer mask remove",
+          "query_tokens": [
+            "layer",
+            "mask",
+            "remove"
+          ],
+          "correct_rank": 2,
+          "top_5": [
+            [
+              "bpy.ops.mask.layer_remove",
+              12.245831555413705
+            ],
+            [
+              "bpy.ops.grease_pencil.layer_mask_remove",
+              11.48240097281149
+            ],
+            [
+              "bpy.ops.mask.shape_key_clear",
+              10.024228148660946
+            ],
+            [
+              "bpy.ops.mask.layer_new",
+              8.253796301239538
+            ],
+            [
+              "bpy.ops.outliner.collection_holdout_set",
+              7.9370831673102185
+            ]
+          ]
+        },
+        {
+          "query": "remove layer mask",
+          "query_tokens": [
+            "remove",
+            "layer",
+            "mask"
+          ],
+          "correct_rank": 2,
+          "top_5": [
+            [
+              "bpy.ops.mask.layer_remove",
+              12.245831555413705
+            ],
+            [
+              "bpy.ops.grease_pencil.layer_mask_remove",
+              11.48240097281149
+            ],
+            [
+              "bpy.ops.mask.shape_key_clear",
+              10.024228148660946
+            ],
+            [
+              "bpy.ops.mask.layer_new",
+              8.253796301239538
+            ],
+            [
+              "bpy.ops.outliner.collection_holdout_set",
+              7.9370831673102185
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "api_id": "bpy.ops.grease_pencil.layer_mask_reorder",
+      "queries": [
+        "Reorder the active Grease Pencil mask layer up/down in the list",
+        "Reorder the active Grease Pencil",
+        "layer mask reorder",
+        "reorder active grease"
+      ],
+      "query_results": [
+        {
+          "query": "Reorder the active Grease Pencil mask layer up/down in the list",
+          "query_tokens": [
+            "reorder",
+            "the",
+            "active",
+            "grease",
+            "pencil",
+            "mask",
+            "layer",
+            "up",
+            "down",
+            "in",
+            "list"
+          ],
+          "correct_rank": 1,
+          "top_5": [
+            [
+              "bpy.ops.grease_pencil.layer_mask_reorder",
+              36.08650343429658
+            ],
+            [
+              "bpy.ops.mask.layer_move",
+              24.743795572104073
+            ],
+            [
+              "bpy.ops.gpencil.layer_annotation_move",
+              20.816431911283807
+            ],
+            [
+              "bpy.ops.cachefile.layer_move",
+              17.800606293285522
+            ],
+            [
+              "bpy.ops.grease_pencil.layer_move",
+              17.707294569861748
+            ]
+          ]
+        },
+        {
+          "query": "Reorder the active Grease Pencil",
+          "query_tokens": [
+            "reorder",
+            "the",
+            "active",
+            "grease",
+            "pencil"
+          ],
+          "correct_rank": 1,
+          "top_5": [
+            [
+              "bpy.ops.grease_pencil.layer_mask_reorder",
+              15.815278617414066
+            ],
+            [
+              "bpy.ops.grease_pencil.reorder",
+              14.02502948462186
+            ],
+            [
+              "bpy.ops.grease_pencil.layer_remove",
+              10.723407101276214
+            ],
+            [
+              "bpy.ops.grease_pencil.layer_active",
+              10.509459244245248
+            ],
+            [
+              "bpy.ops.grease_pencil.set_active_material",
+              10.106192232113205
+            ]
+          ]
+        },
+        {
+          "query": "layer mask reorder",
+          "query_tokens": [
+            "layer",
+            "mask",
+            "reorder"
+          ],
+          "correct_rank": 1,
+          "top_5": [
+            [
+              "bpy.ops.grease_pencil.layer_mask_reorder",
+              13.764223603889963
+            ],
+            [
+              "bpy.ops.mask.layer_remove",
+              9.168413452283058
+            ],
+            [
+              "bpy.ops.grease_pencil.layer_mask_remove",
+              8.596835508250333
+            ],
+            [
+              "bpy.ops.mask.layer_new",
+              8.253796301239538
+            ],
+            [
+              "bpy.ops.outliner.collection_holdout_set",
+              7.9370831673102185
+            ]
+          ]
+        },
+        {
+          "query": "reorder active grease",
+          "query_tokens": [
+            "reorder",
+            "active",
+            "grease"
+          ],
+          "correct_rank": 1,
+          "top_5": [
+            [
+              "bpy.ops.grease_pencil.layer_mask_reorder",
+              11.040056484897626
+            ],
+            [
+              "bpy.ops.grease_pencil.reorder",
+              9.249807352105421
+            ],
+            [
+              "bpy.ops.spreadsheet.reorder_columns",
+              7.023642631990181
+            ],
+            [
+              "bpy.ops.workspace.reorder_to_back",
+              6.7488607865817
+            ],
+            [
+              "bpy.ops.workspace.reorder_to_front",
+              6.7488607865817
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "api_id": "bpy.ops.grease_pencil.layer_merge",
+      "queries": [
+        "Combine layers based on the mode into one layer",
+        "Combine layers based on the",
+        "layer merge",
+        "combine layers based"
+      ],
+      "query_results": [
+        {
+          "query": "Combine layers based on the mode into one layer",
+          "query_tokens": [
+            "combine",
+            "layers",
+            "based",
+            "on",
+            "the",
+            "mode",
+            "into",
+            "one",
+            "layer"
+          ],
+          "correct_rank": 1,
+          "top_5": [
+            [
+              "bpy.ops.grease_pencil.layer_merge",
+              31.85458409341593
+            ],
+            [
+              "bpy.ops.cycles.merge_images",
+              13.8481475168077
+            ],
+            [
+              "bpy.ops.object.voxel_remesh",
+              12.21024692532018
+            ],
+            [
+              "bpy.ops.mesh.select_loose",
+              11.588505991200186
+            ],
+            [
+              "bpy.ops.grease_pencil.layer_reveal",
+              9.68838934578584
+            ]
+          ]
+        },
+        {
+          "query": "Combine layers based on the",
+          "query_tokens": [
+            "combine",
+            "layers",
+            "based",
+            "on",
+            "the"
+          ],
+          "correct_rank": 1,
+          "top_5": [
+            [
+              "bpy.ops.grease_pencil.layer_merge",
+              18.62438187252686
+            ],
+            [
+              "bpy.ops.object.voxel_remesh",
+              12.21024692532018
+            ],
+            [
+              "bpy.ops.outliner.highlight_update",
+              8.936370064361013
+            ],
+            [
+              "bpy.ops.mesh.select_by_attribute",
+              8.936370064361013
+            ],
+            [
+              "bpy.ops.mesh.select_loose",
+              8.936370064361013
+            ]
+          ]
+        },
+        {
+          "query": "layer merge",
+          "query_tokens": [
+            "layer",
+            "merge"
+          ],
+          "correct_rank": 1,
+          "top_5": [
+            [
+              "bpy.ops.grease_pencil.layer_merge",
+              7.985975375116893
+            ],
+            [
+              "bpy.ops.cycles.merge_images",
+              6.546494109415185
+            ],
+            [
+              "bpy.ops.mesh.merge_normals",
+              5.437079034992728
+            ],
+            [
+              "bpy.ops.sculpt.symmetrize",
+              4.934776822498861
+            ],
+            [
+              "bpy.ops.mesh.merge",
+              4.845251526067837
+            ]
+          ]
+        },
+        {
+          "query": "combine layers based",
+          "query_tokens": [
+            "combine",
+            "layers",
+            "based"
+          ],
+          "correct_rank": 1,
+          "top_5": [
+            [
+              "bpy.ops.grease_pencil.layer_merge",
+              14.86471171876958
+            ],
+            [
+              "bpy.ops.object.voxel_remesh",
+              8.57359942391668
+            ],
+            [
+              "bpy.ops.node.combine_bundle_item_remove",
+              7.372852003122981
+            ],
+            [
+              "bpy.ops.node.combine_bundle_item_add",
+              7.222758087763981
+            ],
+            [
+              "bpy.ops.node.combine_bundle_item_move",
+              6.940186365328204
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "api_id": "bpy.ops.grease_pencil.layer_move",
+      "queries": [
+        "Move the active Grease Pencil layer or Group",
+        "Move the active Grease Pencil",
+        "layer move",
+        "move active grease"
+      ],
+      "query_results": [
+        {
+          "query": "Move the active Grease Pencil layer or Group",
+          "query_tokens": [
+            "move",
+            "the",
+            "active",
+            "grease",
+            "pencil",
+            "layer",
+            "or",
+            "group"
+          ],
+          "correct_rank": 1,
+          "top_5": [
+            [
+              "bpy.ops.grease_pencil.layer_move",
+              22.998991002467132
+            ],
+            [
+              "bpy.ops.grease_pencil.layer_group_add",
+              16.773718857314083
+            ],
+            [
+              "bpy.ops.grease_pencil.layer_group_remove",
+              16.19652479182297
+            ],
+            [
+              "bpy.ops.grease_pencil.layer_remove",
+              14.898060084154277
+            ],
+            [
+              "bpy.ops.grease_pencil.layer_active",
+              14.600821715898721
+            ]
+          ]
+        },
+        {
+          "query": "Move the active Grease Pencil",
+          "query_tokens": [
+            "move",
+            "the",
+            "active",
+            "grease",
+            "pencil"
+          ],
+          "correct_rank": 1,
+          "top_5": [
+            [
+              "bpy.ops.grease_pencil.layer_move",
+              12.657404289592018
+            ],
+            [
+              "bpy.ops.object.grease_pencil_dash_modifier_segment_move",
+              11.207804765223502
+            ],
+            [
+              "bpy.ops.object.grease_pencil_time_modifier_segment_move",
+              11.207804765223502
+            ],
+            [
+              "bpy.ops.grease_pencil.layer_remove",
+              10.723407101276214
+            ],
+            [
+              "bpy.ops.grease_pencil.layer_active",
+              10.509459244245248
+            ]
+          ]
+        },
+        {
+          "query": "layer move",
+          "query_tokens": [
+            "layer",
+            "move"
+          ],
+          "correct_rank": 3,
+          "top_5": [
+            [
+              "bpy.ops.mask.layer_move",
+              6.840036781342075
+            ],
+            [
+              "bpy.ops.gpencil.layer_annotation_move",
+              6.840036781342075
+            ],
+            [
+              "bpy.ops.grease_pencil.layer_move",
+              6.713654009022777
+            ],
+            [
+              "bpy.ops.grease_pencil.move_to_layer",
+              6.145870409665937
+            ],
+            [
+              "bpy.ops.cachefile.layer_move",
+              5.849071651432367
+            ]
+          ]
+        },
+        {
+          "query": "move active grease",
+          "query_tokens": [
+            "move",
+            "active",
+            "grease"
+          ],
+          "correct_rank": 1,
+          "top_5": [
+            [
+              "bpy.ops.grease_pencil.layer_move",
+              7.793950787736437
+            ],
+            [
+              "bpy.ops.object.grease_pencil_dash_modifier_segment_move",
+              6.901342232588632
+            ],
+            [
+              "bpy.ops.object.grease_pencil_time_modifier_segment_move",
+              6.901342232588632
+            ],
+            [
+              "bpy.ops.grease_pencil.extrude_move",
+              5.559717671226879
+            ],
+            [
+              "bpy.ops.grease_pencil.move_to_layer",
+              5.465678970199551
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "api_id": "bpy.ops.grease_pencil.layer_remove",
+      "queries": [
+        "Remove the active Grease Pencil layer",
+        "Remove the active Grease Pencil",
+        "layer remove",
+        "remove active grease"
+      ],
+      "query_results": [
+        {
+          "query": "Remove the active Grease Pencil layer",
+          "query_tokens": [
+            "remove",
+            "the",
+            "active",
+            "grease",
+            "pencil",
+            "layer"
+          ],
+          "correct_rank": 1,
+          "top_5": [
+            [
+              "bpy.ops.grease_pencil.layer_remove",
+              17.72488222680727
+            ],
+            [
+              "bpy.ops.grease_pencil.layer_group_remove",
+              14.980223386426456
+            ],
+            [
+              "bpy.ops.grease_pencil.layer_active",
+              14.600821715898721
+            ],
+            [
+              "bpy.ops.grease_pencil.layer_mask_remove",
+              13.998431392692885
+            ],
+            [
+              "bpy.ops.grease_pencil.layer_move",
+              13.521709199060465
+            ]
+          ]
+        },
+        {
+          "query": "Remove the active Grease Pencil",
+          "query_tokens": [
+            "remove",
+            "the",
+            "active",
+            "grease",
+            "pencil"
+          ],
+          "correct_rank": 1,
+          "top_5": [
+            [
+              "bpy.ops.grease_pencil.layer_remove",
+              13.550229243929207
+            ],
+            [
+              "bpy.ops.grease_pencil.layer_group_remove",
+              11.452006191857848
+            ],
+            [
+              "bpy.ops.object.grease_pencil_dash_modifier_segment_remove",
+              11.258303588574112
+            ],
+            [
+              "bpy.ops.object.grease_pencil_time_modifier_segment_remove",
+              11.258303588574112
+            ],
+            [
+              "bpy.ops.grease_pencil.remove_fill_guides",
+              10.714613223796807
+            ]
+          ]
+        },
+        {
+          "query": "layer remove",
+          "query_tokens": [
+            "layer",
+            "remove"
+          ],
+          "correct_rank": 8,
+          "top_5": [
+            [
+              "bpy.ops.mask.layer_remove",
+              7.622151381517999
+            ],
+            [
+              "bpy.ops.node.cryptomatte_layer_remove",
+              7.298641451900618
+            ],
+            [
+              "bpy.ops.gpencil.layer_annotation_remove",
+              7.298641451900618
+            ],
+            [
+              "bpy.ops.grease_pencil.layer_mask_remove",
+              7.146970627680007
+            ],
+            [
+              "bpy.ops.scene.view_layer_remove",
+              7.146970627680007
+            ]
+          ]
+        },
+        {
+          "query": "remove active grease",
+          "query_tokens": [
+            "remove",
+            "active",
+            "grease"
+          ],
+          "correct_rank": 1,
+          "top_5": [
+            [
+              "bpy.ops.grease_pencil.layer_remove",
+              8.19173340435225
+            ],
+            [
+              "bpy.ops.grease_pencil.layer_group_remove",
+              6.923261590627364
+            ],
+            [
+              "bpy.ops.object.grease_pencil_dash_modifier_segment_remove",
+              6.806159506429028
+            ],
+            [
+              "bpy.ops.object.grease_pencil_time_modifier_segment_remove",
+              6.806159506429028
+            ],
+            [
+              "bpy.ops.grease_pencil.remove_fill_guides",
+              6.477473810962575
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "api_id": "bpy.ops.grease_pencil.layer_reveal",
+      "queries": [
+        "Show all Grease Pencil layers",
+        "layer reveal",
+        "show grease pencil"
+      ],
+      "query_results": [
+        {
+          "query": "Show all Grease Pencil layers",
+          "query_tokens": [
+            "show",
+            "all",
+            "grease",
+            "pencil",
+            "layers"
+          ],
+          "correct_rank": 1,
+          "top_5": [
+            [
+              "bpy.ops.grease_pencil.layer_reveal",
+              18.866014224971728
+            ],
+            [
+              "bpy.ops.grease_pencil.active_frame_delete",
+              13.55776572306188
+            ],
+            [
+              "bpy.ops.grease_pencil.layer_lock_all",
+              12.391437912390078
+            ],
+            [
+              "bpy.ops.grease_pencil.insert_blank_frame",
+              12.181845484491703
+            ],
+            [
+              "bpy.ops.grease_pencil.layer_hide",
+              11.707913614700624
+            ]
+          ]
+        },
+        {
+          "query": "layer reveal",
+          "query_tokens": [
+            "layer",
+            "reveal"
+          ],
+          "correct_rank": 1,
+          "top_5": [
+            [
+              "bpy.ops.grease_pencil.layer_reveal",
+              10.036053409011004
+            ],
+            [
+              "bpy.ops.curve.reveal",
+              6.323160174679067
+            ],
+            [
+              "bpy.ops.uv.reveal",
+              6.323160174679067
+            ],
+            [
+              "bpy.ops.particle.reveal",
+              6.323160174679067
+            ],
+            [
+              "bpy.ops.pose.reveal",
+              6.065710854481762
+            ]
+          ]
+        },
+        {
+          "query": "show grease pencil",
+          "query_tokens": [
+            "show",
+            "grease",
+            "pencil"
+          ],
+          "correct_rank": 1,
+          "top_5": [
+            [
+              "bpy.ops.grease_pencil.layer_reveal",
+              11.07482315243783
+            ],
+            [
+              "bpy.ops.grease_pencil.duplicate",
+              6.851460765012878
+            ],
+            [
+              "bpy.ops.grease_pencil.extrude",
+              6.851460765012878
+            ],
+            [
+              "bpy.ops.grease_pencil.layer_mask_remove",
+              6.851460765012878
+            ],
+            [
+              "bpy.ops.grease_pencil.delete",
+              6.711981148208721
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "api_id": "bpy.ops.grease_pencil.material_copy_to_object",
+      "queries": [
+        "Append Materials of the active Grease Pencil to other object",
+        "Append Materials of the active",
+        "material copy to object",
+        "append materials active"
+      ],
+      "query_results": [
+        {
+          "query": "Append Materials of the active Grease Pencil to other object",
+          "query_tokens": [
+            "append",
+            "materials",
+            "of",
+            "the",
+            "active",
+            "grease",
+            "pencil",
+            "to",
+            "other",
+            "object"
+          ],
+          "correct_rank": 1,
+          "top_5": [
+            [
+              "bpy.ops.grease_pencil.material_copy_to_object",
+              28.230324824646615
+            ],
+            [
+              "bpy.ops.grease_pencil.material_hide",
+              15.993610082944524
+            ],
+            [
+              "bpy.ops.grease_pencil.material_reveal",
+              12.448316102667343
+            ],
+            [
+              "bpy.ops.grease_pencil.layer_add",
+              12.250803838614054
+            ],
+            [
+              "bpy.ops.grease_pencil.layer_group_add",
+              12.032513453360739
+            ]
+          ]
+        },
+        {
+          "query": "Append Materials of the active",
+          "query_tokens": [
+            "append",
+            "materials",
+            "of",
+            "the",
+            "active"
+          ],
+          "correct_rank": 1,
+          "top_5": [
+            [
+              "bpy.ops.grease_pencil.material_copy_to_object",
+              15.599769283886632
+            ],
+            [
+              "bpy.ops.grease_pencil.material_hide",
+              10.012229880083384
+            ],
+            [
+              "bpy.ops.workspace.append_activate",
+              9.50560448530071
+            ],
+            [
+              "bpy.ops.console.scrollback_append",
+              7.933245661952043
+            ],
+            [
+              "bpy.ops.console.history_append",
+              7.69833000628407
+            ]
+          ]
+        },
+        {
+          "query": "material copy to object",
+          "query_tokens": [
+            "material",
+            "copy",
+            "to",
+            "object"
+          ],
+          "correct_rank": 2,
+          "top_5": [
+            [
+              "bpy.ops.object.material_slot_copy",
+              11.210899713175738
+            ],
+            [
+              "bpy.ops.grease_pencil.material_copy_to_object",
+              9.474916668963823
+            ],
+            [
+              "bpy.ops.material.copy",
+              9.057935517600104
+            ],
+            [
+              "bpy.ops.texture.slot_copy",
+              8.515777822341695
+            ],
+            [
+              "bpy.ops.outliner.material_drop",
+              7.414417377603739
+            ]
+          ]
+        },
+        {
+          "query": "append materials active",
+          "query_tokens": [
+            "append",
+            "materials",
+            "active"
+          ],
+          "correct_rank": 1,
+          "top_5": [
+            [
+              "bpy.ops.grease_pencil.material_copy_to_object",
+              13.07860415842454
+            ],
+            [
+              "bpy.ops.grease_pencil.material_hide",
+              7.353850005103443
+            ],
+            [
+              "bpy.ops.workspace.append_activate",
+              7.184146390657555
+            ],
+            [
+              "bpy.ops.object.material_slot_remove_all",
+              6.372909227639142
+            ],
+            [
+              "bpy.ops.console.scrollback_append",
+              6.211195504460003
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "api_id": "bpy.ops.grease_pencil.material_hide",
+      "queries": [
+        "Hide active/inactive Grease Pencil material(s)",
+        "material hide",
+        "hide active/inactive grease"
+      ],
+      "query_results": [
+        {
+          "query": "Hide active/inactive Grease Pencil material(s)",
+          "query_tokens": [
+            "hide",
+            "active",
+            "inactive",
+            "grease",
+            "pencil",
+            "material"
+          ],
+          "correct_rank": 1,
+          "top_5": [
+            [
+              "bpy.ops.grease_pencil.material_hide",
+              23.620774781313443
+            ],
+            [
+              "bpy.ops.grease_pencil.material_lock_unused",
+              14.543247564366382
+            ],
+            [
+              "bpy.ops.grease_pencil.set_material",
+              13.080963263752746
+            ],
+            [
+              "bpy.ops.grease_pencil.set_active_material",
+              12.82999312111334
+            ],
+            [
+              "bpy.ops.grease_pencil.stroke_material_set",
+              11.706950785029132
+            ]
+          ]
+        },
+        {
+          "query": "material hide",
+          "query_tokens": [
+            "material",
+            "hide"
+          ],
+          "correct_rank": 2,
+          "top_5": [
+            [
+              "bpy.ops.grease_pencil.material_lock_unused",
+              8.336671540774116
+            ],
+            [
+              "bpy.ops.grease_pencil.material_hide",
+              8.034188564225664
+            ],
+            [
+              "bpy.ops.material.new",
+              5.447108200098872
+            ],
+            [
+              "bpy.ops.material.copy",
+              5.100317608658015
+            ],
+            [
+              "bpy.ops.material.paste",
+              5.100317608658015
+            ]
+          ]
+        },
+        {
+          "query": "hide active/inactive grease",
+          "query_tokens": [
+            "hide",
+            "active",
+            "inactive",
+            "grease"
+          ],
+          "correct_rank": 1,
+          "top_5": [
+            [
+              "bpy.ops.grease_pencil.material_hide",
+              16.269994987876643
+            ],
+            [
+              "bpy.ops.grease_pencil.layer_hide",
+              7.0483990348478915
+            ],
+            [
+              "bpy.ops.grease_pencil.material_lock_unused",
+              6.915714775391036
+            ],
+            [
+              "bpy.ops.grease_pencil.layer_remove",
+              5.364911261699257
+            ],
+            [
+              "bpy.ops.object.isolate_type_render",
+              5.273024624218031
+            ]
+          ]
+        }
+      ]
+    }
+  ]
+}

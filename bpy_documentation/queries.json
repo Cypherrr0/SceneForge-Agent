@@ -1,0 +1,846 @@
+{
+  "cases": {
+    "case0": {
+      "description": "创建基础场景设置，包括添加立方体网格、点光源、相机，调整光源亮度、物体位置和相机镜头焦距，创建材质槽并应用到物体，设置平滑着色效果",
+      "operations": {
+        "op1": {
+          "description": "添加立方体网格到场景",
+          "queries": [
+            "ops add cube mesh primitive to scene",
+            "ops create primitive cube object",
+            "ops insert mesh cube geometry"
+          ],
+          "expected_api": "bpy.ops.mesh.primitive_cube_add"
+        },
+        "op2": {
+          "description": "添加点光源到场景",
+          "queries": [
+            "ops add point light to scene",
+            "ops create light object",
+            "ops insert point light source"
+          ],
+          "expected_api": "bpy.ops.object.light_add"
+        },
+        "op3": {
+          "description": "设置点光源的能量强度",
+          "queries": [
+            "types set point light energy value",
+            "types adjust light intensity property",
+            "types configure light power parameter"
+          ],
+          "expected_api": "bpy.types.PointLight.energy"
+        },
+        "op4": {
+          "description": "添加相机到场景",
+          "queries": [
+            "ops add camera to scene",
+            "ops create camera object",
+            "ops insert camera view"
+          ],
+          "expected_api": "bpy.ops.object.camera_add"
+        },
+        "op5": {
+          "description": "设置相机镜头焦距",
+          "queries": [
+            "types set camera lens focal length",
+            "types adjust camera lens property",
+            "types configure camera focal distance"
+          ],
+          "expected_api": "bpy.types.Camera.lens"
+        },
+        "op6": {
+          "description": "设置物体位置坐标",
+          "queries": [
+            "types set object location coordinates",
+            "types adjust object position vector",
+            "types configure object translation"
+          ],
+          "expected_api": "bpy.types.Object.location"
+        },
+        "op7": {
+          "description": "创建材质槽",
+          "queries": [
+            "ops add material slot to object",
+            "ops create material slot",
+            "ops insert material slot"
+          ],
+          "expected_api": "bpy.ops.object.material_slot_add"
+        },
+        "op8": {
+          "description": "设置物体平滑着色",
+          "queries": [
+            "ops set smooth shading on object",
+            "ops apply smooth shade mode",
+            "ops enable smooth surface shading"
+          ],
+          "expected_api": "bpy.ops.object.shade_smooth"
+        }
+      }
+    },
+    "case1": {
+      "description": "创建多个基础几何体并进行变换操作，添加球体、圆柱体、圆锥体到场景，对物体进行移动、旋转和缩放变换，选择所有物体并设置它们的缩放比例",
+      "operations": {
+        "op1": {
+          "description": "添加UV球体到场景",
+          "queries": [
+            "ops add uv sphere mesh to scene",
+            "ops create sphere primitive",
+            "ops insert spherical mesh geometry"
+          ],
+          "expected_api": "bpy.ops.mesh.primitive_uv_sphere_add"
+        },
+        "op2": {
+          "description": "添加圆柱体到场景",
+          "queries": [
+            "ops add cylinder mesh to scene",
+            "ops create cylinder primitive",
+            "ops insert cylindrical mesh geometry"
+          ],
+          "expected_api": "bpy.ops.mesh.primitive_cylinder_add"
+        },
+        "op3": {
+          "description": "添加圆锥体到场景",
+          "queries": [
+            "ops add cone mesh to scene",
+            "ops create cone primitive",
+            "ops insert conical mesh geometry"
+          ],
+          "expected_api": "bpy.ops.mesh.primitive_cone_add"
+        },
+        "op4": {
+          "description": "移动物体位置",
+          "queries": [
+            "ops translate object position",
+            "ops move object location",
+            "ops apply translation transform"
+          ],
+          "expected_api": "bpy.ops.transform.translate"
+        },
+        "op5": {
+          "description": "旋转物体",
+          "queries": [
+            "ops rotate object orientation",
+            "ops apply rotation transform",
+            "ops spin object around axis"
+          ],
+          "expected_api": "bpy.ops.transform.rotate"
+        },
+        "op6": {
+          "description": "缩放物体大小",
+          "queries": [
+            "ops resize object scale",
+            "ops apply scale transform",
+            "ops change object size"
+          ],
+          "expected_api": "bpy.ops.transform.resize"
+        },
+        "op7": {
+          "description": "选择所有物体",
+          "queries": [
+            "ops select all objects in scene",
+            "ops choose all scene objects",
+            "ops pick all items"
+          ],
+          "expected_api": "bpy.ops.object.select_all"
+        },
+        "op8": {
+          "description": "设置物体缩放比例",
+          "queries": [
+            "types set object scale vector",
+            "types adjust object size ratio",
+            "types configure object scale factor"
+          ],
+          "expected_api": "bpy.types.Object.scale"
+        },
+        "op9": {
+          "description": "设置物体旋转角度",
+          "queries": [
+            "types set object rotation euler angles",
+            "types adjust object orientation values",
+            "types configure object rotation degrees"
+          ],
+          "expected_api": "bpy.types.Object.rotation_euler"
+        }
+      }
+    },
+    "case2": {
+      "description": "进入编辑模式进行网格建模操作，切换到编辑模式，进行挤出、倒角、细分和内插面操作，调整法线方向，最后切换回物体模式",
+      "operations": {
+        "op1": {
+          "description": "切换到编辑模式",
+          "queries": [
+            "ops toggle edit mode",
+            "ops switch to edit mode",
+            "ops enable mesh editing mode"
+          ],
+          "expected_api": "bpy.ops.object.editmode_toggle"
+        },
+        "op2": {
+          "description": "挤出区域并移动",
+          "queries": [
+            "ops extrude region and move",
+            "ops extrude mesh selection",
+            "ops push out faces with translation"
+          ],
+          "expected_api": "bpy.ops.mesh.extrude_region_move"
+        },
+        "op3": {
+          "description": "倒角边缘",
+          "queries": [
+            "ops bevel edges",
+            "ops create chamfer on edges",
+            "ops round edge corners"
+          ],
+          "expected_api": "bpy.ops.mesh.bevel"
+        },
+        "op4": {
+          "description": "细分网格",
+          "queries": [
+            "ops subdivide mesh faces",
+            "ops split faces into smaller parts",
+            "ops increase mesh density"
+          ],
+          "expected_api": "bpy.ops.mesh.subdivide"
+        },
+        "op5": {
+          "description": "内插面",
+          "queries": [
+            "ops inset faces",
+            "ops create inner face offset",
+            "ops shrink faces inward"
+          ],
+          "expected_api": "bpy.ops.mesh.inset"
+        },
+        "op6": {
+          "description": "添加循环切割",
+          "queries": [
+            "ops add loop cut and slide",
+            "ops insert edge loop",
+            "ops create loop subdivision"
+          ],
+          "expected_api": "bpy.ops.mesh.loopcut_slide"
+        },
+        "op7": {
+          "description": "使法线方向一致",
+          "queries": [
+            "ops make normals consistent",
+            "ops recalculate face normals",
+            "ops fix normal direction"
+          ],
+          "expected_api": "bpy.ops.mesh.normals_make_consistent"
+        },
+        "op8": {
+          "description": "展开UV贴图",
+          "queries": [
+            "ops unwrap UV coordinates",
+            "ops create UV mapping",
+            "ops flatten mesh to UV space"
+          ],
+          "expected_api": "bpy.ops.uv.unwrap"
+        },
+        "op9": {
+          "description": "设置物体模式",
+          "queries": [
+            "ops set object mode",
+            "ops switch to object mode",
+            "ops change edit mode state"
+          ],
+          "expected_api": "bpy.ops.object.mode_set"
+        }
+      }
+    },
+    "case3": {
+      "description": "创建动画关键帧序列，设置场景起始和结束帧，设置当前帧位置，插入位置和旋转关键帧，删除不需要的关键帧，创建新动作数据块",
+      "operations": {
+        "op1": {
+          "description": "设置场景起始帧",
+          "queries": [
+            "types set scene start frame number",
+            "types configure animation begin frame",
+            "types adjust timeline start point"
+          ],
+          "expected_api": "bpy.types.Scene.frame_start"
+        },
+        "op2": {
+          "description": "设置场景结束帧",
+          "queries": [
+            "types set scene end frame number",
+            "types configure animation finish frame",
+            "types adjust timeline end point"
+          ],
+          "expected_api": "bpy.types.Scene.frame_end"
+        },
+        "op3": {
+          "description": "设置当前帧位置",
+          "queries": [
+            "types set scene current frame",
+            "types move timeline cursor position",
+            "types adjust active frame number"
+          ],
+          "expected_api": "bpy.types.Scene.frame_current"
+        },
+        "op4": {
+          "description": "插入关键帧",
+          "queries": [
+            "ops insert keyframe for property",
+            "ops add animation key",
+            "ops record keyframe value"
+          ],
+          "expected_api": "bpy.ops.anim.keyframe_insert"
+        },
+        "op5": {
+          "description": "删除关键帧",
+          "queries": [
+            "ops delete keyframe",
+            "ops remove animation key",
+            "ops clear keyframe data"
+          ],
+          "expected_api": "bpy.ops.anim.keyframe_delete"
+        },
+        "op6": {
+          "description": "创建新动作",
+          "queries": [
+            "ops create new action datablock",
+            "ops add action for animation",
+            "ops generate new animation action"
+          ],
+          "expected_api": "bpy.ops.action.new"
+        },
+        "op7": {
+          "description": "清除物体位置",
+          "queries": [
+            "ops clear object location",
+            "ops reset position to origin",
+            "ops remove location transform"
+          ],
+          "expected_api": "bpy.ops.object.location_clear"
+        },
+        "op8": {
+          "description": "清除物体旋转",
+          "queries": [
+            "ops clear object rotation",
+            "ops reset rotation to zero",
+            "ops remove rotation transform"
+          ],
+          "expected_api": "bpy.ops.object.rotation_clear"
+        },
+        "op9": {
+          "description": "清除物体缩放",
+          "queries": [
+            "ops clear object scale",
+            "ops reset scale to one",
+            "ops remove scale transform"
+          ],
+          "expected_api": "bpy.ops.object.scale_clear"
+        }
+      }
+    },
+    "case4": {
+      "description": "添加修改器和约束系统，为物体添加修改器，添加约束控制器，设置约束目标物体，应用修改器效果，设置修改器名称和视口显示状态",
+      "operations": {
+        "op1": {
+          "description": "添加修改器到物体",
+          "queries": [
+            "ops add modifier to object",
+            "ops create object modifier",
+            "ops insert modifier effect"
+          ],
+          "expected_api": "bpy.ops.object.modifier_add"
+        },
+        "op2": {
+          "description": "设置修改器名称",
+          "queries": [
+            "types set modifier name",
+            "types assign modifier identifier",
+            "types configure modifier label"
+          ],
+          "expected_api": "bpy.types.Modifier.name"
+        },
+        "op3": {
+          "description": "设置修改器视口显示",
+          "queries": [
+            "types set modifier viewport visibility",
+            "types toggle modifier display",
+            "types configure modifier show in viewport"
+          ],
+          "expected_api": "bpy.types.Modifier.show_viewport"
+        },
+        "op4": {
+          "description": "应用修改器",
+          "queries": [
+            "ops apply modifier to mesh",
+            "ops bake modifier effect",
+            "ops finalize modifier changes"
+          ],
+          "expected_api": "bpy.ops.object.modifier_apply"
+        },
+        "op5": {
+          "description": "添加约束到物体",
+          "queries": [
+            "ops add constraint to object",
+            "ops create object constraint",
+            "ops insert constraint controller"
+          ],
+          "expected_api": "bpy.ops.object.constraint_add"
+        },
+        "op6": {
+          "description": "设置约束名称",
+          "queries": [
+            "types set constraint name",
+            "types assign constraint identifier",
+            "types configure constraint label"
+          ],
+          "expected_api": "bpy.types.Constraint.name"
+        },
+        "op7": {
+          "description": "设置父子关系",
+          "queries": [
+            "ops set parent for object",
+            "ops create parent-child hierarchy",
+            "ops establish object parenting"
+          ],
+          "expected_api": "bpy.ops.object.parent_set"
+        },
+        "op8": {
+          "description": "设置追踪约束",
+          "queries": [
+            "ops set track to constraint",
+            "ops create tracking relationship",
+            "ops add object following"
+          ],
+          "expected_api": "bpy.ops.object.track_set"
+        }
+      }
+    },
+    "case5": {
+      "description": "创建粒子系统和物理模拟，创建新的粒子系统，添加刚体物理属性，复制物体，合并多个物体，删除选中的物体",
+      "operations": {
+        "op1": {
+          "description": "创建新粒子系统",
+          "queries": [
+            "ops create new particle system",
+            "ops add particle emitter",
+            "ops insert particle settings"
+          ],
+          "expected_api": "bpy.ops.particle.new"
+        },
+        "op2": {
+          "description": "添加刚体物理",
+          "queries": [
+            "ops add rigidbody physics to object",
+            "ops enable rigid body simulation",
+            "ops create physics rigidbody"
+          ],
+          "expected_api": "bpy.ops.rigidbody.object_add"
+        },
+        "op3": {
+          "description": "复制物体",
+          "queries": [
+            "ops duplicate object",
+            "ops copy object instance",
+            "ops clone selected object"
+          ],
+          "expected_api": "bpy.ops.object.duplicate"
+        },
+        "op4": {
+          "description": "合并多个物体",
+          "queries": [
+            "ops join objects together",
+            "ops merge multiple objects",
+            "ops combine objects into one"
+          ],
+          "expected_api": "bpy.ops.object.join"
+        },
+        "op5": {
+          "description": "删除物体",
+          "queries": [
+            "ops delete selected objects",
+            "ops remove objects from scene",
+            "ops erase object data"
+          ],
+          "expected_api": "bpy.ops.object.delete"
+        },
+        "op6": {
+          "description": "分离网格",
+          "queries": [
+            "ops split mesh elements",
+            "ops separate mesh parts",
+            "ops detach mesh components"
+          ],
+          "expected_api": "bpy.ops.mesh.split"
+        },
+        "op7": {
+          "description": "合并网格顶点",
+          "queries": [
+            "ops merge mesh vertices",
+            "ops combine vertex points",
+            "ops weld vertices together"
+          ],
+          "expected_api": "bpy.ops.mesh.merge"
+        },
+        "op8": {
+          "description": "添加空物体",
+          "queries": [
+            "ops add empty object to scene",
+            "ops create null object",
+            "ops insert empty transform"
+          ],
+          "expected_api": "bpy.ops.object.empty_add"
+        },
+        "op9": {
+          "description": "设置物体原点",
+          "queries": [
+            "ops set object origin point",
+            "ops adjust object pivot location",
+            "ops change origin position"
+          ],
+          "expected_api": "bpy.ops.object.origin_set"
+        }
+      }
+    },
+    "case6": {
+      "description": "渲染设置和场景配置，设置渲染引擎，调整渲染分辨率宽度和高度，设置世界环境颜色，执行渲染操作，保存文件",
+      "operations": {
+        "op1": {
+          "description": "设置渲染引擎",
+          "queries": [
+            "types set render engine type",
+            "types configure rendering engine",
+            "types select renderer backend"
+          ],
+          "expected_api": "bpy.types.RenderSettings.engine"
+        },
+        "op2": {
+          "description": "设置渲染水平分辨率",
+          "queries": [
+            "types set render resolution width",
+            "types configure horizontal resolution",
+            "types adjust output image width"
+          ],
+          "expected_api": "bpy.types.RenderSettings.resolution_x"
+        },
+        "op3": {
+          "description": "设置渲染垂直分辨率",
+          "queries": [
+            "types set render resolution height",
+            "types configure vertical resolution",
+            "types adjust output image height"
+          ],
+          "expected_api": "bpy.types.RenderSettings.resolution_y"
+        },
+        "op4": {
+          "description": "设置世界环境颜色",
+          "queries": [
+            "types set world background color",
+            "types configure environment color",
+            "types adjust world color values"
+          ],
+          "expected_api": "bpy.types.World.color"
+        },
+        "op5": {
+          "description": "执行渲染",
+          "queries": [
+            "ops render scene image",
+            "ops execute render process",
+            "ops generate render output"
+          ],
+          "expected_api": "bpy.ops.render.render"
+        },
+        "op6": {
+          "description": "保存Blender文件",
+          "queries": [
+            "ops save blender file as",
+            "ops write blend file to disk",
+            "ops export main project file"
+          ],
+          "expected_api": "bpy.ops.wm.save_as_mainfile"
+        },
+        "op7": {
+          "description": "创建新纹理",
+          "queries": [
+            "ops create new texture datablock",
+            "ops add texture to scene",
+            "ops generate texture data"
+          ],
+          "expected_api": "bpy.ops.texture.new"
+        },
+        "op8": {
+          "description": "创建新图像",
+          "queries": [
+            "ops create new image datablock",
+            "ops generate blank image",
+            "ops add image data"
+          ],
+          "expected_api": "bpy.ops.image.new"
+        }
+      }
+    },
+    "case7": {
+      "description": "节点编辑器操作和材质设置，添加节点到节点树，创建材质数据块，设置材质漫反射颜色，启用材质节点系统",
+      "operations": {
+        "op1": {
+          "description": "创建材质槽",
+          "queries": [
+            "ops add material slot to object",
+            "ops create material slot",
+            "ops insert material channel"
+          ],
+          "expected_api": "bpy.ops.object.material_slot_add"
+        },
+        "op2": {
+          "description": "添加节点到节点树",
+          "queries": [
+            "ops add node to node tree",
+            "ops create shader node",
+            "ops insert node in editor"
+          ],
+          "expected_api": "bpy.ops.node.add_node"
+        },
+        "op3": {
+          "description": "添加点光源",
+          "queries": [
+            "ops add point light to scene",
+            "ops create light source",
+            "ops insert lighting object"
+          ],
+          "expected_api": "bpy.ops.object.light_add"
+        },
+        "op4": {
+          "description": "设置聚光灯能量",
+          "queries": [
+            "types set spotlight energy intensity",
+            "types configure spot light power",
+            "types adjust spotlight brightness"
+          ],
+          "expected_api": "bpy.types.SpotLight.energy"
+        },
+        "op5": {
+          "description": "设置太阳光能量",
+          "queries": [
+            "types set sun light energy intensity",
+            "types configure sun light power",
+            "types adjust sunlight brightness"
+          ],
+          "expected_api": "bpy.types.SunLight.energy"
+        },
+        "op6": {
+          "description": "设置面光源能量",
+          "queries": [
+            "types set area light energy intensity",
+            "types configure area light power",
+            "types adjust area light brightness"
+          ],
+          "expected_api": "bpy.types.AreaLight.energy"
+        },
+        "op7": {
+          "description": "添加立方体网格",
+          "queries": [
+            "ops add cube primitive mesh",
+            "ops create cubic geometry",
+            "ops insert cube object"
+          ],
+          "expected_api": "bpy.ops.mesh.primitive_cube_add"
+        },
+        "op8": {
+          "description": "设置平面着色",
+          "queries": [
+            "ops set flat shading on object",
+            "ops apply flat shade mode",
+            "ops enable faceted shading"
+          ],
+          "expected_api": "bpy.ops.object.shade_flat"
+        },
+        "op9": {
+          "description": "创建集合",
+          "queries": [
+            "ops create new collection",
+            "ops add collection group",
+            "ops generate collection container"
+          ],
+          "expected_api": "bpy.ops.collection.create"
+        }
+      }
+    },
+    "case8": {
+      "description": "曲线和文本对象操作，添加贝塞尔曲线，细分曲线，添加文本对象到场景，进行多重循环选择",
+      "operations": {
+        "op1": {
+          "description": "添加贝塞尔曲线",
+          "queries": [
+            "ops add bezier curve primitive",
+            "ops create bezier curve object",
+            "ops insert curve geometry"
+          ],
+          "expected_api": "bpy.ops.curve.primitive_bezier_curve_add"
+        },
+        "op2": {
+          "description": "细分曲线",
+          "queries": [
+            "ops subdivide curve segments",
+            "ops split curve into more points",
+            "ops increase curve resolution"
+          ],
+          "expected_api": "bpy.ops.curve.subdivide"
+        },
+        "op3": {
+          "description": "添加文本对象",
+          "queries": [
+            "ops add text object to scene",
+            "ops create text geometry",
+            "ops insert text curve"
+          ],
+          "expected_api": "bpy.ops.object.text_add"
+        },
+        "op4": {
+          "description": "进行多重循环选择",
+          "queries": [
+            "ops select multiple edge loops",
+            "ops choose loop selection",
+            "ops pick edge ring pattern"
+          ],
+          "expected_api": "bpy.ops.mesh.loop_multi_select"
+        },
+        "op5": {
+          "description": "分割边",
+          "queries": [
+            "ops split mesh edges",
+            "ops separate edge connections",
+            "ops divide edges apart"
+          ],
+          "expected_api": "bpy.ops.mesh.edge_split"
+        },
+        "op6": {
+          "description": "切换到编辑模式",
+          "queries": [
+            "ops toggle object edit mode",
+            "ops switch to mesh editing",
+            "ops enter edit mode"
+          ],
+          "expected_api": "bpy.ops.object.editmode_toggle"
+        },
+        "op7": {
+          "description": "选择场景中所有物体",
+          "queries": [
+            "ops select all scene objects",
+            "ops choose everything",
+            "ops pick all items in scene"
+          ],
+          "expected_api": "bpy.ops.object.select_all"
+        },
+        "op8": {
+          "description": "添加圆柱体网格",
+          "queries": [
+            "ops add cylinder mesh primitive",
+            "ops create cylindrical geometry",
+            "ops insert cylinder object"
+          ],
+          "expected_api": "bpy.ops.mesh.primitive_cylinder_add"
+        },
+        "op9": {
+          "description": "添加UV球体网格",
+          "queries": [
+            "ops add uv sphere mesh primitive",
+            "ops create spherical geometry",
+            "ops insert sphere object"
+          ],
+          "expected_api": "bpy.ops.mesh.primitive_uv_sphere_add"
+        }
+      }
+    },
+    "case9": {
+      "description": "综合场景编辑操作，包括添加各种几何体，设置变换属性，应用着色效果，管理场景结构和层级关系",
+      "operations": {
+        "op1": {
+          "description": "添加圆锥体网格",
+          "queries": [
+            "ops add cone mesh primitive",
+            "ops create conical geometry",
+            "ops insert cone object"
+          ],
+          "expected_api": "bpy.ops.mesh.primitive_cone_add"
+        },
+        "op2": {
+          "description": "设置物体位置",
+          "queries": [
+            "types set object location vector",
+            "types adjust position coordinates",
+            "types configure object placement"
+          ],
+          "expected_api": "bpy.types.Object.location"
+        },
+        "op3": {
+          "description": "设置物体旋转",
+          "queries": [
+            "types set object rotation euler",
+            "types adjust orientation angles",
+            "types configure object rotation"
+          ],
+          "expected_api": "bpy.types.Object.rotation_euler"
+        },
+        "op4": {
+          "description": "设置物体缩放",
+          "queries": [
+            "types set object scale values",
+            "types adjust size dimensions",
+            "types configure object scaling"
+          ],
+          "expected_api": "bpy.types.Object.scale"
+        },
+        "op5": {
+          "description": "移动变换",
+          "queries": [
+            "ops translate object transform",
+            "ops move object in space",
+            "ops apply translation operation"
+          ],
+          "expected_api": "bpy.ops.transform.translate"
+        },
+        "op6": {
+          "description": "旋转变换",
+          "queries": [
+            "ops rotate object transform",
+            "ops spin object around axis",
+            "ops apply rotation operation"
+          ],
+          "expected_api": "bpy.ops.transform.rotate"
+        },
+        "op7": {
+          "description": "缩放变换",
+          "queries": [
+            "ops resize object transform",
+            "ops scale object dimensions",
+            "ops apply scaling operation"
+          ],
+          "expected_api": "bpy.ops.transform.resize"
+        },
+        "op8": {
+          "description": "设置平滑着色",
+          "queries": [
+            "ops set smooth shading mode",
+            "ops apply smooth surface rendering",
+            "ops enable smooth normals"
+          ],
+          "expected_api": "bpy.ops.object.shade_smooth"
+        },
+        "op9": {
+          "description": "添加相机到场景",
+          "queries": [
+            "ops add camera object",
+            "ops create camera view",
+            "ops insert camera to scene"
+          ],
+          "expected_api": "bpy.ops.object.camera_add"
+        },
+        "op10": {
+          "description": "设置相机焦距",
+          "queries": [
+            "types set camera lens focal length",
+            "types adjust camera lens value",
+            "types configure camera focal distance"
+          ],
+          "expected_api": "bpy.types.Camera.lens"
+        }
+      }
+    }
+  }
+}

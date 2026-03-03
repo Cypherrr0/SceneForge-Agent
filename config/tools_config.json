@@ -1,0 +1,47 @@
+{
+  "tool_system": {
+    "enabled": true,
+    "auto_register": true,
+    "tool_categories": [
+      "scene_management",
+      "import_export",
+      "geometry",
+      "transform",
+      "camera",
+      "lighting",
+      "rendering",
+      "analysis"
+    ],
+    "tool_modules": [
+      "tools.render_tools"
+    ],
+    "custom_tools_path": "custom_tools",
+    "logging": {
+      "enabled": true,
+      "level": "INFO",
+      "file": "logs/tools.log"
+    }
+  },
+  "render_tools": {
+    "default_resolution": {
+      "x": 512,
+      "y": 512
+    },
+    "default_engine": "CYCLES",
+    "default_samples": 128,
+    "multiview_cameras": [
+      "front",
+      "back",
+      "left",
+      "right",
+      "top",
+      "bottom"
+    ]
+  },
+  "tool_registry": {
+    "allow_override": false,
+    "validate_parameters": true,
+    "cache_enabled": true,
+    "max_cache_size": 100
+  }
+}

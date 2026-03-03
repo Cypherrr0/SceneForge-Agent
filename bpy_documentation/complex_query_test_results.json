@@ -1,0 +1,1433 @@
+{
+  "timestamp": "2025-10-26T04:17:17.049417",
+  "overall_metrics": {
+    "bm25_optimized": {
+      "description": "BM25优化版本：启用同义词和查询扩展",
+      "metrics": {
+        "total_operations": 88,
+        "total_queries": 264,
+        "hit_at_1": 54,
+        "hit_at_3": 95,
+        "hit_at_5": 114,
+        "operations_success": 86,
+        "hit_rate_at_1": 0.20454545454545456,
+        "hit_rate_at_3": 0.35984848484848486,
+        "hit_rate_at_5": 0.4318181818181818,
+        "operation_success_rate": 0.9772727272727273,
+        "recall": 0.6628787878787878,
+        "recall_at_5": 0.4318181818181818,
+        "recall_at_3": 0.35984848484848486,
+        "precision": 0.06628787878787878,
+        "f1_score": 0.12052341597796143,
+        "mrr": 0.3056815098427433,
+        "success_rate": 0.6628787878787878
+      },
+      "avg_time_seconds": 0.01520751228125653,
+      "avg_time_milliseconds": 15.20751228125653
+    },
+    "vector_retrieval": {
+      "description": "向量检索：基于sentence-transformers和FAISS",
+      "metrics": {
+        "total_operations": 88,
+        "total_queries": 264,
+        "hit_at_1": 85,
+        "hit_at_3": 123,
+        "hit_at_5": 148,
+        "operations_success": 86,
+        "hit_rate_at_1": 0.32196969696969696,
+        "hit_rate_at_3": 0.4659090909090909,
+        "hit_rate_at_5": 0.5606060606060606,
+        "operation_success_rate": 0.9772727272727273,
+        "recall": 0.8787878787878788,
+        "recall_at_5": 0.5606060606060606,
+        "recall_at_3": 0.4659090909090909,
+        "precision": 0.08787878787878788,
+        "f1_score": 0.15977961432506885,
+        "mrr": 0.4330963878654162,
+        "success_rate": 0.8787878787878788
+      },
+      "avg_time_seconds": 0.005259162592913278,
+      "avg_time_milliseconds": 5.2591625929132775
+    },
+    "fusion_retrieval": {
+      "description": "倒数排名融合：BM25 + 向量检索",
+      "metrics": {
+        "total_operations": 88,
+        "total_queries": 264,
+        "hit_at_1": 90,
+        "hit_at_3": 136,
+        "hit_at_5": 167,
+        "operations_success": 88,
+        "hit_rate_at_1": 0.3409090909090909,
+        "hit_rate_at_3": 0.5151515151515151,
+        "hit_rate_at_5": 0.6325757575757576,
+        "operation_success_rate": 1.0,
+        "recall": 0.9128787878787878,
+        "recall_at_5": 0.6325757575757576,
+        "recall_at_3": 0.5151515151515151,
+        "precision": 0.09128787878787879,
+        "f1_score": 0.1659779614325069,
+        "mrr": 0.4630298782822739,
+        "success_rate": 0.9128787878787878
+      }
+    }
+  },
+  "case_results": {
+    "case0": {
+      "description": "创建基础场景设置，包括添加立方体网格、点光源、相机，调整光源亮度、物体位置和相机镜头焦距，创建材质槽并应用到物体，设置平滑着色效果",
+      "operations": {
+        "op1": {
+          "expected_api": "bpy.ops.mesh.primitive_cube_add",
+          "queries_count": 3,
+          "bm25_success_count": 3,
+          "vector_success_count": 3,
+          "fusion_success_count": 3
+        },
+        "op2": {
+          "expected_api": "bpy.ops.object.light_add",
+          "queries_count": 3,
+          "bm25_success_count": 3,
+          "vector_success_count": 3,
+          "fusion_success_count": 3
+        },
+        "op3": {
+          "expected_api": "bpy.types.PointLight.energy",
+          "queries_count": 3,
+          "bm25_success_count": 2,
+          "vector_success_count": 3,
+          "fusion_success_count": 3
+        },
+        "op4": {
+          "expected_api": "bpy.ops.object.camera_add",
+          "queries_count": 3,
+          "bm25_success_count": 3,
+          "vector_success_count": 3,
+          "fusion_success_count": 3
+        },
+        "op5": {
+          "expected_api": "bpy.types.Camera.lens",
+          "queries_count": 3,
+          "bm25_success_count": 3,
+          "vector_success_count": 3,
+          "fusion_success_count": 3
+        },
+        "op6": {
+          "expected_api": "bpy.types.Object.location",
+          "queries_count": 3,
+          "bm25_success_count": 1,
+          "vector_success_count": 3,
+          "fusion_success_count": 3
+        },
+        "op7": {
+          "expected_api": "bpy.ops.object.material_slot_add",
+          "queries_count": 3,
+          "bm25_success_count": 3,
+          "vector_success_count": 3,
+          "fusion_success_count": 3
+        },
+        "op8": {
+          "expected_api": "bpy.ops.object.shade_smooth",
+          "queries_count": 3,
+          "bm25_success_count": 2,
+          "vector_success_count": 3,
+          "fusion_success_count": 3
+        }
+      },
+      "metrics_comparison": {
+        "bm25": {
+          "metrics": {
+            "total_operations": 8,
+            "total_queries": 24,
+            "hit_at_1": 10,
+            "hit_at_3": 13,
+            "hit_at_5": 16,
+            "operations_success": 8,
+            "hit_rate_at_1": 0.4166666666666667,
+            "hit_rate_at_3": 0.5416666666666666,
+            "hit_rate_at_5": 0.6666666666666666,
+            "operation_success_rate": 1.0,
+            "recall": 0.8333333333333334,
+            "recall_at_5": 0.6666666666666666,
+            "recall_at_3": 0.5416666666666666,
+            "precision": 0.08333333333333333,
+            "f1_score": 0.15151515151515152,
+            "mrr": 0.522883022774327,
+            "success_rate": 0.8333333333333334
+          },
+          "avg_time_seconds": 0.017986139573622495,
+          "avg_time_milliseconds": 17.986139573622495
+        },
+        "vector": {
+          "metrics": {
+            "total_operations": 8,
+            "total_queries": 24,
+            "hit_at_1": 7,
+            "hit_at_3": 14,
+            "hit_at_5": 17,
+            "operations_success": 8,
+            "hit_rate_at_1": 0.2916666666666667,
+            "hit_rate_at_3": 0.5833333333333334,
+            "hit_rate_at_5": 0.7083333333333334,
+            "operation_success_rate": 1.0,
+            "recall": 1.0,
+            "recall_at_5": 0.7083333333333334,
+            "recall_at_3": 0.5833333333333334,
+            "precision": 0.1,
+            "f1_score": 0.18181818181818182,
+            "mrr": 0.49379705942205937,
+            "success_rate": 1.0
+          },
+          "avg_time_seconds": 0.013084150423916677,
+          "avg_time_milliseconds": 13.084150423916677
+        },
+        "fusion": {
+          "metrics": {
+            "total_operations": 8,
+            "total_queries": 24,
+            "hit_at_1": 13,
+            "hit_at_3": 17,
+            "hit_at_5": 20,
+            "operations_success": 8,
+            "hit_rate_at_1": 0.5416666666666666,
+            "hit_rate_at_3": 0.7083333333333334,
+            "hit_rate_at_5": 0.8333333333333334,
+            "operation_success_rate": 1.0,
+            "recall": 1.0,
+            "recall_at_5": 0.8333333333333334,
+            "recall_at_3": 0.7083333333333334,
+            "precision": 0.1,
+            "f1_score": 0.18181818181818182,
+            "mrr": 0.6619212962962963,
+            "success_rate": 1.0
+          }
+        }
+      }
+    },
+    "case1": {
+      "description": "创建多个基础几何体并进行变换操作，添加球体、圆柱体、圆锥体到场景，对物体进行移动、旋转和缩放变换，选择所有物体并设置它们的缩放比例",
+      "operations": {
+        "op1": {
+          "expected_api": "bpy.ops.mesh.primitive_uv_sphere_add",
+          "queries_count": 3,
+          "bm25_success_count": 3,
+          "vector_success_count": 3,
+          "fusion_success_count": 3
+        },
+        "op2": {
+          "expected_api": "bpy.ops.mesh.primitive_cylinder_add",
+          "queries_count": 3,
+          "bm25_success_count": 3,
+          "vector_success_count": 3,
+          "fusion_success_count": 3
+        },
+        "op3": {
+          "expected_api": "bpy.ops.mesh.primitive_cone_add",
+          "queries_count": 3,
+          "bm25_success_count": 3,
+          "vector_success_count": 3,
+          "fusion_success_count": 3
+        },
+        "op4": {
+          "expected_api": "bpy.ops.transform.translate",
+          "queries_count": 3,
+          "bm25_success_count": 1,
+          "vector_success_count": 2,
+          "fusion_success_count": 3
+        },
+        "op5": {
+          "expected_api": "bpy.ops.transform.rotate",
+          "queries_count": 3,
+          "bm25_success_count": 3,
+          "vector_success_count": 3,
+          "fusion_success_count": 3
+        },
+        "op6": {
+          "expected_api": "bpy.ops.transform.resize",
+          "queries_count": 3,
+          "bm25_success_count": 2,
+          "vector_success_count": 1,
+          "fusion_success_count": 2
+        },
+        "op7": {
+          "expected_api": "bpy.ops.object.select_all",
+          "queries_count": 3,
+          "bm25_success_count": 2,
+          "vector_success_count": 3,
+          "fusion_success_count": 3
+        },
+        "op8": {
+          "expected_api": "bpy.types.Object.scale",
+          "queries_count": 3,
+          "bm25_success_count": 1,
+          "vector_success_count": 3,
+          "fusion_success_count": 3
+        },
+        "op9": {
+          "expected_api": "bpy.types.Object.rotation_euler",
+          "queries_count": 3,
+          "bm25_success_count": 2,
+          "vector_success_count": 1,
+          "fusion_success_count": 2
+        }
+      },
+      "metrics_comparison": {
+        "bm25": {
+          "metrics": {
+            "total_operations": 9,
+            "total_queries": 27,
+            "hit_at_1": 6,
+            "hit_at_3": 11,
+            "hit_at_5": 12,
+            "operations_success": 9,
+            "hit_rate_at_1": 0.2222222222222222,
+            "hit_rate_at_3": 0.4074074074074074,
+            "hit_rate_at_5": 0.4444444444444444,
+            "operation_success_rate": 1.0,
+            "recall": 0.7407407407407407,
+            "recall_at_5": 0.4444444444444444,
+            "recall_at_3": 0.4074074074074074,
+            "precision": 0.07407407407407407,
+            "f1_score": 0.13468013468013468,
+            "mrr": 0.33785432257654485,
+            "success_rate": 0.7407407407407407
+          },
+          "avg_time_seconds": 0.01469153845337806,
+          "avg_time_milliseconds": 14.69153845337806
+        },
+        "vector": {
+          "metrics": {
+            "total_operations": 9,
+            "total_queries": 27,
+            "hit_at_1": 12,
+            "hit_at_3": 14,
+            "hit_at_5": 14,
+            "operations_success": 9,
+            "hit_rate_at_1": 0.4444444444444444,
+            "hit_rate_at_3": 0.5185185185185185,
+            "hit_rate_at_5": 0.5185185185185185,
+            "operation_success_rate": 1.0,
+            "recall": 0.8148148148148148,
+            "recall_at_5": 0.5185185185185185,
+            "recall_at_3": 0.5185185185185185,
+            "precision": 0.08148148148148149,
+            "f1_score": 0.14814814814814814,
+            "mrr": 0.5076950121612431,
+            "success_rate": 0.8148148148148148
+          },
+          "avg_time_seconds": 0.004463295573023734,
+          "avg_time_milliseconds": 4.463295573023735
+        },
+        "fusion": {
+          "metrics": {
+            "total_operations": 9,
+            "total_queries": 27,
+            "hit_at_1": 11,
+            "hit_at_3": 15,
+            "hit_at_5": 19,
+            "operations_success": 9,
+            "hit_rate_at_1": 0.4074074074074074,
+            "hit_rate_at_3": 0.5555555555555556,
+            "hit_rate_at_5": 0.7037037037037037,
+            "operation_success_rate": 1.0,
+            "recall": 0.9259259259259259,
+            "recall_at_5": 0.7037037037037037,
+            "recall_at_3": 0.5555555555555556,
+            "precision": 0.09259259259259259,
+            "f1_score": 0.1683501683501683,
+            "mrr": 0.5126846906432498,
+            "success_rate": 0.9259259259259259
+          }
+        }
+      }
+    },
+    "case2": {
+      "description": "进入编辑模式进行网格建模操作，切换到编辑模式，进行挤出、倒角、细分和内插面操作，调整法线方向，最后切换回物体模式",
+      "operations": {
+        "op1": {
+          "expected_api": "bpy.ops.object.editmode_toggle",
+          "queries_count": 3,
+          "bm25_success_count": 3,
+          "vector_success_count": 3,
+          "fusion_success_count": 3
+        },
+        "op2": {
+          "expected_api": "bpy.ops.mesh.extrude_region_move",
+          "queries_count": 3,
+          "bm25_success_count": 2,
+          "vector_success_count": 3,
+          "fusion_success_count": 3
+        },
+        "op3": {
+          "expected_api": "bpy.ops.mesh.bevel",
+          "queries_count": 3,
+          "bm25_success_count": 2,
+          "vector_success_count": 2,
+          "fusion_success_count": 2
+        },
+        "op4": {
+          "expected_api": "bpy.ops.mesh.subdivide",
+          "queries_count": 3,
+          "bm25_success_count": 1,
+          "vector_success_count": 0,
+          "fusion_success_count": 1
+        },
+        "op5": {
+          "expected_api": "bpy.ops.mesh.inset",
+          "queries_count": 3,
+          "bm25_success_count": 2,
+          "vector_success_count": 1,
+          "fusion_success_count": 2
+        },
+        "op6": {
+          "expected_api": "bpy.ops.mesh.loopcut_slide",
+          "queries_count": 3,
+          "bm25_success_count": 3,
+          "vector_success_count": 2,
+          "fusion_success_count": 3
+        },
+        "op7": {
+          "expected_api": "bpy.ops.mesh.normals_make_consistent",
+          "queries_count": 3,
+          "bm25_success_count": 2,
+          "vector_success_count": 3,
+          "fusion_success_count": 3
+        },
+        "op8": {
+          "expected_api": "bpy.ops.uv.unwrap",
+          "queries_count": 3,
+          "bm25_success_count": 2,
+          "vector_success_count": 3,
+          "fusion_success_count": 3
+        },
+        "op9": {
+          "expected_api": "bpy.ops.object.mode_set",
+          "queries_count": 3,
+          "bm25_success_count": 3,
+          "vector_success_count": 2,
+          "fusion_success_count": 3
+        }
+      },
+      "metrics_comparison": {
+        "bm25": {
+          "metrics": {
+            "total_operations": 9,
+            "total_queries": 27,
+            "hit_at_1": 2,
+            "hit_at_3": 12,
+            "hit_at_5": 15,
+            "operations_success": 9,
+            "hit_rate_at_1": 0.07407407407407407,
+            "hit_rate_at_3": 0.4444444444444444,
+            "hit_rate_at_5": 0.5555555555555556,
+            "operation_success_rate": 1.0,
+            "recall": 0.7407407407407407,
+            "recall_at_5": 0.5555555555555556,
+            "recall_at_3": 0.4444444444444444,
+            "precision": 0.07407407407407407,
+            "f1_score": 0.13468013468013468,
+            "mrr": 0.27250487329434697,
+            "success_rate": 0.7407407407407407
+          },
+          "avg_time_seconds": 0.013728334068286198,
+          "avg_time_milliseconds": 13.728334068286198
+        },
+        "vector": {
+          "metrics": {
+            "total_operations": 9,
+            "total_queries": 27,
+            "hit_at_1": 6,
+            "hit_at_3": 9,
+            "hit_at_5": 13,
+            "operations_success": 8,
+            "hit_rate_at_1": 0.2222222222222222,
+            "hit_rate_at_3": 0.3333333333333333,
+            "hit_rate_at_5": 0.48148148148148145,
+            "operation_success_rate": 0.8888888888888888,
+            "recall": 0.7037037037037037,
+            "recall_at_5": 0.48148148148148145,
+            "recall_at_3": 0.3333333333333333,
+            "precision": 0.07037037037037037,
+            "f1_score": 0.12794612794612795,
+            "mrr": 0.32223047468145505,
+            "success_rate": 0.7037037037037037
+          },
+          "avg_time_seconds": 0.004500283980397163,
+          "avg_time_milliseconds": 4.500283980397163
+        },
+        "fusion": {
+          "metrics": {
+            "total_operations": 9,
+            "total_queries": 27,
+            "hit_at_1": 9,
+            "hit_at_3": 12,
+            "hit_at_5": 15,
+            "operations_success": 9,
+            "hit_rate_at_1": 0.3333333333333333,
+            "hit_rate_at_3": 0.4444444444444444,
+            "hit_rate_at_5": 0.5555555555555556,
+            "operation_success_rate": 1.0,
+            "recall": 0.8518518518518519,
+            "recall_at_5": 0.5555555555555556,
+            "recall_at_3": 0.4444444444444444,
+            "precision": 0.08518518518518518,
+            "f1_score": 0.15488215488215487,
+            "mrr": 0.4205957864454597,
+            "success_rate": 0.8518518518518519
+          }
+        }
+      }
+    },
+    "case3": {
+      "description": "创建动画关键帧序列，设置场景起始和结束帧，设置当前帧位置，插入位置和旋转关键帧，删除不需要的关键帧，创建新动作数据块",
+      "operations": {
+        "op1": {
+          "expected_api": "bpy.types.Scene.frame_start",
+          "queries_count": 3,
+          "bm25_success_count": 1,
+          "vector_success_count": 2,
+          "fusion_success_count": 2
+        },
+        "op2": {
+          "expected_api": "bpy.types.Scene.frame_end",
+          "queries_count": 3,
+          "bm25_success_count": 1,
+          "vector_success_count": 2,
+          "fusion_success_count": 2
+        },
+        "op3": {
+          "expected_api": "bpy.types.Scene.frame_current",
+          "queries_count": 3,
+          "bm25_success_count": 1,
+          "vector_success_count": 2,
+          "fusion_success_count": 2
+        },
+        "op4": {
+          "expected_api": "bpy.ops.anim.keyframe_insert",
+          "queries_count": 3,
+          "bm25_success_count": 3,
+          "vector_success_count": 3,
+          "fusion_success_count": 3
+        },
+        "op5": {
+          "expected_api": "bpy.ops.anim.keyframe_delete",
+          "queries_count": 3,
+          "bm25_success_count": 3,
+          "vector_success_count": 3,
+          "fusion_success_count": 3
+        },
+        "op6": {
+          "expected_api": "bpy.ops.action.new",
+          "queries_count": 3,
+          "bm25_success_count": 1,
+          "vector_success_count": 3,
+          "fusion_success_count": 3
+        },
+        "op7": {
+          "expected_api": "bpy.ops.object.location_clear",
+          "queries_count": 3,
+          "bm25_success_count": 1,
+          "vector_success_count": 3,
+          "fusion_success_count": 3
+        },
+        "op8": {
+          "expected_api": "bpy.ops.object.rotation_clear",
+          "queries_count": 3,
+          "bm25_success_count": 2,
+          "vector_success_count": 3,
+          "fusion_success_count": 3
+        },
+        "op9": {
+          "expected_api": "bpy.ops.object.scale_clear",
+          "queries_count": 3,
+          "bm25_success_count": 1,
+          "vector_success_count": 3,
+          "fusion_success_count": 3
+        }
+      },
+      "metrics_comparison": {
+        "bm25": {
+          "metrics": {
+            "total_operations": 9,
+            "total_queries": 27,
+            "hit_at_1": 3,
+            "hit_at_3": 5,
+            "hit_at_5": 6,
+            "operations_success": 9,
+            "hit_rate_at_1": 0.1111111111111111,
+            "hit_rate_at_3": 0.18518518518518517,
+            "hit_rate_at_5": 0.2222222222222222,
+            "operation_success_rate": 1.0,
+            "recall": 0.5185185185185185,
+            "recall_at_5": 0.2222222222222222,
+            "recall_at_3": 0.18518518518518517,
+            "precision": 0.05185185185185185,
+            "f1_score": 0.09427609427609428,
+            "mrr": 0.1650232689121578,
+            "success_rate": 0.5185185185185185
+          },
+          "avg_time_seconds": 0.014945417953034243,
+          "avg_time_milliseconds": 14.945417953034243
+        },
+        "vector": {
+          "metrics": {
+            "total_operations": 9,
+            "total_queries": 27,
+            "hit_at_1": 8,
+            "hit_at_3": 11,
+            "hit_at_5": 12,
+            "operations_success": 9,
+            "hit_rate_at_1": 0.2962962962962963,
+            "hit_rate_at_3": 0.4074074074074074,
+            "hit_rate_at_5": 0.4444444444444444,
+            "operation_success_rate": 1.0,
+            "recall": 0.8888888888888888,
+            "recall_at_5": 0.4444444444444444,
+            "recall_at_3": 0.4074074074074074,
+            "precision": 0.08888888888888889,
+            "f1_score": 0.16161616161616163,
+            "mrr": 0.37541116020648185,
+            "success_rate": 0.8888888888888888
+          },
+          "avg_time_seconds": 0.004476740438905027,
+          "avg_time_milliseconds": 4.4767404389050265
+        },
+        "fusion": {
+          "metrics": {
+            "total_operations": 9,
+            "total_queries": 27,
+            "hit_at_1": 5,
+            "hit_at_3": 11,
+            "hit_at_5": 14,
+            "operations_success": 9,
+            "hit_rate_at_1": 0.18518518518518517,
+            "hit_rate_at_3": 0.4074074074074074,
+            "hit_rate_at_5": 0.5185185185185185,
+            "operation_success_rate": 1.0,
+            "recall": 0.8888888888888888,
+            "recall_at_5": 0.5185185185185185,
+            "recall_at_3": 0.4074074074074074,
+            "precision": 0.08888888888888889,
+            "f1_score": 0.16161616161616163,
+            "mrr": 0.3328755573606832,
+            "success_rate": 0.8888888888888888
+          }
+        }
+      }
+    },
+    "case4": {
+      "description": "添加修改器和约束系统，为物体添加修改器，添加约束控制器，设置约束目标物体，应用修改器效果，设置修改器名称和视口显示状态",
+      "operations": {
+        "op1": {
+          "expected_api": "bpy.ops.object.modifier_add",
+          "queries_count": 3,
+          "bm25_success_count": 3,
+          "vector_success_count": 3,
+          "fusion_success_count": 3
+        },
+        "op2": {
+          "expected_api": "bpy.types.Modifier.name",
+          "queries_count": 3,
+          "bm25_success_count": 1,
+          "vector_success_count": 3,
+          "fusion_success_count": 3
+        },
+        "op3": {
+          "expected_api": "bpy.types.Modifier.show_viewport",
+          "queries_count": 3,
+          "bm25_success_count": 3,
+          "vector_success_count": 3,
+          "fusion_success_count": 3
+        },
+        "op4": {
+          "expected_api": "bpy.ops.object.modifier_apply",
+          "queries_count": 3,
+          "bm25_success_count": 1,
+          "vector_success_count": 2,
+          "fusion_success_count": 2
+        },
+        "op5": {
+          "expected_api": "bpy.ops.object.constraint_add",
+          "queries_count": 3,
+          "bm25_success_count": 3,
+          "vector_success_count": 3,
+          "fusion_success_count": 3
+        },
+        "op6": {
+          "expected_api": "bpy.types.Constraint.name",
+          "queries_count": 3,
+          "bm25_success_count": 0,
+          "vector_success_count": 2,
+          "fusion_success_count": 2
+        },
+        "op7": {
+          "expected_api": "bpy.ops.object.parent_set",
+          "queries_count": 3,
+          "bm25_success_count": 2,
+          "vector_success_count": 3,
+          "fusion_success_count": 3
+        },
+        "op8": {
+          "expected_api": "bpy.ops.object.track_set",
+          "queries_count": 3,
+          "bm25_success_count": 1,
+          "vector_success_count": 2,
+          "fusion_success_count": 2
+        }
+      },
+      "metrics_comparison": {
+        "bm25": {
+          "metrics": {
+            "total_operations": 8,
+            "total_queries": 24,
+            "hit_at_1": 3,
+            "hit_at_3": 8,
+            "hit_at_5": 9,
+            "operations_success": 7,
+            "hit_rate_at_1": 0.125,
+            "hit_rate_at_3": 0.3333333333333333,
+            "hit_rate_at_5": 0.375,
+            "operation_success_rate": 0.875,
+            "recall": 0.5833333333333334,
+            "recall_at_5": 0.375,
+            "recall_at_3": 0.3333333333333333,
+            "precision": 0.058333333333333334,
+            "f1_score": 0.10606060606060606,
+            "mrr": 0.24503842993426325,
+            "success_rate": 0.5833333333333334
+          },
+          "avg_time_seconds": 0.017143999439819407,
+          "avg_time_milliseconds": 17.143999439819407
+        },
+        "vector": {
+          "metrics": {
+            "total_operations": 8,
+            "total_queries": 24,
+            "hit_at_1": 4,
+            "hit_at_3": 9,
+            "hit_at_5": 13,
+            "operations_success": 8,
+            "hit_rate_at_1": 0.16666666666666666,
+            "hit_rate_at_3": 0.375,
+            "hit_rate_at_5": 0.5416666666666666,
+            "operation_success_rate": 1.0,
+            "recall": 0.875,
+            "recall_at_5": 0.5416666666666666,
+            "recall_at_3": 0.375,
+            "precision": 0.0875,
+            "f1_score": 0.15909090909090906,
+            "mrr": 0.3177480158730158,
+            "success_rate": 0.875
+          },
+          "avg_time_seconds": 0.0044954474627350765,
+          "avg_time_milliseconds": 4.4954474627350764
+        },
+        "fusion": {
+          "metrics": {
+            "total_operations": 8,
+            "total_queries": 24,
+            "hit_at_1": 8,
+            "hit_at_3": 13,
+            "hit_at_5": 14,
+            "operations_success": 8,
+            "hit_rate_at_1": 0.3333333333333333,
+            "hit_rate_at_3": 0.5416666666666666,
+            "hit_rate_at_5": 0.5833333333333334,
+            "operation_success_rate": 1.0,
+            "recall": 0.875,
+            "recall_at_5": 0.5833333333333334,
+            "recall_at_3": 0.5416666666666666,
+            "precision": 0.0875,
+            "f1_score": 0.15909090909090906,
+            "mrr": 0.44489304859370654,
+            "success_rate": 0.875
+          }
+        }
+      }
+    },
+    "case5": {
+      "description": "创建粒子系统和物理模拟，创建新的粒子系统，添加刚体物理属性，复制物体，合并多个物体，删除选中的物体",
+      "operations": {
+        "op1": {
+          "expected_api": "bpy.ops.particle.new",
+          "queries_count": 3,
+          "bm25_success_count": 1,
+          "vector_success_count": 2,
+          "fusion_success_count": 2
+        },
+        "op2": {
+          "expected_api": "bpy.ops.rigidbody.object_add",
+          "queries_count": 3,
+          "bm25_success_count": 2,
+          "vector_success_count": 3,
+          "fusion_success_count": 3
+        },
+        "op3": {
+          "expected_api": "bpy.ops.object.duplicate",
+          "queries_count": 3,
+          "bm25_success_count": 2,
+          "vector_success_count": 3,
+          "fusion_success_count": 3
+        },
+        "op4": {
+          "expected_api": "bpy.ops.object.join",
+          "queries_count": 3,
+          "bm25_success_count": 2,
+          "vector_success_count": 3,
+          "fusion_success_count": 3
+        },
+        "op5": {
+          "expected_api": "bpy.ops.object.delete",
+          "queries_count": 3,
+          "bm25_success_count": 2,
+          "vector_success_count": 3,
+          "fusion_success_count": 3
+        },
+        "op6": {
+          "expected_api": "bpy.ops.mesh.split",
+          "queries_count": 3,
+          "bm25_success_count": 1,
+          "vector_success_count": 3,
+          "fusion_success_count": 3
+        },
+        "op7": {
+          "expected_api": "bpy.ops.mesh.merge",
+          "queries_count": 3,
+          "bm25_success_count": 1,
+          "vector_success_count": 0,
+          "fusion_success_count": 1
+        },
+        "op8": {
+          "expected_api": "bpy.ops.object.empty_add",
+          "queries_count": 3,
+          "bm25_success_count": 2,
+          "vector_success_count": 3,
+          "fusion_success_count": 3
+        },
+        "op9": {
+          "expected_api": "bpy.ops.object.origin_set",
+          "queries_count": 3,
+          "bm25_success_count": 2,
+          "vector_success_count": 2,
+          "fusion_success_count": 2
+        }
+      },
+      "metrics_comparison": {
+        "bm25": {
+          "metrics": {
+            "total_operations": 9,
+            "total_queries": 27,
+            "hit_at_1": 4,
+            "hit_at_3": 6,
+            "hit_at_5": 8,
+            "operations_success": 9,
+            "hit_rate_at_1": 0.14814814814814814,
+            "hit_rate_at_3": 0.2222222222222222,
+            "hit_rate_at_5": 0.2962962962962963,
+            "operation_success_rate": 1.0,
+            "recall": 0.5555555555555556,
+            "recall_at_5": 0.2962962962962963,
+            "recall_at_3": 0.2222222222222222,
+            "precision": 0.05555555555555555,
+            "f1_score": 0.101010101010101,
+            "mrr": 0.22153648151841468,
+            "success_rate": 0.5555555555555556
+          },
+          "avg_time_seconds": 0.013524859643506783,
+          "avg_time_milliseconds": 13.524859643506783
+        },
+        "vector": {
+          "metrics": {
+            "total_operations": 9,
+            "total_queries": 27,
+            "hit_at_1": 13,
+            "hit_at_3": 16,
+            "hit_at_5": 17,
+            "operations_success": 8,
+            "hit_rate_at_1": 0.48148148148148145,
+            "hit_rate_at_3": 0.5925925925925926,
+            "hit_rate_at_5": 0.6296296296296297,
+            "operation_success_rate": 0.8888888888888888,
+            "recall": 0.8148148148148148,
+            "recall_at_5": 0.6296296296296297,
+            "recall_at_3": 0.5925925925925926,
+            "precision": 0.08148148148148149,
+            "f1_score": 0.14814814814814814,
+            "mrr": 0.556244064577398,
+            "success_rate": 0.8148148148148148
+          },
+          "avg_time_seconds": 0.004512282743774078,
+          "avg_time_milliseconds": 4.512282743774078
+        },
+        "fusion": {
+          "metrics": {
+            "total_operations": 9,
+            "total_queries": 27,
+            "hit_at_1": 8,
+            "hit_at_3": 12,
+            "hit_at_5": 15,
+            "operations_success": 9,
+            "hit_rate_at_1": 0.2962962962962963,
+            "hit_rate_at_3": 0.4444444444444444,
+            "hit_rate_at_5": 0.5555555555555556,
+            "operation_success_rate": 1.0,
+            "recall": 0.8518518518518519,
+            "recall_at_5": 0.5555555555555556,
+            "recall_at_3": 0.4444444444444444,
+            "precision": 0.08518518518518518,
+            "f1_score": 0.15488215488215487,
+            "mrr": 0.41718300460130525,
+            "success_rate": 0.8518518518518519
+          }
+        }
+      }
+    },
+    "case6": {
+      "description": "渲染设置和场景配置，设置渲染引擎，调整渲染分辨率宽度和高度，设置世界环境颜色，执行渲染操作，保存文件",
+      "operations": {
+        "op1": {
+          "expected_api": "bpy.types.RenderSettings.engine",
+          "queries_count": 3,
+          "bm25_success_count": 0,
+          "vector_success_count": 2,
+          "fusion_success_count": 2
+        },
+        "op2": {
+          "expected_api": "bpy.types.RenderSettings.resolution_x",
+          "queries_count": 3,
+          "bm25_success_count": 1,
+          "vector_success_count": 3,
+          "fusion_success_count": 3
+        },
+        "op3": {
+          "expected_api": "bpy.types.RenderSettings.resolution_y",
+          "queries_count": 3,
+          "bm25_success_count": 1,
+          "vector_success_count": 3,
+          "fusion_success_count": 3
+        },
+        "op4": {
+          "expected_api": "bpy.types.World.color",
+          "queries_count": 3,
+          "bm25_success_count": 3,
+          "vector_success_count": 3,
+          "fusion_success_count": 3
+        },
+        "op5": {
+          "expected_api": "bpy.ops.render.render",
+          "queries_count": 3,
+          "bm25_success_count": 2,
+          "vector_success_count": 3,
+          "fusion_success_count": 3
+        },
+        "op6": {
+          "expected_api": "bpy.ops.wm.save_as_mainfile",
+          "queries_count": 3,
+          "bm25_success_count": 1,
+          "vector_success_count": 1,
+          "fusion_success_count": 1
+        },
+        "op7": {
+          "expected_api": "bpy.ops.texture.new",
+          "queries_count": 3,
+          "bm25_success_count": 3,
+          "vector_success_count": 3,
+          "fusion_success_count": 3
+        },
+        "op8": {
+          "expected_api": "bpy.ops.image.new",
+          "queries_count": 3,
+          "bm25_success_count": 1,
+          "vector_success_count": 2,
+          "fusion_success_count": 2
+        }
+      },
+      "metrics_comparison": {
+        "bm25": {
+          "metrics": {
+            "total_operations": 8,
+            "total_queries": 24,
+            "hit_at_1": 4,
+            "hit_at_3": 5,
+            "hit_at_5": 7,
+            "operations_success": 7,
+            "hit_rate_at_1": 0.16666666666666666,
+            "hit_rate_at_3": 0.20833333333333334,
+            "hit_rate_at_5": 0.2916666666666667,
+            "operation_success_rate": 0.875,
+            "recall": 0.5,
+            "recall_at_5": 0.2916666666666667,
+            "recall_at_3": 0.20833333333333334,
+            "precision": 0.05,
+            "f1_score": 0.09090909090909091,
+            "mrr": 0.21195970695970692,
+            "success_rate": 0.5
+          },
+          "avg_time_seconds": 0.014192861466047665,
+          "avg_time_milliseconds": 14.192861466047665
+        },
+        "vector": {
+          "metrics": {
+            "total_operations": 8,
+            "total_queries": 24,
+            "hit_at_1": 11,
+            "hit_at_3": 13,
+            "hit_at_5": 15,
+            "operations_success": 8,
+            "hit_rate_at_1": 0.4583333333333333,
+            "hit_rate_at_3": 0.5416666666666666,
+            "hit_rate_at_5": 0.625,
+            "operation_success_rate": 1.0,
+            "recall": 0.8333333333333334,
+            "recall_at_5": 0.625,
+            "recall_at_3": 0.5416666666666666,
+            "precision": 0.08333333333333333,
+            "f1_score": 0.15151515151515152,
+            "mrr": 0.5282467793880837,
+            "success_rate": 0.8333333333333334
+          },
+          "avg_time_seconds": 0.004483035784990837,
+          "avg_time_milliseconds": 4.483035784990837
+        },
+        "fusion": {
+          "metrics": {
+            "total_operations": 8,
+            "total_queries": 24,
+            "hit_at_1": 6,
+            "hit_at_3": 8,
+            "hit_at_5": 11,
+            "operations_success": 8,
+            "hit_rate_at_1": 0.25,
+            "hit_rate_at_3": 0.3333333333333333,
+            "hit_rate_at_5": 0.4583333333333333,
+            "operation_success_rate": 1.0,
+            "recall": 0.8333333333333334,
+            "recall_at_5": 0.4583333333333333,
+            "recall_at_3": 0.3333333333333333,
+            "precision": 0.08333333333333333,
+            "f1_score": 0.15151515151515152,
+            "mrr": 0.34489696804647774,
+            "success_rate": 0.8333333333333334
+          }
+        }
+      }
+    },
+    "case7": {
+      "description": "节点编辑器操作和材质设置，添加节点到节点树，创建材质数据块，设置材质漫反射颜色，启用材质节点系统",
+      "operations": {
+        "op1": {
+          "expected_api": "bpy.ops.object.material_slot_add",
+          "queries_count": 3,
+          "bm25_success_count": 3,
+          "vector_success_count": 3,
+          "fusion_success_count": 3
+        },
+        "op2": {
+          "expected_api": "bpy.ops.node.add_node",
+          "queries_count": 3,
+          "bm25_success_count": 3,
+          "vector_success_count": 3,
+          "fusion_success_count": 3
+        },
+        "op3": {
+          "expected_api": "bpy.ops.object.light_add",
+          "queries_count": 3,
+          "bm25_success_count": 3,
+          "vector_success_count": 3,
+          "fusion_success_count": 3
+        },
+        "op4": {
+          "expected_api": "bpy.types.SpotLight.energy",
+          "queries_count": 3,
+          "bm25_success_count": 3,
+          "vector_success_count": 3,
+          "fusion_success_count": 3
+        },
+        "op5": {
+          "expected_api": "bpy.types.SunLight.energy",
+          "queries_count": 3,
+          "bm25_success_count": 2,
+          "vector_success_count": 3,
+          "fusion_success_count": 3
+        },
+        "op6": {
+          "expected_api": "bpy.types.AreaLight.energy",
+          "queries_count": 3,
+          "bm25_success_count": 3,
+          "vector_success_count": 3,
+          "fusion_success_count": 3
+        },
+        "op7": {
+          "expected_api": "bpy.ops.mesh.primitive_cube_add",
+          "queries_count": 3,
+          "bm25_success_count": 2,
+          "vector_success_count": 3,
+          "fusion_success_count": 3
+        },
+        "op8": {
+          "expected_api": "bpy.ops.object.shade_flat",
+          "queries_count": 3,
+          "bm25_success_count": 2,
+          "vector_success_count": 3,
+          "fusion_success_count": 3
+        },
+        "op9": {
+          "expected_api": "bpy.ops.collection.create",
+          "queries_count": 3,
+          "bm25_success_count": 1,
+          "vector_success_count": 3,
+          "fusion_success_count": 3
+        }
+      },
+      "metrics_comparison": {
+        "bm25": {
+          "metrics": {
+            "total_operations": 9,
+            "total_queries": 27,
+            "hit_at_1": 9,
+            "hit_at_3": 14,
+            "hit_at_5": 16,
+            "operations_success": 9,
+            "hit_rate_at_1": 0.3333333333333333,
+            "hit_rate_at_3": 0.5185185185185185,
+            "hit_rate_at_5": 0.5925925925925926,
+            "operation_success_rate": 1.0,
+            "recall": 0.8148148148148148,
+            "recall_at_5": 0.5925925925925926,
+            "recall_at_3": 0.5185185185185185,
+            "precision": 0.08148148148148149,
+            "f1_score": 0.14814814814814814,
+            "mrr": 0.4518530489118724,
+            "success_rate": 0.8148148148148148
+          },
+          "avg_time_seconds": 0.01802720222622156,
+          "avg_time_milliseconds": 18.02720222622156
+        },
+        "vector": {
+          "metrics": {
+            "total_operations": 9,
+            "total_queries": 27,
+            "hit_at_1": 7,
+            "hit_at_3": 14,
+            "hit_at_5": 18,
+            "operations_success": 9,
+            "hit_rate_at_1": 0.25925925925925924,
+            "hit_rate_at_3": 0.5185185185185185,
+            "hit_rate_at_5": 0.6666666666666666,
+            "operation_success_rate": 1.0,
+            "recall": 1.0,
+            "recall_at_5": 0.6666666666666666,
+            "recall_at_3": 0.5185185185185185,
+            "precision": 0.1,
+            "f1_score": 0.18181818181818182,
+            "mrr": 0.4347555857058782,
+            "success_rate": 1.0
+          },
+          "avg_time_seconds": 0.004471466721345981,
+          "avg_time_milliseconds": 4.471466721345981
+        },
+        "fusion": {
+          "metrics": {
+            "total_operations": 9,
+            "total_queries": 27,
+            "hit_at_1": 12,
+            "hit_at_3": 17,
+            "hit_at_5": 20,
+            "operations_success": 9,
+            "hit_rate_at_1": 0.4444444444444444,
+            "hit_rate_at_3": 0.6296296296296297,
+            "hit_rate_at_5": 0.7407407407407407,
+            "operation_success_rate": 1.0,
+            "recall": 1.0,
+            "recall_at_5": 0.7407407407407407,
+            "recall_at_3": 0.6296296296296297,
+            "precision": 0.1,
+            "f1_score": 0.18181818181818182,
+            "mrr": 0.5678756728048943,
+            "success_rate": 1.0
+          }
+        }
+      }
+    },
+    "case8": {
+      "description": "曲线和文本对象操作，添加贝塞尔曲线，细分曲线，添加文本对象到场景，进行多重循环选择",
+      "operations": {
+        "op1": {
+          "expected_api": "bpy.ops.curve.primitive_bezier_curve_add",
+          "queries_count": 3,
+          "bm25_success_count": 3,
+          "vector_success_count": 3,
+          "fusion_success_count": 3
+        },
+        "op2": {
+          "expected_api": "bpy.ops.curve.subdivide",
+          "queries_count": 3,
+          "bm25_success_count": 1,
+          "vector_success_count": 2,
+          "fusion_success_count": 2
+        },
+        "op3": {
+          "expected_api": "bpy.ops.object.text_add",
+          "queries_count": 3,
+          "bm25_success_count": 2,
+          "vector_success_count": 2,
+          "fusion_success_count": 2
+        },
+        "op4": {
+          "expected_api": "bpy.ops.mesh.loop_multi_select",
+          "queries_count": 3,
+          "bm25_success_count": 2,
+          "vector_success_count": 3,
+          "fusion_success_count": 3
+        },
+        "op5": {
+          "expected_api": "bpy.ops.mesh.edge_split",
+          "queries_count": 3,
+          "bm25_success_count": 1,
+          "vector_success_count": 3,
+          "fusion_success_count": 3
+        },
+        "op6": {
+          "expected_api": "bpy.ops.object.editmode_toggle",
+          "queries_count": 3,
+          "bm25_success_count": 3,
+          "vector_success_count": 3,
+          "fusion_success_count": 3
+        },
+        "op7": {
+          "expected_api": "bpy.ops.object.select_all",
+          "queries_count": 3,
+          "bm25_success_count": 2,
+          "vector_success_count": 3,
+          "fusion_success_count": 3
+        },
+        "op8": {
+          "expected_api": "bpy.ops.mesh.primitive_cylinder_add",
+          "queries_count": 3,
+          "bm25_success_count": 2,
+          "vector_success_count": 3,
+          "fusion_success_count": 3
+        },
+        "op9": {
+          "expected_api": "bpy.ops.mesh.primitive_uv_sphere_add",
+          "queries_count": 3,
+          "bm25_success_count": 3,
+          "vector_success_count": 3,
+          "fusion_success_count": 3
+        }
+      },
+      "metrics_comparison": {
+        "bm25": {
+          "metrics": {
+            "total_operations": 9,
+            "total_queries": 27,
+            "hit_at_1": 5,
+            "hit_at_3": 10,
+            "hit_at_5": 13,
+            "operations_success": 9,
+            "hit_rate_at_1": 0.18518518518518517,
+            "hit_rate_at_3": 0.37037037037037035,
+            "hit_rate_at_5": 0.48148148148148145,
+            "operation_success_rate": 1.0,
+            "recall": 0.7037037037037037,
+            "recall_at_5": 0.48148148148148145,
+            "recall_at_3": 0.37037037037037035,
+            "precision": 0.07037037037037037,
+            "f1_score": 0.12794612794612795,
+            "mrr": 0.30502470946019333,
+            "success_rate": 0.7037037037037037
+          },
+          "avg_time_seconds": 0.014717504002705769,
+          "avg_time_milliseconds": 14.71750400270577
+        },
+        "vector": {
+          "metrics": {
+            "total_operations": 9,
+            "total_queries": 27,
+            "hit_at_1": 8,
+            "hit_at_3": 10,
+            "hit_at_5": 14,
+            "operations_success": 9,
+            "hit_rate_at_1": 0.2962962962962963,
+            "hit_rate_at_3": 0.37037037037037035,
+            "hit_rate_at_5": 0.5185185185185185,
+            "operation_success_rate": 1.0,
+            "recall": 0.9259259259259259,
+            "recall_at_5": 0.5185185185185185,
+            "recall_at_3": 0.37037037037037035,
+            "precision": 0.09259259259259259,
+            "f1_score": 0.1683501683501683,
+            "mrr": 0.3987264896971228,
+            "success_rate": 0.9259259259259259
+          },
+          "avg_time_seconds": 0.004445574470554237,
+          "avg_time_milliseconds": 4.445574470554237
+        },
+        "fusion": {
+          "metrics": {
+            "total_operations": 9,
+            "total_queries": 27,
+            "hit_at_1": 10,
+            "hit_at_3": 13,
+            "hit_at_5": 18,
+            "operations_success": 9,
+            "hit_rate_at_1": 0.37037037037037035,
+            "hit_rate_at_3": 0.48148148148148145,
+            "hit_rate_at_5": 0.6666666666666666,
+            "operation_success_rate": 1.0,
+            "recall": 0.9259259259259259,
+            "recall_at_5": 0.6666666666666666,
+            "recall_at_3": 0.48148148148148145,
+            "precision": 0.09259259259259259,
+            "f1_score": 0.1683501683501683,
+            "mrr": 0.48891909057561517,
+            "success_rate": 0.9259259259259259
+          }
+        }
+      }
+    },
+    "case9": {
+      "description": "综合场景编辑操作，包括添加各种几何体，设置变换属性，应用着色效果，管理场景结构和层级关系",
+      "operations": {
+        "op1": {
+          "expected_api": "bpy.ops.mesh.primitive_cone_add",
+          "queries_count": 3,
+          "bm25_success_count": 2,
+          "vector_success_count": 3,
+          "fusion_success_count": 3
+        },
+        "op2": {
+          "expected_api": "bpy.types.Object.location",
+          "queries_count": 3,
+          "bm25_success_count": 1,
+          "vector_success_count": 3,
+          "fusion_success_count": 3
+        },
+        "op3": {
+          "expected_api": "bpy.types.Object.rotation_euler",
+          "queries_count": 3,
+          "bm25_success_count": 2,
+          "vector_success_count": 1,
+          "fusion_success_count": 2
+        },
+        "op4": {
+          "expected_api": "bpy.types.Object.scale",
+          "queries_count": 3,
+          "bm25_success_count": 1,
+          "vector_success_count": 3,
+          "fusion_success_count": 3
+        },
+        "op5": {
+          "expected_api": "bpy.ops.transform.translate",
+          "queries_count": 3,
+          "bm25_success_count": 1,
+          "vector_success_count": 3,
+          "fusion_success_count": 3
+        },
+        "op6": {
+          "expected_api": "bpy.ops.transform.rotate",
+          "queries_count": 3,
+          "bm25_success_count": 2,
+          "vector_success_count": 3,
+          "fusion_success_count": 3
+        },
+        "op7": {
+          "expected_api": "bpy.ops.transform.resize",
+          "queries_count": 3,
+          "bm25_success_count": 2,
+          "vector_success_count": 3,
+          "fusion_success_count": 3
+        },
+        "op8": {
+          "expected_api": "bpy.ops.object.shade_smooth",
+          "queries_count": 3,
+          "bm25_success_count": 2,
+          "vector_success_count": 3,
+          "fusion_success_count": 3
+        },
+        "op9": {
+          "expected_api": "bpy.ops.object.camera_add",
+          "queries_count": 3,
+          "bm25_success_count": 3,
+          "vector_success_count": 3,
+          "fusion_success_count": 3
+        },
+        "op10": {
+          "expected_api": "bpy.types.Camera.lens",
+          "queries_count": 3,
+          "bm25_success_count": 3,
+          "vector_success_count": 3,
+          "fusion_success_count": 3
+        }
+      },
+      "metrics_comparison": {
+        "bm25": {
+          "metrics": {
+            "total_operations": 10,
+            "total_queries": 30,
+            "hit_at_1": 8,
+            "hit_at_3": 11,
+            "hit_at_5": 12,
+            "operations_success": 10,
+            "hit_rate_at_1": 0.26666666666666666,
+            "hit_rate_at_3": 0.36666666666666664,
+            "hit_rate_at_5": 0.4,
+            "operation_success_rate": 1.0,
+            "recall": 0.6333333333333333,
+            "recall_at_5": 0.4,
+            "recall_at_3": 0.36666666666666664,
+            "precision": 0.06333333333333334,
+            "f1_score": 0.11515151515151516,
+            "mrr": 0.3276753246753247,
+            "success_rate": 0.6333333333333333
+          },
+          "avg_time_seconds": 0.013696336979046464,
+          "avg_time_milliseconds": 13.696336979046464
+        },
+        "vector": {
+          "metrics": {
+            "total_operations": 10,
+            "total_queries": 30,
+            "hit_at_1": 9,
+            "hit_at_3": 13,
+            "hit_at_5": 15,
+            "operations_success": 10,
+            "hit_rate_at_1": 0.3,
+            "hit_rate_at_3": 0.43333333333333335,
+            "hit_rate_at_5": 0.5,
+            "operation_success_rate": 1.0,
+            "recall": 0.9333333333333333,
+            "recall_at_5": 0.5,
+            "recall_at_3": 0.43333333333333335,
+            "precision": 0.09333333333333334,
+            "f1_score": 0.1696969696969697,
+            "mrr": 0.40385822114251246,
+            "success_rate": 0.9333333333333333
+          },
+          "avg_time_seconds": 0.004447844345122576,
+          "avg_time_milliseconds": 4.447844345122576
+        },
+        "fusion": {
+          "metrics": {
+            "total_operations": 10,
+            "total_queries": 30,
+            "hit_at_1": 8,
+            "hit_at_3": 18,
+            "hit_at_5": 21,
+            "operations_success": 10,
+            "hit_rate_at_1": 0.26666666666666666,
+            "hit_rate_at_3": 0.6,
+            "hit_rate_at_5": 0.7,
+            "operation_success_rate": 1.0,
+            "recall": 0.9666666666666667,
+            "recall_at_5": 0.7,
+            "recall_at_3": 0.6,
+            "precision": 0.09666666666666666,
+            "f1_score": 0.17575757575757578,
+            "mrr": 0.44717345634673905,
+            "success_rate": 0.9666666666666667
+          }
+        }
+      }
+    }
+  }
+}

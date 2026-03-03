@@ -1,0 +1,27 @@
+{
+  "input_image": "test_images/sample_scene.jpg",
+  "device": "cuda",
+  "low_vram_mode": true,
+  "hunyuan_file_path": "text_to_3d_agent/Hunyuan3D-2.1",
+  "hunyuan_model_path": "tencent/Hunyuan3D-2.1",
+  "hunyuan_subfolder": "hunyuan3d-dit-v2-1",
+  "qwen_model_path":  "text_to_3d_agent/models",
+  "text2image_params": {
+    "width": 1328,
+    "height": 1328,
+    "num_inference_steps": 45,
+    "guidance_scale": 7.5,
+    "temperature": 0.01,
+    "top_p": 0.98,
+    "seed": 42
+  },
+  "image23d_params": {
+    "steps": 50,
+    "guidance_scale": 7.5,
+    "seed": 42,
+    "octree_resolution": 256,
+    "check_box_rembg": false,
+    "num_chunks": 200000
+  }
+}
+

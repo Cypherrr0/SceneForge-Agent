@@ -1,0 +1,38 @@
+# Python cache
+__pycache__/
+*.pyc
+
+# IDE configuration folder
+.idea/
+.vscode/
+
+# Environment variables file
+.env
+text_to_3d_agent/models/
+output/
+outputs/
+text_to_3d_agent/text23d_save_dir/
+bpy_documentation/blender_python_reference_4_5/
+bpy_documentation/all-MiniLM-L6-v2/
+bpy_documentation/bge-reranker-large/
+bpy_documentation/vector_index/
+bpy_documentation/bm25_index/
+bpy_documentation/structured_docs/
+rag/retrieval/all-MiniLM-L6-v2/
+rag/retrieval/bge-reranker-large/
+bpy_tutorial_pdf/
+sessions/
+generated_scripts/
+logs/
+frontend/.next
+frontend/node_modules
+node_modules
+node_modules
+old_version/
+backend/text_to_3d_agent/
+backend/backend.log
+frontend/backend.log
+frontend/frontend.log
+面试问题回答.md
+test/
+archive

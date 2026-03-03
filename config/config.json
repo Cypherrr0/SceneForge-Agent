@@ -1,0 +1,11 @@
+{
+  "qwen_api_key": "",
+  "gemini_api_key": "",
+  "uid": "deer_and_forest",  
+  "input_source": "a cartoon deer is running,there are forests in cartoon style around it,no background",
+  "save_dir": "./text_to_3d_agent/text23d_save_dir",
+  "frontend_save_dir":"./outputs",
+  "txt2img_model_name": "gemini-2.5-flash-image-preview",
+  "translate_model_name": "Qwen/Qwen3-Next-80B-A3B-Instruct",
+  "evaluate_model_name":"Qwen/Qwen2-VL-72B-Instruct"
+}

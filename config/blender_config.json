@@ -1,0 +1,28 @@
+{
+    "lighting": {
+        "world_background": {
+            "color": [0.5, 0.5, 0.5, 1.0],
+            "strength": 0.0
+        },
+        "point_light": {
+            "location": [-0.10521, 0.36788, 3.8454],
+            "rotation_euler_degrees": [-49.206, 7.4037, 101.74],
+            "color": [1.0, 1.0, 1.0],
+            "power": 1004.100,
+            "radius": 4.72
+        }
+    },
+    "camera": {
+        "lens_mm": 35,
+        "side_distance_multiplier": 1.5,
+        "top_bottom_distance_multiplier": 2.0
+    },
+    "render": {
+        "resolution_x": 512,
+        "resolution_y": 512,
+        "engine": "CYCLES",
+        "exposure": 0.9,
+        "cycles_samples": 128,
+        "film_transparent": true
+    }
+}
